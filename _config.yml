@@ -23,9 +23,9 @@ email: ammarmplumber@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Here, I share musings on religion, philosophy, art, and science.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "ammarmplumber.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: ammar_plumber
+github_username:  ammarmplumber
 
 # Build settings
 theme: minima
