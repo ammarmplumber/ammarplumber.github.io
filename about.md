@@ -5,15 +5,9 @@ permalink: /about/
 published: true
 ---
 
-Hi, I'm Ammar. I love to exchange ideas and hate to restrict my expressive domains. Here, I share my thoughts and feelings about a vast range of topics.
+Hi, I'm Ammar, and I'm a generalist with particular interests in utopianism, behavioral science, spirituality, and education. I'm eager to share the ideas that inspire me.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+Connect with me:
+[Email](mailto:ammarmplumber@gmail.com)
+[LinkedIn](https://www.linkedin.com/in/ammarplumber/)
+[Twitter](https://twitter.com/ammar_plumber)
