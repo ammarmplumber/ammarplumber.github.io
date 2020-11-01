@@ -2,9 +2,10 @@
 layout: page
 title: About
 permalink: /about/
+published: true
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Hi, I'm Ammar. I love to exchange ideas and hate to restrict my expressive domains. Here, I share my thoughts and feelings about a vast range of topics.
 
 You can find the source code for Minima at GitHub:
 [jekyll][jekyll-organization] /
