@@ -5,7 +5,7 @@ permalink: /about/
 published: true
 ---
 
-Hi, I'm Ammar, and I'm a generalist with particular interests in utopianism, behavioral science, spirituality, and education. I'm eager to share the ideas that inspire me.
+Hi, I'm Ammar, and I'm a generalist with particular interests in early education, childhood development, behavioral/neuroscience, and spirituality. I'm eager to share the ideas that inspire me.
 
 Connect with me:
 
