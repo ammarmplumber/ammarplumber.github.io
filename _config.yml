@@ -21,7 +21,7 @@
 title: Ammar Plumber
 email: ammarmplumber@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Here, I share musings on neuroscience, education, spirituality, art, and science.
+  Here, I share musings on behavioral/brain science, education, and spirituality.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "ammarmplumber.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
