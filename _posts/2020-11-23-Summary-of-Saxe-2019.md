@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ## Summary of “Social Cognitive Functions of the Prefrontal Cortex in Human Infants” (2019) by Rebecca Saxe
 
