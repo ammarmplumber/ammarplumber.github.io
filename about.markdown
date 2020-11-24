@@ -5,7 +5,7 @@ permalink: /about/
 published: true
 ---
 
-Hi, I'm Ammar, and I'm a interdisciplinary thinker with particular interests in early education, childhood development, behavioral/neuroscience, and spirituality. I'm eager to share the ideas that inspire me.
+Hi, I'm Ammar, and I'm an interdisciplinary thinker with particular interests in early education, childhood development, behavioral/neuroscience, and spirituality. I'm eager to share the ideas that inspire me.
 
 Connect with me:
 
