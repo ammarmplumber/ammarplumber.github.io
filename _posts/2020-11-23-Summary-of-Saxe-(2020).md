@@ -1,8 +1,7 @@
 ---
 published: true
 ---
-#### Summary of “Social Cognitive Functions of the Prefrontal Cortex in Human Infants” (2020) by Rebecca Saxe
-
+“Social Cognitive Functions of the Prefrontal Cortex in Human Infants” (2020) by Rebecca Saxe
 See talk here: https://videocast.nih.gov/summary.asp?live=35611&bhcp=1
 
 Rebecca Saxe of MIT showcased research that examined the extent of regional specialization of perceptual, social, and cognitive processing in human babies. Her work challenges the prevailing hypothesis that babies passively absorb information and develop top-down attentional mechanisms only after statistical patterns are learned over time.
