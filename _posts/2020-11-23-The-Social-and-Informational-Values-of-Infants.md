@@ -5,7 +5,7 @@ published: true
 
 See talk here: https://videocast.nih.gov/summary.asp?live=35611&bhcp=1
 
-Rebecca Saxe of MIT showcased research that examined the extent of regional specialization of perceptual, social, and cognitive processing in human babies. Her work challenges the prevailing hypothesis that babies passively absorb information and develop top-down attentional mechanisms only after statistical patterns are learned over time.
+Rebecca Saxe of MIT showcased research examining the extent of regional specialization of perceptual, social, and cognitive processing in human babies. Her work challenges the prevailing hypothesis that babies passively absorb information and develop top-down attentional mechanisms only after statistical patterns are learned over time.
 
 Saxe’s first study involved fMRI of human infants during the observation of scenes and faces. The most obvious challenge is keeping babies still and calm during the scan. The way the researchers dealt with this problem was by sending a person into the scanner with the baby—an imperfect solution, no doubt. In any case, it became clear from the scans that certain regions were preferentially active in response to faces and others to scenes. Indeed, these were the same regions that showed preferential activation in adults: parahippocampal place area (for scenes), fusiform face area (faces), and posterior superior temporal sulcus (faces). In a follow-up study, babies were shown to also display preferential activation in the medial prefrontal cortex, which plays specific social and cognitive roles in human adults. Specifically, the mPFC is most active in contexts that are social, self-related, and/or high value.
 
