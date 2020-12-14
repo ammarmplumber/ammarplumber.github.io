@@ -29,7 +29,9 @@ In sum, if you want to reward reading, make sure that the rewards are unexpected
 
 My next piece will discuss the relationship between choice and intrinsic motivation.
 
-
+  
+  
+  
 
 **References**
 
