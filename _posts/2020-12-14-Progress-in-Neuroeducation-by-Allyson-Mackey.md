@@ -1,9 +1,9 @@
 ---
 published: true
 ---
-Summary of “Current Progress in Neurofields: Neuroeducation” (2019) by Allyson Mackey
+**Summary of “Current Progress in Neurofields: Neuroeducation” (2019) by Allyson Mackey**
 
-Link to talk: https://www.youtube.com/watch?v=0sOePuqEyqE
+Link to talk: [https://www.youtube.com/watch?v=0sOePuqEyqE](https://www.youtube.com/watch?v=0sOePuqEyqE)
 
 For students with learning disabilities, there are two possible criteria for evaluating the effectiveness of education: normalization and compensation. Normalization encompasses the goal of making students more neurotypical as they develop stronger academic abilities. Compensation implies that disabled learners’ brains will become more atypical; they are making up for cognitive deficits using distinct neural mechanisms. A few notable findings shed light on this topic. First, the structure of the left superior longitudinal fasciculus (SLF), a white matter tract, predicts success in learning how to read among neurotypical students. Among dyslexics, the right SLF predicts this success. Over an eight-week period, reading intervention for those with learning disabilities caused mean white matter tract diffusivity—measured using diffusion tensor imaging—to decrease, whereas a typical reader exhibits greater mean diffusivity. This evidence supports the compensation hypothesis; neurotypical and atypical learners become more neurologically different when acquiring the same skill. However, a similar study on a math intervention showed the opposite effect. The two groups of learners showed substantial differences in neural activations pre-intervention, but the resultant structural and functional data showed convergence, reflecting normalization.
 
