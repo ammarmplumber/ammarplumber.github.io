@@ -1,7 +1,7 @@
 ---
 published: true
 ---
-### Should we reward reading in school? And if so, how? 
+**Should we reward reading in school? And if so, how?**
  &nbsp;
  
 A recent opinion piece in Education Week suggested that associating reading with external motivators strips reading of its intrinsic joy, which makes students less likely to read in the long term (Ferlazzo, 2020). Here, I examine the literature surrounding this question and offer a few suggestions regarding how reading instruction might be improved.
