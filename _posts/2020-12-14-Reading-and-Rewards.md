@@ -33,29 +33,29 @@ My next piece will discuss the relationship between choice and intrinsic motivat
 
 **References**
 
-Deci, E. (1971). Effects of externally mediated rewards on intrinsic motivation. Journal of personality and Social Psychology, 18(1), 105-115. https://doi.org/10.1037/h0030644
+Deci, E. (1971). Effects of externally mediated rewards on intrinsic motivation. _Journal of Personality and Social Psychology_, 18(1), 105-115. https://doi.org/10.1037/h0030644
 
-Ferlazzo, L. (2020). Allow Time for Children to Read Whatever They Want. Education Week. https://www.edweek.org/teaching-learning/opinion-allow-time-for-children-to-read-whatever-they-want/2020/11
+Ferlazzo, L. (2020). Allow Time for Children to Read Whatever They Want. _Education Week_. https://www.edweek.org/teaching-learning/opinion-allow-time-for-children-to-read-whatever-they-want/2020/11
 
-Glimcher, P. (2011). Understanding dopamine and reinforcement learning: The dopamine reward prediction error hypothesis. Proceedings of the National Academy of Sciences, 108, 15647-15654. https://doi.org/10.1073/pnas.1014269108
+Glimcher, P. (2011). Understanding dopamine and reinforcement learning: The dopamine reward prediction error hypothesis. _Proceedings of the National Academy of Sciences_, 108, 15647-15654. https://doi.org/10.1073/pnas.1014269108
 
-Guthrie, J., Hoa, A., Wigfield, A., Tonks, S., Humenick, N., & Littles, E. (2007). Reading motivation and reading comprehension growth in the later elementary years. Contemporary Educational Psychology, 32(3), 282-313. https://doi.org/10.1016/j.cedpsych.2006.05.004
+Guthrie, J., Hoa, A., Wigfield, A., Tonks, S., Humenick, N., & Littles, E. (2007). Reading motivation and reading comprehension growth in the later elementary years. _Contemporary Educational Psychology_, 32(3), 282-313. https://doi.org/10.1016/j.cedpsych.2006.05.004
 
-Hebbecker, K., Förster, N., & Souvignier, E. (2019). Reciprocal effects between reading achievement and intrinsic and extrinsic reading motivation. Scientific Studies of Reading, 23(5), 419-436. https://doi.org/10.1080/10888438.2019.1598413
+Hebbecker, K., Förster, N., & Souvignier, E. (2019). Reciprocal effects between reading achievement and intrinsic and extrinsic reading motivation. _Scientific Studies of Reading_, 23(5), 419-436. https://doi.org/10.1080/10888438.2019.1598413
 
-Jang, A., Nassar, M., Dillon, D., & Frank, M. (2019). Positive reward prediction errors during decision-making strengthen memory encoding. Nature human behaviour, 3(7), 719-732. https://doi.org/10.1038/s41562-019-0597-3
+Jang, A., Nassar, M., Dillon, D., & Frank, M. (2019). Positive reward prediction errors during decision-making strengthen memory encoding. _Nature Human Behaviour_, 3(7), 719-732. https://doi.org/10.1038/s41562-019-0597-3
 
-Lepper, M., Greene, D., & Nisbett, R. (1973). Undermining children’s intrinsic interest with extrinsic reward: A test of the “overjustification” hypothesis. Journal of Personality and Social Psychology, 28(1), 129-137. https://doi.org/10.1037/h0035519
+Lepper, M., Greene, D., & Nisbett, R. (1973). Undermining children’s intrinsic interest with extrinsic reward: A test of the “overjustification” hypothesis. _Journal of Personality and Social Psychology_, 28(1), 129-137. https://doi.org/10.1037/h0035519
 
-Marinak, B. & Gambrell, L. (2008). Intrinsic Motivation and Rewards: What Sustains Young Children's Engagement with Text?. Literacy Research and Instruction, 47(1), 9-26. https://doi.org/10.1080/19388070701749546
+Marinak, B. & Gambrell, L. (2008). Intrinsic Motivation and Rewards: What Sustains Young Children's Engagement with Text?. _Literacy Research and Instruction_, 47(1), 9-26. https://doi.org/10.1080/19388070701749546
 
-Murayama, K., Matsumoto, M., Izuma, K., & Matsumoto, K. (2010). Neural basis of the undermining effect of monetary reward on intrinsic motivation. Proceedings of the National Academy of Sciences, 107(49), 20911-20916. https://doi.org/10.1073/pnas.1013305107
+Murayama, K., Matsumoto, M., Izuma, K., & Matsumoto, K. (2010). Neural basis of the undermining effect of monetary reward on intrinsic motivation. _Proceedings of the National Academy of Sciences_, 107(49), 20911-20916. https://doi.org/10.1073/pnas.1013305107
 
 Pierce, W., & Cameron, J. (2002). A summary of the effects of reward contingencies on interest and performance. The Behavior Analyst Today, 3(2), 221-228. http://dx.doi.org/10.1037/h0099969
 Schultz, W. (2016). Dopamine reward prediction error coding. Dialogues in clinical neuroscience, 18(1), 23–32. https://doi.org/10.31887/DCNS.2016.18.1/wschultz
 
-Toste, J., Didion, L., Peng, P., Filderman, M., & McClelland, A. (2020). A Meta-Analytic Review of the Relations Between Motivation and Reading Achievement for K-12 Students. Review of Educational Research, 90(3), 420-456. https://doi.org/10.3102/0034654320919352
+Toste, J., Didion, L., Peng, P., Filderman, M., & McClelland, A. (2020). A Meta-Analytic Review of the Relations Between Motivation and Reading Achievement for K-12 Students. _Review of Educational Research_, 90(3), 420-456. https://doi.org/10.3102/0034654320919352
 
-Warneken, F., & Tomasello, M. (2006). Altruistic helping in human infants and young chimpanzees. Science Magazine, 311(5765), 1301-1303. https://doi.org/10.1126/science.1121448
+Warneken, F., & Tomasello, M. (2006). Altruistic helping in human infants and young chimpanzees. _Science Magazine_, 311(5765), 1301-1303. https://doi.org/10.1126/science.1121448
 
-Warneken, F., & Tomasello, M. (2008). Extrinsic rewards undermine altruistic tendencies in 20-month-olds. Developmental psychology, 44(6), 1785-1788. https://doi.org/10.1037/a0013860
+Warneken, F., & Tomasello, M. (2008). Extrinsic rewards undermine altruistic tendencies in 20-month-olds. _Developmental Psychology_, 44(6), 1785-1788. https://doi.org/10.1037/a0013860
