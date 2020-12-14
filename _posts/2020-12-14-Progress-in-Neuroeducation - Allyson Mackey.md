@@ -1,7 +1,7 @@
 ---
 published: false
 ---
-## Summary of “Current Progress in Neurofields: Neuroeducation” (2019) by Allyson Mackey
+### Summary of “Current Progress in Neurofields: Neuroeducation” (2019) by Allyson Mackey
 
 Link to talk: https://www.youtube.com/watch?v=0sOePuqEyqE
 
@@ -12,4 +12,3 @@ More recent work, including Dr. Mackey’s research, focus on the neural correla
 Mackey offers a few interesting perspectives inspired by this research. Students learn much more than reading and math in school such as art, science, and social skills. Moreover, previous research showed that whether normalization/compensation occurs varies according to subject. Perhaps, then, it is more useful to focus on the substrates of curiosity and engagement more generally, two consistent determinants of educational outcomes. Moreover, curiosity supports the social, cognitive, and affective skills that educators hope to instill in their students. Animal models are valuable proxies for assessing these broader educational considerations. For example, the finding that cerebellum-to-VTA connectivity is causally related to social exploration is significant and may have implications for how we teach inquisitive or exploratory social skills to humans. 
 
 Mackey also notes that educational neuroscience is a translational field and suggests a few issues that are likely to be politically salient. One is ethics. Certain screening requirements may create self-fulfilling prophecies via stigma, which may make identified children feel discouraged. Second, randomized control trials and longitudinal studies are necessary to evaluate the effectiveness of novel interventions. Finally, Mackey expects that neuroimaging will be utilized in more classrooms to assess student engagement across pedagogical formats, and teachers will become trained in neuroeducation. In sum, neuroeducation promises to broaden our understanding of learning processes, and researchers should note the many different criteria and determinants of educational effectiveness.
-
