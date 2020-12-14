@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ### Summary of “Current Progress in Neurofields: Neuroeducation” (2019) by Allyson Mackey
 
