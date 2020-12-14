@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 **Should we reward reading in school? And if so, how?**
 
