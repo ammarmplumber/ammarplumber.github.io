@@ -5,10 +5,6 @@ published: true
  
  &nbsp;
  
- &nbsp;
- 
- &nbsp;
- 
 A recent opinion piece in Education Week suggested that associating reading with external motivators strips reading of its intrinsic joy, which makes students less likely to read in the long term (Ferlazzo, 2020). Here, I examine the literature surrounding this question and offer a few suggestions regarding how reading instruction might be improved.
 
 The author’s position is based on something referred to by psychologists as the undermining effect. An influential 1971 experiment by Edward Deci showed that people who previously did a task for its own sake, upon being financially compensated for it, became less motivated to do the task once the reward was no longer being offered. The same pattern has been observed in a developmental context: children’s helping behaviors. Without any external rewards or social encouragement, young children around 20 months of age were seen to help experimenters who accidentally dropped something or were unable to open a cabinet door because their arms were full (Warneken & Tomasello, 2006). Like adults, children find it intrinsically rewarding to help others. However, if provided an external incentive to help, children became less likely to do so in the future (Warneken & Tomasello, 2008). The same tendency was observed in 6- to 12-year-old schoolchildren. Murayama et al. (2010) identify patterns in reward-related regions of the brain that explain this phenomenon.
