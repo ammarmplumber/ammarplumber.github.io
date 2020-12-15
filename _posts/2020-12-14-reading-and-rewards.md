@@ -1,5 +1,6 @@
 ---
 title: Should we reward reading in school? And if so, how?
+tags: intrinsic motivation, education, reading, behavioral science, neuroscience, SCAN
 published: true
 ---
 **The Undermining Effect**
