@@ -2,17 +2,15 @@
 layout: page
 title: About
 permalink: /about/
+published: true
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Hi, I'm Ammar, and I'm an interdisciplinary thinker with particular interests in early education and behavioral/brain science. I'm eager to share the ideas that inspire me.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Connect with me:
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+[Email](mailto:ammarmplumber@gmail.com)
 
+[LinkedIn](https://www.linkedin.com/in/ammarplumber/)
 
-[jekyll-organization]: https://github.com/jekyll
+[Twitter](https://twitter.com/ammar_plumber)
