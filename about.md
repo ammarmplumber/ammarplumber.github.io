@@ -26,3 +26,12 @@ titles:
 key: page-about
 ---
 
+Hi, I'm Ammar, and I'm an interdisciplinary thinker with particular interests in early education and behavioral/brain science. I'm eager to share the ideas that inspire me.
+
+Connect with me:
+
+[Email](mailto:ammarmplumber@gmail.com)
+
+[LinkedIn](https://www.linkedin.com/in/ammarplumber/)
+
+[Twitter](https://twitter.com/ammar_plumber)
