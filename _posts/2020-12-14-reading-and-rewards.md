@@ -1,5 +1,5 @@
 ---
-title: Should we reward reading in school? And if so, how?
+title: Rewarding reading in school
 tags: intrinsic-motivation education reading behavioral-science neuroscience SCAN
 published: true
 ---
@@ -23,7 +23,7 @@ A 2008 study by Marinak and Gambrell found that the kind of reward predicted its
 
 A final factor that may be important is whether rewards are presented as a pre-task motivator or as an unexpected bonus. Regarding nursery schoolchildren’s drawing behaviors, a study in 1973 showed that when children had knowledge of the reward prior to the drawing activity (expected-reward condition), their intrinsic motivation subsequently decreased—they produced less drawings in the absence of the reward (Lepper et al., 1973). But, when rewards were unexpectedly given afterwards, motivation did not decrease and in some cases increased. A 2002 meta-analysis of more than 140 experiments found the same division to be relevant; when rewards given after and not offered prior to the activity (unexpected), intrinsic motivation was unaffected (Pierce & Cameron, 2002).
 
-These finding befit what we know about the brain; two dopaminergic reward-processing regions—the ventral striatum and ventral tegmental area—encode a “reward prediction error.” The strength of the signal is determined by the difference between expected reward magnitude and actual reward magnitude. An unforeseen reward is experienced as more pleasurable, predicts stronger memory encoding of the experience, and has a stronger effect on future behavior relative to an expected reward (Schultz, 2016; Glimcher, 2011; Jang et al., 2019). When an incentive is offered beforehand, an expectation is formed, and, therefore, the ultimate dopamine signal is modulated by this initial prediction. However, when reading a book without an external incentive, one does not exactly know what kind of reward to expect, and any pleasure experienced, either from the book alone or from an awarded bonus, is surprising and more motivationally potent.
+These finding befit what we know about the brain; two dopaminergic reward-processing regions—the ventral striatum and ventral tegmental area—encode a “reward prediction error.” The strength of the signal is determined by the difference between expected reward magnitude and actual reward magnitude. An unforeseen reward is experienced as more pleasurable, predicts stronger memory encoding of the experience, and has a stronger effect on future behavior relative to an expected reward (Schultz, 2016; Glimcher, 2011; Jang et al., 2019). When an incentive is offered beforehand, an expectation is formed, and the ultimate dopamine signal is modulated by this initial prediction. However, when reading a book without an external incentive, one does not exactly know what kind of reward to expect, and any pleasure experienced, either from the book alone or from an awarded bonus, is surprising and more motivationally potent.
 
 **Conclusion**
 
