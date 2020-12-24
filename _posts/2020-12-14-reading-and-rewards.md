@@ -3,7 +3,7 @@ title: Rewarding reading in school
 tags: intrinsic-motivation education reading behavioral-science neuroscience SCAN
 published: true
 ---
-**Intro: The Undermining Effect**
+**The Undermining Effect**
 
 A [recent opinion piece in Education Week](https://www.edweek.org/teaching-learning/opinion-allow-time-for-children-to-read-whatever-they-want/2020/11) suggested that associating reading with external motivators strips reading of its intrinsic joy, which makes students less likely to read in the long term (Ferlazzo, 2020). Here, I examine the literature surrounding this question and offer a few suggestions regarding how reading instruction might be improved.
 
@@ -29,6 +29,7 @@ These finding befit what we know about the brain; two dopaminergic reward-proces
 
 In sum, if you want to reward reading, make sure that the rewards are unexpected and reading-related.
 
+My next piece will discuss the relationship between choice and intrinsic motivation.
 
   &nbsp;
   
