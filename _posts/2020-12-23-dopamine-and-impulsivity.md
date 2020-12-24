@@ -40,28 +40,28 @@ In sum, this paper shores up hypotheses about the relationship between striatal 
 
 **References**
 
-Amlung, M., Vedelago, L., Acker, J., Balodis, I. & MacKillop, J. Addiction 112, 51–62 (2017).
+Amlung, M., Vedelago, L., Acker, J., Balodis, I. & MacKillop, J. _Addiction_ **112**, 51–62 (2017).
 
-Barker, V., Romaniuk, L., Cardinal, R.N., Pope, M., Nicol, K. & Hall, J. Psych. Med. 45, 1955-1964 (2015).
+Barker, V., Romaniuk, L., Cardinal, R.N., Pope, M., Nicol, K. & Hall, J. _Psych. Med._ **45**, 1955-1964 (2015).
 
-Bostwick, J.M., Hecksel, K.A., Stevens, S.R., Bower, J.H. & Ahlskog, J.E. Mayo Clin. Proc. 84, 310-316 (2009).
+Bostwick, J.M., Hecksel, K.A., Stevens, S.R., Bower, J.H. & Ahlskog, J.E. _Mayo Clin. Proc._ **84**, 310-316 (2009).
 
-Dalley, J. W. & Robbins, T. W. Nat. Rev. Neurosci. 18, 158–171 (2017).
+Dalley, J. W. & Robbins, T. W. _Nat. Rev. Neurosci._ **18**, 158–171 (2017).
 
-Jackson, J.N.S. & MacKillop, J. Bio. Psychiatry: Cog. Neurosci. and Neuroim. 1, 316–325 (2016).
+Jackson, J.N.S. & MacKillop, J. _Bio. Psychiatry: Cog. Neurosci. and Neuroim._ **1**, 316–325 (2016).
 
-Lempert, K.M., Steinglass, J.E., Pinto, A., Kable, J.W. & Simpson, H.B. Psychol. Medicine 49, 190–199 (2018).
+Lempert, K.M., Steinglass, J.E., Pinto, A., Kable, J.W. & Simpson, H.B. _Psychol. Medicine_ **49**, 190–199 (2018).
 
-Miyazaki, K., Miyazaki, K.W. & Doya, K. J. Neurosci. 31, 469–479 (2011).
+Miyazaki, K., Miyazaki, K.W. & Doya, K. _J. Neurosci._ **31**, 469–479 (2011).
 
-Petzold, J., Kienast, A., Lee, Y., Pooseh, S., London, E.D., Goschke, T. & Smolka, M.N. Sci. Rep. 9, 5652 (2019a).
+Petzold, J., Kienast, A., Lee, Y., Pooseh, S., London, E.D., Goschke, T. & Smolka, M.N. _Sci. Rep._ **9**, 5652 (2019a).
 
-Petzold, J., Lee, Y., Pooseh, S., Oehme, L., Beuthien-Baumann, B., London, E.D., Goschke, T. & Smolka, M.N. Sci. Rep. 9, 17927 (2019b).
+Petzold, J., Lee, Y., Pooseh, S., Oehme, L., Beuthien-Baumann, B., London, E.D., Goschke, T. & Smolka, M.N. _Sci. Rep._ **9**, 17927 (2019b).
 
-Steinglass, J.E., Lempert, K.M., Choo, T.-H., Kimeldorf, M.B., Wall, M., Walsh, B.T., Fyer, A.J, Schneier, F.R. & Simpson, H.B. Depression and Anxiety 34, 463-470 (2017). 
+Steinglass, J.E., Lempert, K.M., Choo, T.-H., Kimeldorf, M.B., Wall, M., Walsh, B.T., Fyer, A.J, Schneier, F.R. & Simpson, H.B. _Depression and Anxiety_ **34**, 463-470 (2017). 
 
-Steward, T., Mestre-Bach, G., Vintró-Alcaraz, C., Agüera, Z., Jiménez-Murcia, S., Granero, R. & Fernández-Aranda, F. European Eating Disorders Rev. 25, 601–606 (2017).
+Steward, T., Mestre-Bach, G., Vintró-Alcaraz, C., Agüera, Z., Jiménez-Murcia, S., Granero, R. & Fernández-Aranda, F. _European Eating Disorders Rev._ **25**, 601–606 (2017).
 
-Weintraub, D., Koester, J., Potenza, M.N., Siderowf, A.D., Stacy, M., Voon, V., Whetteckey, J., Wunderlich, G.R. & Lang, A.E. Arch. Neurol. 67, 589-595 (2010).
+Weintraub, D., Koester, J., Potenza, M.N., Siderowf, A.D., Stacy, M., Voon, V., Whetteckey, J., Wunderlich, G.R. & Lang, A.E. _Arch. Neurol._ **67**, 589-595 (2010).
 
-Winstanley, C.A., Dalley, J.W., Theobald, D.E.H. & Robbins, T.W. Psychopharmacology 170, 320–331 (2003).
+Winstanley, C.A., Dalley, J.W., Theobald, D.E.H. & Robbins, T.W. _Psychopharmacology_ **170**, 320–331 (2003).
