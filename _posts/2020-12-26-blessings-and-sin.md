@@ -17,8 +17,10 @@ The other prophecies Nathan delivered came true. David’s son Amnon sexually vi
 
 From this bleak picture, I’d like to highlight the birth of Solomon, loved by the Lord. Solomon would succeed his father as King of Israel. Repeating his father’s sins, Solomon lusted for many foreign princesses, who would turn away his heart after their gods.
 
-While a steep price was paid for David’s sin,—namely, the death of Bathsheba’s first child, the rape of David’s daughter by his son, fratricide, and Absalom’s public abuse of his father’s concubines—still Solomon was given with love.
+Although a steep price was paid for David’s sin,—namely, the death of Bathsheba’s first child, the rape of David’s daughter by his son, fratricide, and Absalom’s public abuse of his father’s concubines—still Solomon was given with love.
 
-While it comes naturally to observe the costs of sin, we often neglect to recognize the gifts that follow. These gifts are not given because of sin but despite it.
+My mother was the daughter of an abusive marriage between an alcoholic womanizer and a sixteen-year-old girl. My grandfather deserted my mother and grandmother when my mother was a year old. He subsequently fathered many offspring with many women, all victims of his unspeakable abuse. 
 
-My mother was the daughter of an abusive marriage between an alcoholic womanizer and a sixteen-year-old girl. My grandfather deserted my mother and grandmother when my mother was a year old. He subsequently fathered many offspring with many women, all victims of his unspeakable abuse. I can assure you, like the House of David, so too did Karim Charania’s lineage pay a steep price for his sins—myself included. And yet there are blessings.
+While it comes naturally to observe the costs of sin, we often neglect to recognize the gifts that accompany them. These gifts are not given because of sin but in spite of it.
+
+I can assure you, like the House of David, so too did Karim Charania’s lineage pay a steep price for his sins—myself included. And yet there are blessings.
