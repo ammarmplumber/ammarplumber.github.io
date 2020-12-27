@@ -13,7 +13,7 @@ The Lord sent Nathan to David to deliver his message. “Thus says the Lord, ‘
 
 David and Bathsheba’s first child fell sick, and after seven days, he died. Bathsheba eventually birthed another child, who they called Solomon. “And the Lord loved him and sent a message by Nathan the prophet” (12:24). 
 
-The other prophecies Nathan delivered came true. David’s son Amnon sexually violated his sister Tamar, and David’s other son Absalom murdered Amnon to avenge Tamar (13:1-33). Later, Absalom abuses his father’s concubines on the same roof from where David first lusted after Bathsheba—in the sight all of Israel (16:21-22).
+The other prophecies Nathan delivered came true. David’s son Amnon sexually violated his sister Tamar, and David’s other son Absalom murdered Amnon to avenge Tamar (13:1-33). Later, Absalom abuses his father’s concubines on the same roof from where David first lusted after Bathsheba—in the sight of all of Israel (16:21-22).
 
 From this bleak picture, I’d like to highlight the birth of Solomon, loved by the Lord. Solomon would succeed his father as King of Israel. Repeating his father’s sins, Solomon lusted for many foreign princesses, who would turn away his heart after their gods.
 
@@ -21,6 +21,6 @@ Although a steep price was paid for David’s sin,—namely, the death of Bathsh
 
 My mother was the daughter of an abusive marriage between an alcoholic womanizer and a sixteen-year-old girl. My grandfather deserted my mother and grandmother when my mother was a year old. He subsequently fathered many offspring with many women, all victims of his unspeakable abuse. 
 
-While it comes naturally to observe the costs of sin, we often neglect to recognize the gifts that accompany them. These gifts are not given because of sin but in spite of it.
+While it comes naturally to observe the costs of sin, we often neglect to rejoice in the gifts that accompany them. These gifts are not given because of sin but in spite of it.
 
 I can assure you, like the House of David, so too did Karim Charania’s lineage pay a steep price for his sins—myself included. And yet there are blessings.
