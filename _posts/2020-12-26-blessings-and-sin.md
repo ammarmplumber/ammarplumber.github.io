@@ -1,5 +1,5 @@
 ---
-title: Blessings and sin
+title: Blessings and Sin
 tags: scripture spirituality old-testament
 published: true
 ---
