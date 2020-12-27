@@ -1,5 +1,5 @@
 ---
-title: Blessings and Sin
+title: And yet there are blessings
 tags: scripture spirituality old-testament
 published: true
 ---
