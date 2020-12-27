@@ -1,5 +1,5 @@
 ---
-title: And yet there are blessings
+title: The Gift of Solomon
 tags: scripture spirituality old-testament
 published: true
 ---
