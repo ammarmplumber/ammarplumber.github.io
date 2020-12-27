@@ -1,10 +1,8 @@
 ---
-title: Blessings and Sin
+title: Blessings and sin
 tags: scripture spirituality old-testament
 published: true
 ---
-**Sin and blessing**
-
 What follows summarizes the story of David and Bathsheba from the Second Book of Samuel.
 
 King David saw a beautiful woman bathing from his roof and sent a messenger to fetch her so that he could lay with her. She was Bathsheba, wife of Uriah the Hittite. Bathsheba conceived a child, and David was notified.
