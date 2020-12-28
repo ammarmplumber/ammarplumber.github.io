@@ -1,5 +1,5 @@
 ---
-title: Zinsser — Writing to Learn
+title: Zinsser - Writing to Learn
 tags: writing education learning
 published: true
 ---
