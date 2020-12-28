@@ -5,7 +5,7 @@ published: true
 ---
 I recently found an old book that was assigned by my 11th grade English teacher: _On Writing Well_ by William Zinsser. Mr. Brown used to use Zinsser’s name as a verb: we ought to _Zinsser-ize_—or declutter—our writing. Why use a complex word when a simple one will suffice? And why use five words when you only need two?
 
-My writing improved a lot in Mr. Brown’s class. Since high school, my intellectual pursuits have grown more esoteric. I use terms like “multicollinearity” and “ontological priority.” In all fairness, jargon exists to simplify communication between experts, but, when using it, I lose track of my mystical self in a forest of semantics.
+My writing improved a lot in Mr. Brown’s class. Since high school, my intellectual pursuits have grown more esoteric. I use terms like “multicollinearity” and “ontological priority.” In all fairness, jargon exists to simplify communication between specialists, but, when using it, I lose track of my mystical self in a forest of semantics.
 
 One of the most charming things about the Bible is that it was mostly written in Hebrew, a language that is simpler by nature. Its use of allegory, metaphor, and the like are quite effective for this purpose; they serve to explicate distant concepts through the lens of more familiar ones. This is what we do when we teach.
 
