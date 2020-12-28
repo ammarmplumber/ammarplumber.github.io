@@ -1,6 +1,6 @@
 ---
 title: Writing to Learn
-tags: writing education learning teaching
+tags: writing education learning teaching Augustine scripture new-testament
 published: true
 ---
 I recently found an old book that was assigned by my 11th grade English teacher: _On Writing Well_ by William Zinsser. Mr. Brown used to use Zinsser’s name as a verb: we ought to _Zinsser-ize_—or declutter—our writing. Why use a complex word when a simple one will suffice? And why use five words when you only need two?
