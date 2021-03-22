@@ -30,9 +30,10 @@ Hi, I'm Ammar, and I'm an interdisciplinary thinker with particular interests in
 
 Connect with me:
 
-<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="ammarplumber"><a class="LI-simple-link" href='https://www.linkedin.com/in/ammarplumber?trk=profile-badge'>Ammar M. Plumber</a></div>
+<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="ammarplumber"><a class="LI-simple-link" href='https://www.linkedin.com/in/ammarplumber?trk=profile-badge'>Ammar M. Plumber</a></div>
 
 [Email](mailto:ammarmplumber@gmail.com)
+<br>
 [Twitter](https://twitter.com/ammar_plumber)
 
 
