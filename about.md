@@ -25,15 +25,8 @@ titles:
   # @end locale config
 key: page-about
 ---
-<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="ammarplumber"><a class="LI-simple-link" href='https://www.linkedin.com/in/ammarplumber?trk=profile-badge'>Ammar M. Plumber</a></div>
-
 Hi, I'm Ammar, and I'm an interdisciplinary thinker with particular interests in early education and behavioral/brain science. I'm eager to share the ideas that inspire me.
 
-Connect with me:
-<br>
-[Email](mailto:ammarmplumber@gmail.com)
-<br>
-[Twitter](https://twitter.com/ammar_plumber)
-
+<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="ammarplumber"><a class="LI-simple-link" href='https://www.linkedin.com/in/ammarplumber?trk=profile-badge'>Ammar M. Plumber</a></div>
 
 <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
