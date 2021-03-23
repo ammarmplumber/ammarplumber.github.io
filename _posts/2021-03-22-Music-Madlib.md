@@ -1,5 +1,5 @@
 ---
-title: A Sampling of Music - Madlib
+title: Madlib - A Sampling
 tags: music playlist
 published: true
 ---
