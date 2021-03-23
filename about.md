@@ -25,7 +25,7 @@ titles:
   # @end locale config
 key: page-about
 ---
-Hi, I'm Ammar, and I'm an interdisciplinary thinker with particular interests in early education and behavioral/brain science. I'm eager to share the ideas that inspire me.
+I'm an interdisciplinary thinker with particular interests in education, economics, brain science, and theology. I'm eager to share the ideas that inspire me.
 
 <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="ammarplumber"><a class="LI-simple-link" href='https://www.linkedin.com/in/ammarplumber?trk=profile-badge'>Ammar M. Plumber</a></div>
 
