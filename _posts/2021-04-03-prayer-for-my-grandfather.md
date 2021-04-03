@@ -3,7 +3,7 @@ title: A Prayer for my Grandfather
 tags: prayer family death life
 published: true
 ---
-Hasanali Janmohmed was a strong, faithful man who weathered many challenges in his life. He struggled through addiction, poverty, heart failure, and familial turmoil.
+Hasanali Janmohmed was a strong, faithful man who weathered many challenges. He struggled through addiction, poverty, heart failure, and familial turmoil.
 
 Though I didn't know him until the last two decades of his life, I could see plainly that his struggles conditioned him to seek You. After his heart transplant, he grew to see his life as a gift---as a testament to your wondrousness. He became prayerful and temperate, among other things. The man I knew after the heart transplant seemed worlds apart from the one I knew before.
 
