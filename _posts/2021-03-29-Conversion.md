@@ -3,8 +3,6 @@ title: Ideas that Kicked off my Conversion Journey
 tags: conversion
 published: false
 ---
-Hi friends,
-
 A handful of people know about my recent conversion to Christianity. For those who don't know and/or are curious about my journey, I'd like to share the ideas and experiences that sparked this change in me.
 
 Before I was Christian, I was Muslim until my early teens and then agnostic until 22.
