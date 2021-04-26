@@ -1,7 +1,6 @@
 ---
 title: "Modeling differences between Twitter accounts of two social media giants"
 author: "Ammar Plumber, Elaina Lin, Kim Nguyen, Meghan Aines, Ryan Karbowicz"
-date: "4/25/2021"
 output: 
   html_document:
     keep_md: true
