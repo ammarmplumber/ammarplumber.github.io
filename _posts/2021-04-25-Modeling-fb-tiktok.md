@@ -1,9 +1,6 @@
 ---
 title: "Facebook's and TikTok's tweets: a classification model"
-author: "Ammar Plumber, Elaina Lin, Kim Nguyen, Meghan Aines, Ryan Karbowicz"
-output: 
-  html_document:
-    keep_md: true
+tags: data-science twitter modeling r
 ---
 
 
