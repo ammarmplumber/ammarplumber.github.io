@@ -116,7 +116,7 @@ facebook %>%
   ggtitle('Facebook Source Breakdown by Hour')
 ```
 
-<img src="https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-4-1.png" width="400"><!-- -->
+<img src="https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-4-1.png" width="700"><!-- -->
 
 ```r
 tiktok %>%
