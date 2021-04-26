@@ -1155,4 +1155,4 @@ Looking at the analyses, it seems that the Facebook and TikTok accounts have sys
 
 # VIII. Contributions
 
-As the authorship indicates, four teammates contributed to this analysis: Elaina Lin, Kim Nguyen, Meghan Aines, and Ryan Karbowicz.
+Four teammates contributed to this analysis: Elaina Lin, Kim Nguyen, Meghan Aines, and Ryan Karbowicz.
