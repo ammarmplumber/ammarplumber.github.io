@@ -116,7 +116,7 @@ facebook %>%
   ggtitle('Facebook Source Breakdown by Hour')
 ```
 
-![](https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
+![](https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-4-1.png){:class="img-responsive"}<!-- -->
 
 ```r
 tiktok %>%
@@ -129,7 +129,7 @@ tiktok %>%
   ggtitle('Tiktok Source Breakdown by Hour')
 ```
 
-![](https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-4-2.png)<!-- -->
+![](https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-4-2.png){:class="img-responsive"}<!-- -->
 
 We see that the vast majority of Facebook's tweets are put out using Khoros Publishing between the hours of 10 AM and 8 PM. TikTok publishes most of its tweets through the Twitter Web App and Fan Experiences Platform---usually between 10 AM and 8 PM, like Facebook.
 
@@ -162,13 +162,13 @@ writeLines(c(paste0("Facebook Mean Tweet Length: ",
 hist(tiktok_wordcounts$tweetLength, main = "TikTok - Histogram of Tweet Lengths")
 ```
 
-![](https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
+![](https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-5-1.png){:class="img-responsive"}<!-- -->
 
 ```r
 hist(fb_wordcounts$tweetLength, main = "Facebook - Histogram of Tweet Lengths")
 ```
 
-![](https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-5-2.png)<!-- -->
+![](https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-5-2.png){:class="img-responsive"}<!-- -->
 
 As we see, TikTok's tweet lengths are right-skewed, with most tweets being around 100 words long. Facebook, on the other hand, seems to post longer tweets, with a more normal distribution centered around 150 words long. Tweet length seems like a useful feature to include in our predictive model.
 
@@ -206,7 +206,7 @@ fb_picture_counts %>%
   ggtitle("Percent of Facebook Tweets with Picture/link and Without")
 ```
 
-![](https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-6-1.png)<!-- -->
+![](https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-6-1.png){:class="img-responsive"}<!-- -->
 
 ```r
 tiktok_picture_counts %>% 
@@ -219,7 +219,7 @@ tiktok_picture_counts %>%
   ggtitle("Percent of TikTok Tweets with Picture/link and Without")
 ```
 
-![](https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-6-2.png)<!-- -->
+![](https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-6-2.png){:class="img-responsive"}<!-- -->
 
 ~86% of Facebook's tweets contain pictures/links, while only ~52% of TikTok's tweets contain pictures/links. This could be another useful predictor to include in our model.
 
@@ -290,7 +290,7 @@ fb_most_common %>%
   ggtitle("Facebook Word Frequency")
 ```
 
-![](https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
+![](https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-8-1.png){:class="img-responsive"}<!-- -->
 
 ```r
 tiktok_most_common <- 
@@ -307,7 +307,7 @@ tiktok_most_common %>%
   ggtitle("TikTok Word Frequency")
 ```
 
-![](https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-8-2.png)<!-- -->
+![](https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-8-2.png){:class="img-responsive"}<!-- -->
 
 ```r
 facebook_cloud <- 
@@ -323,7 +323,7 @@ wordcloud(facebook_cloud$word,
                      "blue", "brown"))
 ```
 
-![](https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-8-3.png)<!-- -->
+![](https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-8-3.png){:class="img-responsive"}<!-- -->
 
 ```r
 tiktok_cloud <- 
@@ -395,7 +395,7 @@ fb_sentiment_analysis %>%
   labs(title="Facebook Sentiment")
 ```
 
-![](https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-10-1.png)<!-- -->
+![](https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-10-1.png){:class="img-responsive"}<!-- -->
 
 ```r
 tiktok_sentiment_analysis <- 
@@ -413,7 +413,7 @@ tiktok_sentiment_analysis %>%
   labs(title="TikTok Sentiment")
 ```
 
-![](https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-10-2.png)<!-- -->
+![](https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-10-2.png){:class="img-responsive"}<!-- -->
 
 It looks like Facebook's tweets use more trust words while TikTok uses more words that reflect anticipation. We now show specifically which words are conveying each of these observed sentiments.
 
@@ -430,7 +430,7 @@ ggplot(fb_sentiment_analysis2, aes(x=word, y=n, fill = n)) +
   labs(y="count", title="Facebook Sentiment Words")
 ```
 
-![](https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-11-1.png)<!-- -->
+![](https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-11-1.png){:class="img-responsive"}<!-- -->
 
 ```r
 tiktok_sentiment_analysis %>% filter(!sentiment %in% c("positive", "negative")) %>% 
@@ -444,7 +444,7 @@ ggplot(tiktok_sentiment_analysis2, aes(x=word, y=n, fill = n)) +
   labs(y="count", title="Tik Tok Sentiment Words")
 ```
 
-![](https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-11-2.png)<!-- -->
+![](https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-11-2.png){:class="img-responsive"}<!-- -->
 
 Next, we examine texts on Facebook and Tiktok to see their positive-negative score by using the AFINN sentiment lexicon, a list of English terms manually rated for valence with an integer between -5 (negative) and +5 (positive) by Finn Årup Nielsen between 2009 and 2011.
 
@@ -628,7 +628,7 @@ simple_model <- rpart(user ~ .,
 rpart.plot(simple_model, yesno = 2)
 ```
 
-![](https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-13-1.png)<!-- -->
+![](https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-13-1.png){:class="img-responsive"}<!-- -->
 
 It seems that the most dominant predictors in the simple model were the presence (or non-presence) of Facebook's most common words, along with tweet length and the presence of the word "tiktok." I suspect this will be similar for other models, though perhaps sentiment will play a role too.
 
@@ -683,28 +683,28 @@ vip(simple_model, num_features = 25) +
   ggtitle('Simple Decision Tree - Variable Importance Plot')
 ```
 
-![](https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-15-1.png)<!-- -->
+![](https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-15-1.png){:class="img-responsive"}<!-- -->
 
 ```r
 vip(bagging_model, num_features = 25) + 
   ggtitle('Bagging - Variable Importance Plot')
 ```
 
-![](https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-15-2.png)<!-- -->
+![](https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-15-2.png){:class="img-responsive"}<!-- -->
 
 ```r
 vip(rf_model, num_features = 25) + 
   ggtitle('Random Forests - Variable Importance Plot')
 ```
 
-![](https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-15-3.png)<!-- -->
+![](https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-15-3.png){:class="img-responsive"}<!-- -->
 
 ```r
 vip(gbm_model, num_features = 25) + 
   ggtitle('Gradient Boosting - Variable Importance Plot')
 ```
 
-![](https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-15-4.png)<!-- -->
+![](https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-15-4.png){:class="img-responsive"}<!-- -->
 
 It seems that the simple decision tree, random forests model, and gradient boosting model placed the most importance on the presence of the word "kn" and the other commonly used words. The bagging model, on the other hand places little importance on the presence of these words and instead privileges tweet length, AFINN score, and sentiments. All of the ensemble methods identified tweet length as strongly predictive of the user. All four heavily weighted anticipation sentiments and AFINN scores.
 
