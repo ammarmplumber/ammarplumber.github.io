@@ -116,7 +116,7 @@ facebook %>%
   ggtitle('Facebook Source Breakdown by Hour')
 ```
 
-![](https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-4-1.png){:class="img-responsive"}<!-- -->
+![](https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-4-1.png){:class="img-responsive"}{ width=50% }<!-- -->
 
 ```r
 tiktok %>%
