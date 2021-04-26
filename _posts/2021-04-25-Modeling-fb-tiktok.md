@@ -1,5 +1,5 @@
 ---
-title: "Modeling differences between Twitter accounts of two social media giants"
+title: "Facebook's and TikTok's tweets: a classification model"
 author: "Ammar Plumber, Elaina Lin, Kim Nguyen, Meghan Aines, Ryan Karbowicz"
 output: 
   html_document:
@@ -116,7 +116,7 @@ facebook %>%
   ggtitle('Facebook Source Breakdown by Hour')
 ```
 
-![](https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-4-1.png){:class="img-responsive"}{ width=50% }<!-- -->
+<img src="https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-4-1.png" width="400"><!-- -->
 
 ```r
 tiktok %>%
