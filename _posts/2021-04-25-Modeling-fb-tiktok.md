@@ -7,11 +7,11 @@ tags: data-science twitter modeling r
 
 This isn't my usual kind of post, but I'm proud of the work my teammates and I did and thought I ought to put it on my personal blog. This was a homework assignment for BDS (Behavioral and Decision Science) 516: Data Science and Quantitative Modeling, a graduate course taught by Alex Shpenev.
 
-# I. Introduction
+## I. Introduction
 
 We will be examining the difference in tweet communications between TikTok and Facebook. These are two popular social media platforms but with very different target audiences. Thus, the two brands may differ in their communication styles and language. We set out to identify the particular ways in which they differ and to build a model that can attribute each tweet to the correct user.
 
-# II. Methodology
+## II. Methodology
 
 First, after getting tweets using the Twitter API and R package rtweet, we use basic tools of data exploration to transform, visualize, and examine different features of the datasets, such as source, time, length, and particular contents (e.g., picture/links) of the tweets. We produce bar charts to visualize the most popular words used by each twitter account, as well as the most popular sentiments associated with tweets that each account produces. A word cloud also helps paint a clearer picture of each company’s most commonly used words.
 
@@ -33,7 +33,7 @@ The first model is a Simple Decision Tree, the second model is a Bagging Model, 
 
 We report the residual sum of squares on the training and test sets to determine which models have the smallest differences between the predicted tweeter and actual tweeter. We also show confusion matrices to determine the predictive efficacy of the four models.
 
-# III. Setup and Preliminary Analysis
+## III. Setup and Preliminary Analysis
 
 First, we import all non-base packages to be used in this analysis.
 
@@ -167,7 +167,7 @@ hist(fb_wordcounts$tweetLength, main = "Facebook - Histogram of Tweet Lengths")
 
 <img src="https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-5-2.png" width="700"><!-- -->
 
-As we see, TikTok's tweet lengths are right-skewed, with most tweets being around 100 words long. Facebook, on the other hand, seems to post longer tweets, with a more normal distribution centered around 150 words long. Tweet length seems like a useful feature to include in our predictive model.
+As we see, TikTok's tweet lengths are right-skewed, with most tweets being around 100 characters long. Facebook, on the other hand, seems to post longer tweets, with a more normal distribution centered around 150 characters long. Tweet length seems like a useful feature to include in our predictive model.
 
 Next, we look at whether there is a difference in the share of Tweets that include pictures.
 
@@ -220,7 +220,7 @@ tiktok_picture_counts %>%
 
 ~86% of Facebook's tweets contain pictures/links, while only ~52% of TikTok's tweets contain pictures/links. This could be another useful predictor to include in our model.
 
-# IV. Sentiment Analysis
+## IV. Sentiment Analysis
 
 Now, we split the tweets into tokens so that we can perform sentiment analysis on them.
 
@@ -488,7 +488,7 @@ cat(paste0("Average AFINN scores for all words by user\n",
 
 Facebook's mean AFINN value is 0.79 while TikTok's mean AFINN value is 1.704. In general, words tweeted by Tiktok are more positive than those tweeted by Facebook. 
 
-# V. Training Predictive Models
+## V. Training Predictive Models
 
 Here, using the text of a tweet, we attempt to predict the user who tweeted it. 
 
@@ -706,11 +706,11 @@ vip(gbm_model, num_features = 25) +
 It seems that the simple decision tree, random forests model, and gradient boosting model placed the most importance on the presence of the word "kn" and the other commonly used words. The bagging model, on the other hand places little importance on the presence of these words and instead privileges tweet length, AFINN score, and sentiments. All of the ensemble methods identified tweet length as strongly predictive of the user. All four heavily weighted anticipation sentiments and AFINN scores.
 
 
-# VI. Results and Discussion
+## VI. Results and Discussion
 
 Now, I produce confusion matrices and show residual sum of squares for all tree-based methods---first evaluating their performance on the training set and then on the test set. Note again that a Tiktok tweet is encoded as 1, and a Facebook tweet is encoded as 0. The code is shown for the first matrix but not for subsequent ones for the sake of elegance.
 
-## Training Set Performance
+### Training Set Performance
 
 **Simple Decision Tree - Training Set:**
 
@@ -922,7 +922,7 @@ The random forests method had the lowest RSS, despite the bagging method achievi
 
 Now, we show confusion matrices for the test set.
 
-## Test Set Performance
+### Test Set Performance
 
 **Simple Decision Tree - Test Set:**
 
@@ -1148,11 +1148,11 @@ The bagging model had the lowest RSS on the test set even though it was only sec
 In sum, it seems that the best model would be either the bagging model or the gradient boosting model, but this is nitpicking because all of the ensemble methods performed very well, with accuracy scores above 93%.
 
 
-# VII. Conclusion
+## VII. Conclusion
 
 Looking at the analyses, it seems that the Facebook and TikTok accounts have systematically different Twitter presences. Facebook seems to respond more frequently to user fears, which are associated with words such as “secure” and “trust.” Whereas, TikTok focuses on generating excitement and offer prize giveaways, which is associated with “anticipation” words such as “winning” and “tomorrow.” Differences in tweet length also possibly reflect on the preferences of the target audience; TikTok users are younger and less likely to consume written information (it is a video platform, after all), and the opposite is true for Facebook. In sum, our predictive endeavor was successful, and we unveiled a number of useful insights from it.
 
 
-# VIII. Contributions
+## VIII. Contributions
 
 Four teammates contributed to this analysis: Elaina Lin, Kim Nguyen, Meghan Aines, and Ryan Karbowicz.
