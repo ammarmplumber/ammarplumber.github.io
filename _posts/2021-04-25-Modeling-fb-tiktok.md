@@ -4,9 +4,6 @@ tags: data-science twitter modeling r
 ---
 
 
-
-This isn't my usual kind of post, but I'm proud of the work my teammates and I did and thought I ought to put it on my personal blog. This was a homework assignment for BDS (Behavioral and Decision Science) 516: Data Science and Quantitative Modeling, a graduate course taught by Alex Shpenev.
-
 ## I. Introduction
 
 We will be examining the difference in tweet communications between TikTok and Facebook. These are two popular social media platforms but with very different target audiences. Thus, the two brands may differ in their communication styles and language. We set out to identify the particular ways in which they differ and to build a model that can attribute each tweet to the correct user.
@@ -1151,8 +1148,3 @@ In sum, it seems that the best model would be either the bagging model or the gr
 ## VII. Conclusion
 
 Looking at the analyses, it seems that the Facebook and TikTok accounts have systematically different Twitter presences. Facebook seems to respond more frequently to user fears, which are associated with words such as “secure” and “trust.” Whereas, TikTok focuses on generating excitement and offer prize giveaways, which is associated with “anticipation” words such as “winning” and “tomorrow.” Differences in tweet length also possibly reflect on the preferences of the target audience; TikTok users are younger and less likely to consume written information (it is a video platform, after all), and the opposite is true for Facebook. In sum, our predictive endeavor was successful, and we unveiled a number of useful insights from it.
-
-
-## VIII. Contributions
-
-Four teammates contributed to this analysis: Elaina Lin, Kim Nguyen, Meghan Aines, and Ryan Karbowicz.
