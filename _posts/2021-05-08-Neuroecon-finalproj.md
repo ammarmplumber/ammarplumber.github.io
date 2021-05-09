@@ -369,7 +369,7 @@ pattern seen in the DC in response to fair responses.
   </div>
   <div class="item__content">
     <div class="item__description">
-      <p>**Figure 7.** Expected difference between the correlation between the
+      <p><b>Figure 7.</b> Expected difference between the correlation between the
 change in neural activity in the NAcc (left) and mOCC (right) when
 regressed against the overall BDI score change (light red) and BDI
 anhedonia subscore ($BDI_a$), calculated as in
@@ -384,7 +384,7 @@ calculated for each correlation.</p>
     <img class="image" src="https://i.imgur.com/zDdfNjJ.jpg" width="50%"/>
   </div>
   <div class="card__content">
-    <p>**Figure 7.** Expected difference between the correlation between the
+    <p><b>Figure 7.</b> Expected difference between the correlation between the
 change in neural activity in the NAcc (left) and mOCC (right) when
 regressed against the overall BDI score change (light red) and BDI
 anhedonia subscore ($BDI_a$), calculated as in
