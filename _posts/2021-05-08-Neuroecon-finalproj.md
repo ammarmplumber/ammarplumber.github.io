@@ -210,7 +210,7 @@ balance between assessing persistence of treatment-related effects, and
 ensuring the stability of psychiatric groupings while minimizing group
 attrition.
 
-<img src="https://i.imgur.com/9RWagWh.png" width="75%" />
+<img src="https://i.imgur.com/si1mA57.png" width="75%" />
 <div class="item__description">
     <p><b>Figure 3.</b> Experimental Timeline. Recruitment phase: Subjects will be
 recruited via local and internet advertisements (control group) or via
@@ -242,7 +242,7 @@ responder. Should the responder accept, the endowment is divided
 accordingly. If the responder rejects the offer, neither player receives
 any of the endowment.
 
-<img src="https://i.imgur.com/9RWagWh.png" width="50%" />
+<img src="https://i.imgur.com/lZd1VMg.png" width="50%" />
 <div class="item__description">
     <p><b>Figure 4.</b> Ultimatum Game Setup. From Gradin et al., 2015. The initial screen shows the proposer’s initials. Subsequently, an offer is shown to the responder along with the two buttons for accepting and rejecting the offer. The duration of each screen is shown in seconds with rt signifying response time.
 </p>
@@ -278,7 +278,7 @@ subject but that these two factors will exhibit minimal correlation for
 control subjects. Figure 5 shows an example of the expected findings for
 these experiments.
 
-<img src="https://i.imgur.com/9RWagWh.png" width="70%" />
+<img src="https://i.imgur.com/GbljDZY.jpg" width="70%" />
 <div class="item__description">
     <p><b>Figure 5.</b> Expected results pertaining to happiness ratings in
 response to fairness. Left: Happiness ratings over time for control
@@ -350,7 +350,7 @@ differences between the MDD group and controls (Kumar et al., 2002).
 Cog./noncognitive subscales: $\Delta r_{Comparison,h,t} = \alpha_0 + \alpha_1 * \Delta BDI_{noncognitive,t} + \alpha_2 * \Delta BDI_{cognitive,t}$
 </center>
 
-<img src="https://i.imgur.com/zDdfNjJ.jpg" width="60%" />
+<img src="https://i.imgur.com/m5Nj7AF.jpg" width="60%" />
 <div class="item__description">
     <p><b>Figure 6.</b> Expected results pertaining to the nucleus accumbens
 (NAcc) response to fair offers (top) and medial occipital lobe (mOCC)
