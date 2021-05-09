@@ -1,5 +1,5 @@
 ---
-title: Fairness sensitivity in MDD patients---state or trait?
+title: Fairness sensitivity in MDD patients - state or trait?
 tags: neuroscience neuroeconomics computational-neuropsychiatry
 published: true
 mathjax: true
