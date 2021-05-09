@@ -1,10 +1,12 @@
 ---
-title: Relationship Between Trajectories of Clinical Improvement and Neural Responses to Fairness in Major Depressive Disorder Patients
+title: A Neuroeconomic Research Proposal
 tags: neuroscience neuroeconomics computational-neuropsychiatry
 published: true
 mathjax: true
 ---
+# Relationship Between Trajectories of Clinical Improvement and Neural Responses to Fairness in Major Depressive Disorder Patients
 
+This was a research proposal drafted by me and two other classmates for <i>PSYC 473: Neuroeconomics</i>,  a graduate course taught by Joseph Kable at the University of Pennsylvania.
 
 ## Background and Motivations
 
@@ -327,8 +329,8 @@ anhedonia, a common symptom of depression in which appreciation for
 social interactions is diminished (Gradin et al., 2015). We therefore
 hypothesize that anhedonia-related symptoms of depression may be driving
 any observed correlations between BDI change and neural recovery in our
-ROIs. To address this possibility, we regress *Δ**r* against the BDI
-anhedonia subscore (*B**D**I*<sub>*a*</sub>), calculated by summing the
+ROIs. To address this possibility, we regress $\Delta r$ against the BDI
+anhedonia subscore ($BDI_a$), calculated by summing the
 scores on questions related to low motivation and reward responsiveness
 (questions 4, 12, 15, and 21) to determine to what extent anhedonia
 symptoms drive any neural findings (Pizzagalli et al., 2005). We
