@@ -2,6 +2,7 @@
 title: Relationship Between Trajectories of Clinical Improvement and Neural Responses to Fairness in Major Depressive Disorder Patients
 tags: neuroscience neuroeconomics computational-neuropsychiatry
 published: true
+mathjax: true
 ---
 
 
@@ -261,34 +262,9 @@ in the regions of interest (ROIs) upon presentation of the offers—an
 event-related design. We focus on three key regions: the dorsal caudate,
 nucleus accumbens, and medial occipital lobe.
 
-From a behavioral standpoint, we examine whether the acceptance and
-rejection rates differ between the two groups for both kinds of offers.
-In addition, after the scan, we present participants with eight
-fair/unfair offers (four of each type, matched for material payoff) and
-ask them to rate feelings on 9-point Likert scales along these four
-dimensions: happy, angry, sad, and betrayed. The average of four ratings
-for each individual is represented by *L*<sub>*g*, *j*, *k*, *t*</sub>
-where *g* = {MDD, Controls}; *j* = {happy, angry, sad, betrayed}; *k* =
-{fair, unfair}; and *t* is the time period.
+From a behavioral standpoint, we examine whether the acceptance and rejection rates differ between the two groups for both kinds of offers. In addition, after the scan, we present participants with eight fair/unfair offers (four of each type, matched for material payoff) and ask them to rate feelings on 9-point Likert scales along these four dimensions: happy, angry, sad, and betrayed. The average of four ratings for each individual is represented by $L_{g,j,k,t}$ where $g$ = {MDD, Controls}; $j$ = {happy, angry, sad, betrayed}; $k$ = {fair, unfair}; and $t$ is the time period.
 
-Upon collection of this data, we first intend to replicate the analyses
-of Gradin et al. (2015). Primarily, this involves comparing the
-correlations between regional BOLD signal and fairness/inequity for the
-two groups in the first session and confirming that the mOCC is less
-sensitive to inequity and DC and NAcc are less sensitive to fairness
-among depressed people prior to treatment than healthy controls. Note
-that these correlations for each individual are represented by
-*r*<sub>*g*, *h*, *k*, *t*</sub> where *g* = {MDD, Controls}; *h* = {DC,
-NAcc, mOCC}; *k* = {fairness, unfairness}; and *t* is the time period.
-For evaluating effects of fairness, r is defined as the correlation
-between BOLD signal and the percent of the endowment for fair offers,
-ranging from 38% to 50%. For offer unfairness, r is the correlation
-between BOLD signal and offer inequality for unfair offers, ranging from
-33% (minimally unequal) to 8% (maximally unequal). To ensure that the
-correlation between mOCC BOLD signal and unfairness will be positive
-like in Gradin et al. (2015), we encode unfair offer percentages as the
-proposer’s share (67% to 92%). The overall pattern of the expected
-findings are similar to those seen in Figures 1 and 2 above.
+Upon collection of this data, we first intend to replicate the analyses of Gradin et al. (2015). Primarily, this involves comparing the correlations between regional BOLD signal and fairness/inequity for the two groups in the first session and confirming that the mOCC is less sensitive to inequity and DC and NAcc are less sensitive to fairness among depressed people prior to treatment than healthy controls. Note that these correlations for each individual are represented by $r_{g,h,k,t}$ where $g$ = {MDD, Controls}; $h$ = {DC, NAcc, mOCC}; $k$ = {fairness, unfairness}; and $t$ is the time period. For evaluating effects of fairness, r is defined as the correlation between BOLD signal and the percent of the endowment for fair offers, ranging from 38% to 50%. For offer unfairness, r is the correlation between BOLD signal and offer inequality for unfair offers, ranging from 33% (minimally unequal) to 8% (maximally unequal). To ensure that the correlation between mOCC BOLD signal and unfairness will be positive like in Gradin et al. (2015), we encode unfair offer percentages as the proposer’s share (67% to 92%). The overall pattern of the expected findings are similar to those seen in Figures 1 and 2 above. 
 
 Like in Gradin et al. (2015), we do not expect to find differences in
 sadness, anger, or betrayal emotionality scores, either during the
@@ -317,20 +293,19 @@ group patterns as depression symptoms abate. For each individual in the
 depression group, we will compute inter-period changes relative to
 controls in ROI responsiveness to fairness/inequity.
 
-$$\\Delta r\_{Comparison,h,t} = (r\_{MDD,h,t} - \\overline{r\_{Control,h,t}})-(r\_{MDD,h,t-1} - \\overline{r\_{Control,h,t-1}})$$
+$$\Delta r_{Comparison,h,t} = (r_{MDD,h,t} - \overline{r_{Control,h,t}})-(r_{MDD,h,t-1} - \overline{r_{Control,h,t-1}})$$
 
 We also compute changes in self-reported emotionality scores relative to
 controls for fair/unfair offers.
 
-$$\\Delta L\_{Comparison,j,k,t} = (L\_{MDD,j,k,t} - \\overline{L\_{Control,j,k,t}})-(L\_{MDD,j,k,t-1}-\\overline{L\_{Control,j,k,t-1}})$$
+$$\Delta L_{Comparison,j,k,t} = (L_{MDD,j,k,t} - \overline{L_{Control,j,k,t}})-(L_{MDD,j,k,t-1}-\overline{L_{Control,j,k,t-1}})$$
 
 We regress these values on changes in BDI-II score across periods. For
 ROI regression models, a negative coefficient implies that a decrease in
 BDI-II predicts an increase in regional responsiveness.
 
 <center>
-Overall BDI model:
-*Δ**r*<sub>*C**o**m**p**a**r**i**s**o**n*, *h*, *t*</sub> = *α*<sub>0</sub> + *α*<sub>1</sub> \* *Δ**B**D**I*<sub>*t*</sub>
+Overall BDI model: $\Delta r_{Comparison,h,t} = \alpha_0 + \alpha_1 * \Delta BDI_t$
 </center>
 
 Similar patterns as those exhibited in Gradin et al. (2015) are expected
@@ -362,8 +337,7 @@ the data than than that for the overall BDI score. Shown in Figure 7 is
 expected data for these regressions.
 
 <center>
-Anhedonia BDI subscore model:
-*Δ**r*<sub>*C**o**m**p**a**r**i**s**o**n*, *h*, *t*</sub> = *α*<sub>0</sub> + *α*<sub>1</sub> \* *Δ**B**D**I*<sub>*a*</sub>
+Anhedonia BDI subscore model: $\Delta r_{Comparison,h,t} = \alpha_0 + \alpha_1 * \Delta BDI_a$
 </center>
 
 We also regress inter-temporal changes in ROI responsiveness (Δr) on the
@@ -372,8 +346,7 @@ identify which subscale is most strongly linked to UG neural/behavioral
 differences between the MDD group and controls (Kumar et al., 2002).
 
 <center>
-Cog./noncognitive subscales:
-*Δ**r*<sub>*C**o**m**p**a**r**i**s**o**n*, *h*, *t*</sub> = *α*<sub>0</sub> + *α*<sub>1</sub> \* *Δ**B**D**I*<sub>*n**o**n**c**o**g**n**i**t**i**v**e*, *t*</sub> + *α*<sub>2</sub> \* *Δ**B**D**I*<sub>*c**o**g**n**i**t**i**v**e*, *t*</sub>
+Cog./noncognitive subscales: $\Delta r_{Comparison,h,t} = \alpha_0 + \alpha_1 * \Delta BDI_{noncognitive,t} + \alpha_2 * \Delta BDI_{cognitive,t}$
 </center>
 
 <img src="https://i.imgur.com/zDdfNjJ.jpg" alt="**Figure 6.** Expected results pertaining to the nucleus accumbens (NAcc) response to fair offers (top) and medial occipital lobe (mOCC) ROI response to unfair offers over time. Left: Change in neural response to fairness or unfairness, respectively, over time for control (black trace) and MDD (red trace) subjects. Right, correlation between individual subjects’ change in BDI score from the baseline scan to the 3yr scan regressed against the neural response to fairness for the respective brain regions. We additionally hypothesize a nearly identical pattern seen in the DC in response to fair responses." width="60%" />
@@ -394,7 +367,7 @@ pattern seen in the DC in response to fair responses.
 **Figure 7.** Expected difference between the correlation between the
 change in neural activity in the NAcc (left) and mOCC (right) when
 regressed against the overall BDI score change (light red) and BDI
-anhedonia subscore (*B**D**I*<sub>*a*</sub>), calculated as in
+anhedonia subscore ($BDI_a$), calculated as in
 Pizzagalli et al. (2005) and as described above. Inset: R2 value
 calculated for each correlation.
 </p>
