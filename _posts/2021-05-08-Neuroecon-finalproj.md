@@ -505,7 +505,7 @@ and social anxiety disorders (Goldin et al., 2009; Bjorkquist and
 Herbener, 2013). We therefore believe the proposed studies will be
 impactful and trans-diagnostically relevant.
 
-## Methods
+## References
 
 Bewernick, B., Kayser, S., Sturm, V. et al. Long-Term Effects of Nucleus
 Accumbens Deep Brain Stimulation in Treatment-Resistant Depression:
