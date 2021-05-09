@@ -362,15 +362,20 @@ respective brain regions. We additionally hypothesize a nearly identical
 pattern seen in the DC in response to fair responses.
 </p>
 
-<img src="https://i.imgur.com/zDdfNjJ.jpg" alt="**Figure 7.** Expected difference between the correlation between the change in neural activity in the NAcc (left) and mOCC (right) when regressed against the overall BDI score change (light red) and BDI anhedonia subscore ($BDI_a$), calculated as in Pizzagalli et al. (2005) and as described above. Inset: R2 value calculated for each correlation." width="50%" />
-<p class="caption">
-**Figure 7.** Expected difference between the correlation between the
+
+<div class="card">
+  <div class="card__image">
+    <img class="image" src="https://i.imgur.com/zDdfNjJ.jpg" width="50%"/>
+  </div>
+  <div class="card__content">
+    <p>**Figure 7.** Expected difference between the correlation between the
 change in neural activity in the NAcc (left) and mOCC (right) when
 regressed against the overall BDI score change (light red) and BDI
 anhedonia subscore ($BDI_a$), calculated as in
 Pizzagalli et al. (2005) and as described above. Inset: R2 value
-calculated for each correlation.
-</p>
+calculated for each correlation.</p>
+  </div>
+</div>
 
 ## Limitations
 
