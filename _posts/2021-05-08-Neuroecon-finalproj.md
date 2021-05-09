@@ -1,12 +1,10 @@
 ---
-title: A Neuroeconomic Research Proposal
+title: Fairness sensitivity in MDD patients---state or trait?
 tags: neuroscience neuroeconomics computational-neuropsychiatry
 published: true
 mathjax: true
 ---
-# Relationship Between Trajectories of Clinical Improvement and Neural Responses to Fairness in Major Depressive Disorder Patients
-
-This was a research proposal drafted by me and two other classmates for <i>PSYC 473: Neuroeconomics</i>,  a graduate course taught by Joseph Kable at the University of Pennsylvania.
+This is a research proposal drafted by me and two other classmates for <i>PSYC 473: Neuroeconomics</i>,  a graduate course taught by Joseph Kable at the University of Pennsylvania.
 
 ## Background and Motivations
 
