@@ -373,6 +373,7 @@ anhedonia subscore ($BDI_a$), calculated as in
 Pizzagalli et al. (2005) and as described above. Inset: R2 value
 calculated for each correlation.</p>
 </div>
+
 ## Limitations
 
 While we believe the proposed experimental design is robust, several
@@ -504,7 +505,7 @@ and social anxiety disorders (Goldin et al., 2009; Bjorkquist and
 Herbener, 2013). We therefore believe the proposed studies will be
 impactful and trans-diagnostically relevant.
 
-**References**
+## Methods
 
 Bewernick, B., Kayser, S., Sturm, V. et al. Long-Term Effects of Nucleus
 Accumbens Deep Brain Stimulation in Treatment-Resistant Depression:
