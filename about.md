@@ -27,6 +27,6 @@ key: page-about
 ---
 I'm an interdisciplinary thinker with particular interests in education, economics, brain science, and theology. I'm eager to share the ideas that inspire me.
 
-<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="ammarplumber"><a class="LI-simple-link" href='https://www.linkedin.com/in/ammarplumber?trk=profile-badge'>Ammar M. Plumber</a></div>
+<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
-<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="ammarplumber" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/ammarplumber?trk=profile-badge">Ammar M. Plumber</a></div>
