@@ -365,7 +365,7 @@ pattern seen in the DC in response to fair responses.
 
 <div class="item">
   <div class="item__image">
-    <img class="image" src="https://i.imgur.com/zDdfNjJ.jpg" width="50%"/>
+    <img class="image" src="https://i.imgur.com/zDdfNjJ.jpg" width="100%"/>
   </div>
   <div class="item__content">
     <div class="item__description">
