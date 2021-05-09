@@ -45,11 +45,12 @@ the nucleus accumbens (NAcc) and the dorsal caudate (DC) while the
 depressed group did not (Gradin et al., 2015).
 
 <img src="https://i.imgur.com/LFVmq0s.png" alt="**Figure 1.** From Gradin et al., 2015 summarizing their findings that healthy controls showed activation in the nucleus accumbens and dorsal caudate as the fairness of offers increased, while MDD patients did not." width="50%" />
-<p class="caption">
-**Figure 1.** From Gradin et al., 2015 summarizing their findings that
+<div class="item__description">
+    <p><b>Figure 1.</b> From Gradin et al., 2015 summarizing their findings that
 healthy controls showed activation in the nucleus accumbens and dorsal
 caudate as the fairness of offers increased, while MDD patients did not.
 </p>
+</div>
 
 These areas are thought to respond to reward and social information
 (Gradin et al., 2015). Importantly, there were no differences in
@@ -60,11 +61,12 @@ relative to controls as unfairness increased (Gradin et al., 2015).
 Figures 1 and 2 summarize these findings.
 
 <img src="https://i.imgur.com/9RWagWh.png" alt="**Figure 2.** From Gradin et al., 2015 summarizing their findings that healthy controls had a greater increase in activation in the medial occipital lobe as inequality compared to depressed subjects." width="52%" />
-<p class="caption">
-**Figure 2.** From Gradin et al., 2015 summarizing their findings that
+<div class="item__description">
+    <p><b>Figure 2.</b> From Gradin et al., 2015 summarizing their findings that
 healthy controls had a greater increase in activation in the medial
 occipital lobe as inequality compared to depressed subjects.
 </p>
+</div>
 
 Previous work has also shown occipital lobe functioning differences in
 depressed patients in emotion and social related tasks, as well as in
@@ -208,9 +210,9 @@ balance between assessing persistence of treatment-related effects, and
 ensuring the stability of psychiatric groupings while minimizing group
 attrition.
 
-<img src="https://i.imgur.com/9RWagWh.png" alt="**Figure 3.** Experimental Timeline. Recruitment phase: Subjects will be recruited via local and internet advertisements (control group) or via psychiatrist referral. Control subjects will be screened using the HAMD-17 questionnaire. A medical history of diagnosis or treatment of any psychiatric disorder (defined by the DSM-V) or a HAMD-17 score &gt;7 (which could possibly indicate dysphoria or mild depression) will disqualify control subjects from participating. A diagnosis of MDD and referral by a psychiatrist will be considered sufficient for inclusion. Baseline Scan: all participants will then undergo an initial BDI questionnaire, then be asked to perform the Ultimatum game against a computer during an fMRI scan. MDD patients will begin SSRI treatments within six weeks of the initial scan. Longitudinal Phase: Subjects will return every 6 months (with t=0 being time of diagnosis/initial recruitment) for 3 years, during which sessions HAMD/BDI questionnaires will be completed, and the UG/fMRI procedure will be repeated (total of 7 scans). If a control subject achieves a HAMD score &gt;7 at any time point, they will be removed from all analyses." width="75%" />
-<p class="caption">
-**Figure 3.** Experimental Timeline. Recruitment phase: Subjects will be
+<img src="https://i.imgur.com/9RWagWh.png" width="75%" />
+<div class="item__description">
+    <p><b>Figure 3.</b> Experimental Timeline. Recruitment phase: Subjects will be
 recruited via local and internet advertisements (control group) or via
 psychiatrist referral. Control subjects will be screened using the
 HAMD-17 questionnaire. A medical history of diagnosis or treatment of
@@ -228,6 +230,7 @@ will be completed, and the UG/fMRI procedure will be repeated (total of
 7 scans). If a control subject achieves a HAMD score &gt;7 at any time
 point, they will be removed from all analyses.
 </p>
+</div>
 
 The Ultimatum Game task is as follows. There are two roles: proposers
 (pre-programmed) and responders (played by participants). So that the
@@ -239,14 +242,11 @@ responder. Should the responder accept, the endowment is divided
 accordingly. If the responder rejects the offer, neither player receives
 any of the endowment.
 
-<img src="https://i.imgur.com/9RWagWh.png" alt="**Figure 4.** Ultimatum Game Setup. From Gradin et al., 2015. The initial screen shows the proposer’s initials. Subsequently, an offer is shown to the responder along with the two buttons for accepting and rejecting the offer. The duration of each screen is shown in seconds with rt signifying response time." width="50%" />
-<p class="caption">
-**Figure 4.** Ultimatum Game Setup. From Gradin et al., 2015. The
-initial screen shows the proposer’s initials. Subsequently, an offer is
-shown to the responder along with the two buttons for accepting and
-rejecting the offer. The duration of each screen is shown in seconds
-with rt signifying response time.
+<img src="https://i.imgur.com/9RWagWh.png" width="50%" />
+<div class="item__description">
+    <p><b>Figure 4.</b> Ultimatum Game Setup. From Gradin et al., 2015. The initial screen shows the proposer’s initials. Subsequently, an offer is shown to the responder along with the two buttons for accepting and rejecting the offer. The duration of each screen is shown in seconds with rt signifying response time.
 </p>
+</div>
 
 Participants are given fair and unfair offers and told that they will be
 paid a percentage of their earnings at the end of the experiment. Fair
@@ -278,14 +278,15 @@ subject but that these two factors will exhibit minimal correlation for
 control subjects. Figure 5 shows an example of the expected findings for
 these experiments.
 
-<img src="https://i.imgur.com/9RWagWh.png" alt="**Figure 5.** Expected results pertaining to happiness ratings in response to fairness. Left: Happiness ratings over time for control (black trace) and MDD (red trace) subjects. Right: Correlation between individual subjects’ change in BDI score from baseline scan to 3yr scan and the mean change in happiness ratings across the same timeframe." width="70%" />
-<p class="caption">
-**Figure 5.** Expected results pertaining to happiness ratings in
+<img src="https://i.imgur.com/9RWagWh.png" width="70%" />
+<div class="item__description">
+    <p><b>Figure 5.</b> Expected results pertaining to happiness ratings in
 response to fairness. Left: Happiness ratings over time for control
 (black trace) and MDD (red trace) subjects. Right: Correlation between
 individual subjects’ change in BDI score from baseline scan to 3yr scan
 and the mean change in happiness ratings across the same timeframe.
 </p>
+</div>
 
 Using data from subsequent sessions, we wish to examine whether MDD
 group patterns—both neural and behavioral—converge with the control
@@ -349,9 +350,9 @@ differences between the MDD group and controls (Kumar et al., 2002).
 Cog./noncognitive subscales: $\Delta r_{Comparison,h,t} = \alpha_0 + \alpha_1 * \Delta BDI_{noncognitive,t} + \alpha_2 * \Delta BDI_{cognitive,t}$
 </center>
 
-<img src="https://i.imgur.com/zDdfNjJ.jpg" alt="**Figure 6.** Expected results pertaining to the nucleus accumbens (NAcc) response to fair offers (top) and medial occipital lobe (mOCC) ROI response to unfair offers over time. Left: Change in neural response to fairness or unfairness, respectively, over time for control (black trace) and MDD (red trace) subjects. Right, correlation between individual subjects’ change in BDI score from the baseline scan to the 3yr scan regressed against the neural response to fairness for the respective brain regions. We additionally hypothesize a nearly identical pattern seen in the DC in response to fair responses." width="60%" />
-<p class="caption">
-**Figure 6.** Expected results pertaining to the nucleus accumbens
+<img src="https://i.imgur.com/zDdfNjJ.jpg" width="60%" />
+<div class="item__description">
+    <p><b>Figure 6.</b> Expected results pertaining to the nucleus accumbens
 (NAcc) response to fair offers (top) and medial occipital lobe (mOCC)
 ROI response to unfair offers over time. Left: Change in neural response
 to fairness or unfairness, respectively, over time for control (black
@@ -361,7 +362,7 @@ individual subjects’ change in BDI score from the baseline scan to the
 respective brain regions. We additionally hypothesize a nearly identical
 pattern seen in the DC in response to fair responses.
 </p>
-
+</div>
 
 <img src="https://i.imgur.com/zDdfNjJ.jpg" width = "50%"/>
 <div class="item__description">
