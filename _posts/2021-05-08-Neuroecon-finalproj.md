@@ -1,5 +1,5 @@
 ---
-title: Fairness sensitivity in MDD patients - state or trait?
+title: Neural unresponsiveness to fairness in MDD patients - state or trait?
 tags: neuroscience neuroeconomics computational-neuropsychiatry
 published: true
 mathjax: true
@@ -40,7 +40,7 @@ responder rejects the offer, neither party receives any of the
 endowment. We consider this paradigm useful for studying neural
 signature correlations because it involves social cognition and a
 gradient of fairness, which is apt for regression analysis. As the
-fairness of the offers increased, the control group showed activation in
+fairness of the offers increased, the control group showed increased activation in
 the nucleus accumbens (NAcc) and the dorsal caudate (DC) while the
 depressed group did not (Gradin et al., 2015).
 
@@ -64,7 +64,7 @@ Figures 1 and 2 summarize these findings.
 <div class="item__description">
     <p><b>Figure 2.</b> From Gradin et al., 2015 summarizing their findings that
 healthy controls had a greater increase in activation in the medial
-occipital lobe as inequality compared to depressed subjects.
+occipital lobe as inequality increased compared to depressed subjects.
 </p>
 </div>
 
