@@ -363,20 +363,15 @@ pattern seen in the DC in response to fair responses.
 </p>
 
 
-<div class="item">
-  <div class="item__image">
-    <img class="image" src="https://i.imgur.com/zDdfNjJ.jpg" width = "50%"/>
-  </div>
-  <div class="item__content">
+<img src="https://i.imgur.com/zDdfNjJ.jpg" width = "50%"/>
+<div class="item__description">
     <p><b>Figure 7.</b> Expected difference between the correlation between the
 change in neural activity in the NAcc (left) and mOCC (right) when
 regressed against the overall BDI score change (light red) and BDI
 anhedonia subscore ($BDI_a$), calculated as in
 Pizzagalli et al. (2005) and as described above. Inset: R2 value
 calculated for each correlation.</p>
-  </div>
 </div>
-
 ## Limitations
 
 While we believe the proposed experimental design is robust, several
