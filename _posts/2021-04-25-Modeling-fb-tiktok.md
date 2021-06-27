@@ -1,6 +1,10 @@
 ---
 title: "Facebook's and TikTok's tweets: a classification model"
 tags: data-science twitter modeling r
+
+<meta name="citation_title" content="Facebook's and TikTok's tweets - a classification model">
+<meta name="citation_author" content="Plumber, Ammar M."/>
+<meta name="citation_publication_date" content="2021/04/25">
 ---
 
 
