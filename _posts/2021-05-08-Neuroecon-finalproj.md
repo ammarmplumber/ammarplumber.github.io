@@ -4,13 +4,6 @@ tags: neuroscience neuroeconomics computational-neuropsychiatry
 published: true
 mathjax: true
 ---
-
-<meta name="citation_title" content="Neural unresponsiveness to fairness in MDD patients - state or trait?">
-<meta name="citation_author" content="Plumber, Ammar M."/>
-<meta name="citation_author" content="Wooldridge, Lisa">
-<meta name="citation_author" content="Perez, Gianna">
-<meta name="citation_publication_date" content="2021/05/08">
-
 This is a research proposal drafted by me and two other classmates for <i>PSYC 473: Neuroeconomics</i>,  a graduate course taught by Joseph Kable at the University of Pennsylvania.
 
 ## Background and Motivations

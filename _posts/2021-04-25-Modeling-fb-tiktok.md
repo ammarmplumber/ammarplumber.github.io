@@ -2,10 +2,6 @@
 title: "Facebook's and TikTok's tweets: a classification model"
 tags: data-science twitter modeling r
 ---
-<meta name="citation_title" content="Facebook's and TikTok's tweets: a classification model">
-<meta name="citation_author" content="Plumber, Ammar M."/>
-<meta name="citation_publication_date" content="2021/04/25">
-
 ## I. Introduction
 
 We will be examining the difference in tweet communications between TikTok and Facebook. These are two popular social media platforms but with very different target audiences. Thus, the two brands may differ in their communication styles and language. We set out to identify the particular ways in which they differ and to build a model that can attribute each tweet to the correct user.
