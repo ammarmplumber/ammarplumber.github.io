@@ -139,15 +139,15 @@ McLean Hospital (2021), Deconstructing Stigma, https://deconstructingstigma.org/
 
 Mills, K., Goddings, A., Clasen, L., Giedd, J., & Blakemore, S. (2014), The Developmental Mismatch in Structural Brain Maturation during Adolescence, _Dev Neurosci_ 36, 147-160.
 
-Müller, J. M., Postert, C., Beyer, T., Furniss, T., and Achtergarde, S. (2010). Comparison of eleven short versions of the Symptom Checklist 90-Revised (SCL-90-R) for use in the assessment of general psychopathology, _Journal of Psychopathology and Behavioral Assessment_, 32(2), 246–254. https://doi.org/10.1007/s10862-009-9141-5.
+Müller, J. M., Postert, C., Beyer, T., Furniss, T., and Achtergarde, S. (2010). Comparison of eleven short versions of the Symptom Checklist 90-Revised (SCL-90-R) for use in the assessment of general psychopathology, _Journal of Psychopathology and Behavioral Assessment_, 32(2), 246–254. <https://doi.org/10.1007/s10862-009-9141-5>.
 
 Peltonen, K., Ellonen, N., Pitkänen, J., Aaltonen, M., & Martikainen, P. (2020), Trauma and violent offending among adolescents: a birth cohort study, _J Epidemiol Community Health_, 74(10), 845-850.
 
-Pew Center on the States (2008), One in 100: Behind Bars in America 2008, https://www.pewtrusts.org/en/research-and-analysis/reports/2008/02/28/one-in-100-behind-bars-in-america-2008.
+Pew Center on the States (2008), One in 100: Behind Bars in America 2008, <https://www.pewtrusts.org/en/research-and-analysis/reports/2008/02/28/one-in-100-behind-bars-in-america-2008>.
 
-Prison Entrepreneurship Program (2020), Results, https://www.pep.org/pep-results/.
+Prison Entrepreneurship Program (2020), Results, <https://www.pep.org/pep-results/>.
 
-Shichor, D., & Kelly, D. H. (1980), _Critical issues in juvenile delinquency_, Lexington Books, Retrieved from https://proxy.library.upenn.edu/login?url=https://www-proquest-com.proxy.library.upenn.edu/books/critical-issues-juvenile-delinquency/docview/38119599/se-2?accountid=14707.
+Shichor, D., & Kelly, D. H. (1980), _Critical issues in juvenile delinquency_, Lexington Books, Retrieved from <https://proxy.library.upenn.edu/login?url=https://www-proquest-com.proxy.library.upenn.edu/books/critical-issues-juvenile-delinquency/docview/38119599/se-2?accountid=14707>.
 
 Shampanier, K., Mazar, N., & Ariely, D. (2007), Zero as a special price: The true value of free products, _Marketing Science_ 26(6), 742–757.
 
@@ -157,11 +157,11 @@ Singh, J., Grann, M., & Fazel, S. (2011), A comparative study of violence risk a
 
 Strand BH, Dalgard OS, Tambs K, Rognerud M (2003), Measuring the mental health status of the Norwegian population: a comparison of the instruments SCL-25, SCL-10, SCL-5 and MHI-5 (SF-36), _Nord J Psychiatry_ 57(2), doi: 10.1080/08039480310000932. PMID: 12745773.
 
-Taylor, R. E., & Kuo, B. C. H. (2019), Black American psychological help-seeking intention: An integrated literature review with recommendations for clinical practice, _Journal of Psychotherapy Integration_ 29(4), https://doi.org/10.1037/int0000131.
+Taylor, R. E., & Kuo, B. C. H. (2019), Black American psychological help-seeking intention: An integrated literature review with recommendations for clinical practice, _Journal of Psychotherapy Integration_ 29(4), <https://doi.org/10.1037/int0000131>.
 
 Trulson, C., & Caudill, J. (2017), Juvenile homicide offender recidivism, _Journal of criminal psychology_.
 
-Ward, E. C., & Heidrich, S. M. (2009), African American women's beliefs about mental illness, stigma, and preferred coping behaviors. _Res Nurs Health_ 32(5),  [doi:10.1002/nur.20344].
+Ward, E. C., & Heidrich, S. M. (2009), African American women's beliefs about mental illness, stigma, and preferred coping behaviors. _Res Nurs Health_ 32(5),  doi:10.1002/nur.20344.
 
 Wolfgang, M., Figlio, R., & Sellin, J.T. (1972), Delinquency in a Birth Cohort, University of Chicago Press.
 Zhao, J., & Tomm, B. M. (2018), Psychological responses to scarcity, _Oxford Research Encyclopedia of Psychology_.
