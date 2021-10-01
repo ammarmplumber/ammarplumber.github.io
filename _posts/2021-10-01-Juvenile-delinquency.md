@@ -86,7 +86,7 @@ The basic framework of this study potentially has even broader applicability. On
 
 Abram, K.M., Teplin, L.A., Charles, D.R., Longworth, S.L., McClelland, G.M., & Dulcan, M.K. (2004), Posttraumatic stress disorder and trauma in youth in juvenile detention, _Archives of General Psychiatry_ 61(4), 403-410.
 
-American Psychological Association, Eye Movement Desensitization and Reprocessing (EMDR) Therapy, https://www.apa.org/ptsd-guideline/treatments/eye-movement-reprocessing.
+American Psychological Association, Eye Movement Desensitization and Reprocessing (EMDR) Therapy, <https://www.apa.org/ptsd-guideline/treatments/eye-movement-reprocessing>.
 
 Blattman, C., Jamison, J. C. and Sheridan, M. (2017). Reducing crime and violence: Experimental evidence from cognitive behavioral therapy in Liberia. _American Economic Review_ 107, 4, 1165-1206.
 
@@ -94,11 +94,11 @@ Burns, D. D. (1999), _Feeling good: the new mood therapy_, New York: Morrow.
 
 Child Poverty Action Lab, A Guide to Reducing Childhood Poverty in Dallas.
 
-Dallas Independent School District (2020), _Dallas ISD Fact Sheet_, https://www.dallasisd.org/Page/2609.
+Dallas Independent School District (2020), _Dallas ISD Fact Sheet_, <https://www.dallasisd.org/Page/2609>.
 
-Dallas ISD News Hub (2021), Approved 2021-2022 budget includes $50.5 million in salary increases and funding for discipline reform, https://thehub.dallasisd.org/2021/06/25/approved-2021-2022-budget-includes-50-5-million-in-salary-increases-and-discipline-reform/.
+Dallas ISD News Hub (2021), Approved 2021-2022 budget includes $50.5 million in salary increases and funding for discipline reform, <https://thehub.dallasisd.org/2021/06/25/approved-2021-2022-budget-includes-50-5-million-in-salary-increases-and-discipline-reform/>.
 
-Day, L. (2015), Could more black therapists mean better outcomes?, _Center for Health Journalism_, https://centerforhealthjournalism.org/fellowships/projects/could-more-black-therapists-mean-better-outcomes.
+Day, L. (2015), Could more black therapists mean better outcomes?, _Center for Health Journalism_, <https://centerforhealthjournalism.org/fellowships/projects/could-more-black-therapists-mean-better-outcomes>.
 
 Dumontheil, I. (2016), Adolescent brain development, _Current Opinion in Behav Sci_ 10, 39-44.
 
@@ -106,13 +106,13 @@ Evans-Chase, M. (2014), Addressing trauma and psychological development in juven
 
 Fang, X., Brown, D., Florence, C., & Mercy, J. (2012), The Economic Burden of Child Maltreatment in the United States And Implications for Prevention, _Child Abuse Negl_ 36(2), 156-165.
 
-Forman-Hoffman, V. L., Bose, J., Batts, K. R., Glasheen, C., Hirsch, E., Karg, R. S., Huang, L. N., & Hedden, S. L. (2016), Correlates of Lifetime Exposure to One or More Potentially Traumatic Events and Subsequent Posttraumatic Stress among Adults in the United States: Results from the Mental Health Surveillance Study, 2008-2012, _Center for Behavioral Health Statistics and Quality_, Substance Abuse and Mental Health Services Administration, https://www.samhsa.gov/data/sites/default/files/CBHSQ-DR-PTSDtrauma-2016/CBHSQ-DR-PTSDtrauma-2016.htm.
+Forman-Hoffman, V. L., Bose, J., Batts, K. R., Glasheen, C., Hirsch, E., Karg, R. S., Huang, L. N., & Hedden, S. L. (2016), Correlates of Lifetime Exposure to One or More Potentially Traumatic Events and Subsequent Posttraumatic Stress among Adults in the United States: Results from the Mental Health Surveillance Study, 2008-2012, _Center for Behavioral Health Statistics and Quality_, Substance Abuse and Mental Health Services Administration, <https://www.samhsa.gov/data/sites/default/files/CBHSQ-DR-PTSDtrauma-2016/CBHSQ-DR-PTSDtrauma-2016.htm>.
 
 Greenwald, R. (2012), Motivation-Adaptive Skills-Trauma Resolution (MASTR) Therapy for Adolescents with Conduct Problems: An Open Trial, from _Trauma and Juvenile Delinquency: Theory, Research, and Interventions_.
 
 Hallsworth, M., Berry, D., Sanders, M., Sallis, A., King, D., Vlaev, I., & Darzi, A. (2015), Stating Appointment Costs in SMS Reminders Reduces Missed Hospital Appointments: Findings from Two Randomised Controlled Trials, _PLOS ONE_ 10(10).
 
-Heller, S. B., Shah, A. K., Guryan, J., Ludwig, J., Mullainathan, S., Pollack, H. A. (2017), Thinking, Fast and Slow? Some Field Experiments to Reduce Crime and Dropout in Chicago, _The Quarterly Journal of Economics_ 132(1), https://doi.org/10.1093/qje/qjw033.
+Heller, S. B., Shah, A. K., Guryan, J., Ludwig, J., Mullainathan, S., Pollack, H. A. (2017), Thinking, Fast and Slow? Some Field Experiments to Reduce Crime and Dropout in Chicago, _The Quarterly Journal of Economics_ 132(1), <https://doi.org/10.1093/qje/qjw033>.
 
 Hjalmarsson, R., & Lindquist, M. J. (2012), Like godfather, like son exploring the intergenerational nature of crime, Journal of Human Resources 47(2), 550-582.
 
@@ -120,22 +120,23 @@ Hunt, W. (2017), Recidivism and Juvenile Justice Youth: A Study on Recidivism Ra
 
 Ideas42 (2017), Reducing Recidivism Rates for Juveniles: CBT in the Juvenile Justice System in Chicago.
 
-Jaycox, L. H., Morse, L. K., Tanielian, T., & Stein, B. D. (2006), How Schools Can Help Children Recover from Traumatic Experiences, _RAND Corporation_, https://www.rand.org/pubs/research_briefs/RB9229.html.
+Jaycox, L. H., Morse, L. K., Tanielian, T., & Stein, B. D. (2006), How Schools Can Help Children Recover from Traumatic Experiences, _RAND Corporation_, <https://www.rand.org/pubs/research_briefs/RB9229.html>.
 
-Katsiyannis, A., & Archwamety, T. (1997), Factors Related to Recidivism Among Delinquent Youths in a State Correctional Facility, _Journal of Child and Family Studies_ 6, https://doi.org/10.1023/A:1025068623167.
+Katsiyannis, A., & Archwamety, T. (1997), Factors Related to Recidivism Among Delinquent Youths in a State Correctional Facility, _Journal of Child and Family Studies_ 6, <https://doi.org/10.1023/A:1025068623167>.
 
 Kratzer, L., & Hodgins, S. (1997), Adult outcomes of child conduct problems: A cohort study. _Journal of abnormal child psychology_ 25(1), 65-81.
-Lin, L., Stamm, K., & Christidis, P. (2018), How diverse is the psychology workforce?, Monitor on Psychology 49(2), http://www.apa.org/monitor/2018/02/datapoint.
+Lin, L., Stamm, K., & Christidis, P. (2018), How diverse is the psychology workforce?, Monitor on Psychology 49(2), <http://www.apa.org/monitor/2018/02/datapoint>.
 
 National Academies of Sciences (2016), _Ending discrimination against people with mental and substance use disorders: the evidence for stigma change_.
 
 Nguyen, T. D., Attkisson, C. C., & Stegner, B. L. (1983), Assessment of patient satisfaction: development and refinement of a service evaluation questionnaire, _Evaluation and program planning_ 6(3-4), 299-313.
 
-Mayo Clinic, Cognitive behavioral therapy, https://www.mayoclinic.org/tests-procedures/cognitive-behavioral-therapy/about/pac-20384610.
+Mayo Clinic, Cognitive behavioral therapy, <https://www.mayoclinic.org/tests-procedures/cognitive-behavioral-therapy/about/pac-20384610>.
 McCabe, K.M., Hough, R.L., Yeh, M., Lucchini, S.E. & Hazen, A. (2005), The Relation Between Violence Exposure and Conduct Problems Among Adolescents: A Prospective Study, _American Journal of Orthopsychiatry_, 75: 575-584, https://doi.org/10.1037/0002-9432.75.4.575.
 
-McCarthy, A. (2020), Cafe Momentum Built a Restaurant to Revolutionize Juvenile Justice in Dallas. Now, It’s Going National., _Dallas Eater_, https://dallas.eater.com/2020/11/9/21546388/dallas-restaurant-cafe-momentum-expansion-juvenile-justice-reform-nonprofit.
-McLean Hospital (2021), Deconstructing Stigma, https://deconstructingstigma.org/facts.
+McCarthy, A. (2020), Cafe Momentum Built a Restaurant to Revolutionize Juvenile Justice in Dallas. Now, It’s Going National., _Dallas Eater_, <https://dallas.eater.com/2020/11/9/21546388/dallas-restaurant-cafe-momentum-expansion-juvenile-justice-reform-nonprofit>.
+
+McLean Hospital (2021), Deconstructing Stigma, <https://deconstructingstigma.org/facts>.
 
 Mills, K., Goddings, A., Clasen, L., Giedd, J., & Blakemore, S. (2014), The Developmental Mismatch in Structural Brain Maturation during Adolescence, _Dev Neurosci_ 36, 147-160.
 
