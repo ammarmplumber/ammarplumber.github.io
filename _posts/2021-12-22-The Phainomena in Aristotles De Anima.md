@@ -1,10 +1,8 @@
 ---
-title: The <i>Phainomena</i> in Aristotle's <i>De Anima</i>
+title: The Phainomena in Aristotle's De Anima
 tags: ancient greek philosophy aristotle soul philosophy-of-science epistemology
 published: true
 ---
-This is a final paper I wrote for <i>BDS 503: Behavioral Public Policy</i>,  a graduate course taught by Enrique Fatas at the University of Pennsylvania.
-
 ## Introduction
 
 Aristotle’s <i>De Anima</i>, a treatise on the soul, exhibits many of the same methods seen in his other texts. Relatively little literature has examined the extent to which Aristotle privileges observable data in formulating theories. In the philosophy of science community, the term “saving the phenomena” is often used to denote this empirical focus. Many recognize the term from the writings of Bas van Fraassen and Pierre Duhem, who was inspired by the Copernican revolution era debates and the writings of Thomas Aquinas. Much evidence suggests that the concept pre-dates Aristotle, particularly in the field of astronomy.
