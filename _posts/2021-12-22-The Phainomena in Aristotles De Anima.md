@@ -1,5 +1,5 @@
 ---
-title: The <i>Phainomena</i> in Aristotle's De Anima
+title: The <i>Phainomena</i> in Aristotle's <i>De Anima</i>
 tags: ancient greek philosophy aristotle soul philosophy-of-science epistemology
 published: true
 ---
