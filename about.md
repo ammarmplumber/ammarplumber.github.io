@@ -46,7 +46,7 @@ key: page-about
         <img src="https://i.imgur.com/IDvVFSP.jpg">
       </div>
       <div class="text">
-        First and foremost, I'm a follower of Jesus and the Catholic Church.
+        Hi, I'm Ammar. First and foremost, I'm a follower of Jesus and the Catholic Church.
         <br> <br>
         I work as the Chief of Staff at the <a href="adcompsystems.com">AdComp Systems Group</a>, a city government tech company in Dallas, my hometown. The company was founded by my father, and I hope to help him continue to build it.
         <br> <br>
@@ -54,11 +54,9 @@ key: page-about
       </div>
     </div>
 
-<br>
-
 I'm currently also involved in two passion projects. 
 <ul>
-  <li>The first is a non-profit community development project in Dallas. This neighborhood aspires to support foster/adoptive families and the elderly, who will serve as foster grandparents for the community. To learn more about these communities, visit <a href="https://ghdc.generationsofhope.org/">Generations of Hope's website</a>.
+  <li>The first is a non-profit community development project in Dallas. This neighborhood aspires to support foster/adoptive families and the elderly, who will serve as foster grandparents for the community. To learn more about these communities, visit <a href="https://ghdc.generationsofhope.org/">Generations of Hope's website</a>.</li>
   <li>The second is <a href="resonantnotes.com">Resonant Notes</a>, a journal that I'm working on alongside some other folks. If you're interested in contributing, please get in touch with me at ammarp ~at~ sas.upenn.edu.</li>
 </ul>
 
