@@ -34,6 +34,9 @@ key: page-about
         align-items: center;
         justify-content: center
       }
+      .text {
+        padding-left: 20px;
+      }
 </style>
 
 
@@ -44,7 +47,7 @@ key: page-about
       <div class="text">
         First and foremost, I'm a friend of Jesus.
         <br>
-        I work as the Chief of Staff at the AdComp Systems Group, a small city government tech company in Dallas, my hometown. The company was founded by my father, and I hope to help him continue to build it.
+        I work as the Chief of Staff at the AdComp Systems Group, a city government tech company in Dallas, my hometown. The company was founded by my father, and I hope to help him continue to build it.
         <br>
       </div>
     </div>
@@ -54,7 +57,7 @@ My educational background is in economics, philosophy, and neuroscience. I atten
 I'm currently also involved in two passion projects. 
 <ul>
   <li>The first is a non-profit community development project in Dallas. This neighborhood aspires to support foster/adoptive families and the elderly, who will serve as foster grandparents for the community. To learn more about these communities, visit <a href="https://ghdc.generationsofhope.org/">Generations of Hope's website</a>.
-  <li>The second is a journal that I'm working on alongside some other folks. You can check it out at <a href="resonantnotes.com"> If you're interested in contributing, please get in touch with me at ammarp ~at~ sas.upenn.edu.</li>
+  <li>The second is <a href="resonantnotes.com">Resonant Notes</a>, a journal that I'm working on alongside some other folks. If you're interested in contributing, please get in touch with me at ammarp ~at~ sas.upenn.edu.</li>
 </ul>
 - 
 - The second is a 
