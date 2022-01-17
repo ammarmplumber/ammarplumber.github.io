@@ -50,10 +50,11 @@ key: page-about
         <br>
         I work as the Chief of Staff at the AdComp Systems Group, a city government tech company in Dallas, my hometown. The company was founded by my father, and I hope to help him continue to build it.
         <br>
+        My educational background is in economics, philosophy, and neuroscience. I attended St. Mark's School of Texas for high school and completed both my undergraduate and graduate degrees at the University of Pennsylvania.
       </div>
     </div>
 
-My educational background is in economics, philosophy, and neuroscience. I attended St. Mark's School of Texas for high school and completed both my undergraduate and graduate degrees at the University of Pennsylvania.
+<br>
 
 I'm currently also involved in two passion projects. 
 <ul>
