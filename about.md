@@ -26,8 +26,6 @@ titles:
 key: page-about
 ---
 
-<br>
-
 <style>
       .container {
         display: flex;
