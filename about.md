@@ -60,10 +60,6 @@ I'm currently also involved in two passion projects.
   <li>The second is <a href="resonantnotes.com">Resonant Notes</a>, a journal that I'm working on alongside some other folks. If you're interested in contributing, please get in touch with me at ammarp ~at~ sas.upenn.edu.</li>
 </ul>
 
-<br>
-
-I'm an interdisciplinary thinker with particular interests in education, economics, brain science, and theology. I'm eager to share the ideas that inspire me.
-
 
 
 
