@@ -46,7 +46,7 @@ key: page-about
         <img src="https://i.imgur.com/IDvVFSP.jpg">
       </div>
       <div class="text">
-        Hi, I'm Ammar. First and foremost, I'm a follower of Jesus and the Catholic Church.
+        Hi, I'm Ammar. First and foremost, I'm a follower of Jesus Christ and the Catholic Church.
         <br> <br>
         I work as the Chief of Staff at the <a href="adcompsystems.com">AdComp Systems Group</a>, a city government tech company in Dallas, my hometown. The company was founded by my father, and I hope to help him continue to build it.
         <br> <br>
