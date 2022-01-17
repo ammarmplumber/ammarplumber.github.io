@@ -61,8 +61,8 @@ I'm currently also involved in two passion projects.
   <li>The first is a non-profit community development project in Dallas. This neighborhood aspires to support foster/adoptive families and the elderly, who will serve as foster grandparents for the community. To learn more about these communities, visit <a href="https://ghdc.generationsofhope.org/">Generations of Hope's website</a>.
   <li>The second is <a href="resonantnotes.com">Resonant Notes</a>, a journal that I'm working on alongside some other folks. If you're interested in contributing, please get in touch with me at ammarp ~at~ sas.upenn.edu.</li>
 </ul>
-- 
-- The second is a 
+
+<br>
 
 I'm an interdisciplinary thinker with particular interests in education, economics, brain science, and theology. I'm eager to share the ideas that inspire me.
 
