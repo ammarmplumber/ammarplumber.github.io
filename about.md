@@ -34,17 +34,7 @@ key: page-about
         align-items: center;
         justify-content: center
       }
-      img {
-        max-width: 100%
-      }
-      .image {
-        flex-basis: 40%
-      }
-      .text {
-        font-size: 20px;
-        padding-left: 20px;
-      }
-    </style>
+</style>
 
 
 <div class="container">
@@ -59,7 +49,12 @@ key: page-about
         My educational background is in economics, philosophy, and neuroscience. I attended St. Mark's School of Texas for high school and completed both my undergraduate and graduate degrees at the University of Pennsylvania.
 
         I'm currently also involved in two passion projects. 
-        - The first is a non-profit community development project in Dallas. This neighborhood aspires to support foster/adoptive families and the elderly, who will serve as foster grandparents for the community. To learn more about this work, visit 
+        <ul>
+          <li>The first is a non-profit community development project in Dallas. This neighborhood aspires to support foster/adoptive families and the elderly, who will serve as foster grandparents for the community. To learn more about this work, visit <a href="url">link text</a>
+          <li>Tea</li>
+          <li>Milk</li>
+        </ul>
+        - 
         - The second is a 
 
         I'm an interdisciplinary thinker with particular interests in education, economics, brain science, and theology. I'm eager to share the ideas that inspire me.
