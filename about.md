@@ -48,9 +48,9 @@ key: page-about
       <div class="text">
         First and foremost, I'm a friend of Jesus.
         <br>
-        I work as the Chief of Staff at the AdComp Systems Group, a city government tech company in Dallas, my hometown. The company was founded by my father, and I hope to help him continue to build it.
+        I work as the Chief of Staff at the <a href="adcompsystems.com">AdComp Systems Group</a>, a city government tech company in Dallas, my hometown. The company was founded by my father, and I hope to help him continue to build it.
         <br>
-        My educational background is in economics, philosophy, and neuroscience. I attended St. Mark's School of Texas for high school and completed both my undergraduate and graduate degrees at the University of Pennsylvania.
+        My educational background is in economics, philosophy, and neuroscience. I attended <a href="smtexas.org">St. Mark's School of Texas</a> for high school and completed both my undergraduate and graduate degrees at the <a href="upenn.edu">University of Pennsylvania</a>.
       </div>
     </div>
 
