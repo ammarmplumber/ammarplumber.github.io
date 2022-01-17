@@ -39,7 +39,7 @@ key: page-about
 
 <div class="container">
       <div class="image">
-        <img src="https://i.imgur.com/IDvVFSP.jpg" width="25%" height="25%">
+        <img src="https://i.imgur.com/IDvVFSP.jpg">
       </div>
       <div class="text">
         First and foremost, I'm a friend of Jesus.
