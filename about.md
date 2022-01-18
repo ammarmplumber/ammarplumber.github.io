@@ -30,10 +30,8 @@ key: page-about
         img {
             float: left;
         }
-        p {
-            text-align: justify;
-        }
         .shape{
+          shape-outside: polygon(0 0, 0 40%, 40% 40%, 40% 0);
           shape-margin: 20px;
         }
 </style>
