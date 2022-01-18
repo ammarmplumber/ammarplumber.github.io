@@ -28,8 +28,7 @@ key: page-about
 
 <style>
         img {
-            float: left; 
-            margin: 20px;
+            float: left;
         }
         p {
             text-align: justify;
