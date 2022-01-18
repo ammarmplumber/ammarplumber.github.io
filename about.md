@@ -36,6 +36,9 @@ key: page-about
       .text {
         padding-left: 20px;
       }
+      .image {
+        flex-basis: 70%
+      }
 </style>
 
 
