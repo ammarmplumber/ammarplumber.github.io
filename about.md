@@ -2,7 +2,7 @@
 layout: article
 titles:
   # @start locale config
-  en      : &EN       About
+  en      : &EN       About Ammar
   en-GB   : *EN
   en-US   : *EN
   en-CA   : *EN
@@ -33,7 +33,7 @@ key: page-about
         justify-content: center
       }
       .text {
-        padding-left: 40px;
+        padding-left: 20px;
       }
       .image {
         flex-basis: 70%
@@ -42,9 +42,7 @@ key: page-about
 
 
 <div class="container">
-      <div class="image">
-        <img src="https://i.imgur.com/IDvVFSP.jpg">
-      </div>
+      <img src="https://i.imgur.com/IDvVFSP.jpg" width="25%" height="25%">
       <div class="text">
         Hi, I'm Ammar. First and foremost, I'm a follower of Jesus Christ and the Catholic Church.
         <br> <br>
