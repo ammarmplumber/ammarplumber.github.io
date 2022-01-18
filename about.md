@@ -34,6 +34,9 @@ key: page-about
         p {
             text-align: justify;
         }
+        .shape{
+          shape-margin: 20px;
+        }
 </style>
 
 <div class="square">
