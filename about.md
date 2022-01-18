@@ -27,12 +27,10 @@ key: page-about
 ---
 
 <style>
-        img {
+        .facepic {
             float: left;
-        }
-        .shape{
-          shape-outside: circle(50%);
-          margin-right: 20px;
+            shape-outside: circle(50%);
+            margin-right: 2rem;
         }
 </style>
 
