@@ -30,7 +30,8 @@ key: page-about
         .facepic {
             float: left;
             shape-outside: inset();
-            margin-right: 3rem;
+            margin-right: 2rem;
+            margin-bottom: 2rem;
         }
 </style>
 
