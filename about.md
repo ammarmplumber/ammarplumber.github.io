@@ -31,7 +31,7 @@ key: page-about
             float: left;
         }
         .shape{
-          shape-outside: polygon(0 0, 0 40%, 40% 40%, 40% 0);
+          shape-outside: inset(100px 100px 100px 100px);
           shape-margin: 20px;
         }
 </style>
