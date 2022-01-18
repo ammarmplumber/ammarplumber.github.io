@@ -29,7 +29,7 @@ key: page-about
 <style>
         .facepic {
             float: left;
-            shape-outside: inset();
+            shape-outside: circle(50%);
             margin-right: 2rem;
             margin-bottom: 2rem;
         }
