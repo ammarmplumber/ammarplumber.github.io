@@ -42,7 +42,7 @@ key: page-about
 
 
 <div class="container">
-      <img src="https://i.imgur.com/IDvVFSP.jpg" width="25%" height="25%">
+      <img src="https://i.imgur.com/IDvVFSP.jpg" width="25%" height="25%" style="flex-shrink: 0">
       <div class="text">
         Hi, I'm Ammar. First and foremost, I'm a follower of Jesus Christ and the Catholic Church.
         <br> <br>
