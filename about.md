@@ -29,8 +29,8 @@ key: page-about
 <style>
         .facepic {
             float: left;
-            shape-outside: circle(50%);
-            margin-right: 2rem;
+            shape-outside: inset();
+            margin-right: 3rem;
         }
 </style>
 
