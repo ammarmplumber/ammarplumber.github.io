@@ -37,7 +37,7 @@ key: page-about
 
 <div class="square">
         <div> 
-            <img src="https://i.imgur.com/IDvVFSP.jpg" width="30%" height="30%" class="facepic">
+            <img src="https://i.imgur.com/IDvVFSP.jpg" width="40%" height="40%" class="facepic">
         </div>
 
   <p>Hi, I'm Ammar. First and foremost, I'm a follower of Jesus Christ and the Catholic Church.
