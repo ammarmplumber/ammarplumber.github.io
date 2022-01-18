@@ -33,7 +33,7 @@ key: page-about
         justify-content: center
       }
       .text {
-        padding-left: 20px;
+        padding-left: 30px;
       }
       .image {
         flex-basis: 70%
