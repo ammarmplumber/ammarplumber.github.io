@@ -27,20 +27,12 @@ key: page-about
 ---
 
 <style>
-        body {
-            margin: 20px;
-            text-align: center;
-        }
-        h1 {
-            color: green;
-        }
         img {
             float: left; 
-            margin: 5px;
+            margin: 20px;
         }
         p {
             text-align: justify;
-            font-size: 25px;
         }
 </style>
 
