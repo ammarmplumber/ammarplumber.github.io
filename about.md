@@ -31,7 +31,7 @@ key: page-about
             float: left;
         }
         .shape{
-          shape-outside: inset(40% 40% 40% 40%);
+          shape-outside: rectangle();
           shape-margin: 20px;
         }
 </style>
