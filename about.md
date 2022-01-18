@@ -32,7 +32,7 @@ key: page-about
         }
         .shape{
           shape-outside: rectangle();
-          shape-margin: 20px;
+          padding: 30px;
         }
 </style>
 
