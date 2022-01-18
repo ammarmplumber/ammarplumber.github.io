@@ -26,6 +26,24 @@ titles:
 key: page-about
 ---
 
+<style>
+        body {
+            margin: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: green;
+        }
+        img {
+            float: left; 
+            margin: 5px;
+        }
+        p {
+            text-align: justify;
+            font-size: 25px;
+        }
+</style>
+
 <div class="square">
         <div> 
             <img src="https://i.imgur.com/IDvVFSP.jpg" width="30%" height="30%">
