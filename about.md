@@ -31,10 +31,10 @@ key: page-about
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-wrap: wrap;
       }
       .text {
         padding-left: 20px;
+        flex-wrap: wrap;
       }
       .image {
         flex-basis: 70%
