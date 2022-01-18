@@ -30,20 +30,18 @@ key: page-about
       .container {
         display: flex;
         align-items: center;
-        justify-content: center
+        justify-content: center;
+        flex-wrap: wrap;
       }
       .text {
         padding-left: 20px;
-      }
-      .image {
-        flex-basis: 70%
       }
 </style>
 
 
 <div class="container">
       <img src="https://i.imgur.com/IDvVFSP.jpg" width="25%" height="25%" class="responsive">
-      <div class="text">
+      <div class="text" style="flex-shrink: 1">
         Hi, I'm Ammar. First and foremost, I'm a follower of Jesus Christ and the Catholic Church.
         <br> <br>
         I work as the Chief of Staff at the <a href="adcompsystems.com">AdComp Systems Group</a>, a city government tech company in Dallas, my hometown. The company was founded by my father, and I hope to help him continue to build it.
