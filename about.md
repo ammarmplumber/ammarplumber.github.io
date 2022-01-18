@@ -30,7 +30,7 @@ key: page-about
         .facepic {
             float: left;
             shape-outside: circle(50%);
-            margin-right: 2rem;
+            margin-right: 3rem;
             margin-bottom: 2rem;
         }
 </style>
