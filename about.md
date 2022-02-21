@@ -42,9 +42,9 @@ key: page-about
 
   <p>Hi, I'm Ammar. First and foremost, I'm a follower of Jesus Christ and the Catholic Church.
   <br> <br>
-  I work as the Chief of Staff at the <a href="adcompsystems.com">AdComp Systems Group</a>, a city government tech company in Dallas, my hometown. The company was founded by my father, and I hope to help him continue to build it.
+  I work as the Chief of Staff at the <a href="https://www.adcompsystems.com">AdComp Systems Group</a>, a city government tech company in Dallas, my hometown. The company was founded by my father, and I hope to help him continue to build it.
   <br> <br>
-  My educational background is in economics, philosophy, and neuroscience. I attended <a href="smtexas.org">St. Mark's School of Texas</a> for high school and completed both my undergraduate and graduate degrees at the <a href="upenn.edu">University of Pennsylvania</a>.
+  My educational background is in economics, philosophy, and neuroscience. I attended <a href="https://www.smtexas.org">St. Mark's School of Texas</a> for high school and completed both my undergraduate and graduate degrees at the <a href="https://www.upenn.edu">University of Pennsylvania</a>.
   <br> <br>
   I'm currently also involved in two passion projects. 
   <ul>
