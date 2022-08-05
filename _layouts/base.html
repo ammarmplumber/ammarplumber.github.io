@@ -21,5 +21,12 @@ layout: none
     <script>
       {%- include scripts/common.js -%}
     </script>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="classyCourtBot"
+      agent-id="d3cfd044-ed3f-4e59-8369-dc49772dbdc0"
+      language-code="en"
+    ></df-messenger>
     </body>
 </html>
