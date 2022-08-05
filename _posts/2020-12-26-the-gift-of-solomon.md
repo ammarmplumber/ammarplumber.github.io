@@ -1,7 +1,7 @@
 ---
 title: The Gift of Solomon
 tags: scripture spirituality old-testament
-published: true
+published: false
 ---
 What follows summarizes the story of David and Bathsheba from the Second Book of Samuel.
 
