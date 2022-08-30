@@ -13,21 +13,25 @@ layout: none
       {%- include scripts/lib/lazyload.js -%}
     </script>
     {%- include scripts/variables.html -%}
-    <script type="application/javascript">
-      window.tiledeskSettings= 
-      {
-          projectid: "62fa5c831656190019a38573"
-      };
-      (function(d, s, id) { 
-          var w=window; var d=document; var i=function(){i.c(arguments);};
-          i.q=[]; i.c=function(args){i.q.push(args);}; w.Tiledesk=i;                
-          var js, fjs=d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js=d.createElement(s); 
-          js.id=id; js.async=true; js.src="https://widget.tiledesk.com/v5/launch.js";
-          fjs.parentNode.insertBefore(js, fjs);
-      }(document,'script','tiledesk-jssdk'));
+
+    <script>
+      window.chatwootSettings = {"position":"right","type":"standard","launcherTitle":"Chat with us"};
+      (function(d,t) {
+        var BASE_URL="https://app.chatwoot.com";
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=BASE_URL+"/packs/js/sdk.js";
+        g.defer = true;
+        g.async = true;
+        s.parentNode.insertBefore(g,s);
+        g.onload=function(){
+          window.chatwootSDK.run({
+            websiteToken: 'RSwYwQHnJhQjFacoqp73FHE7',
+            baseUrl: BASE_URL
+          })
+        }
+      })(document,"script");
     </script>
+    
   </head>
   <body>
     <div class="root" data-is-touch="false">
