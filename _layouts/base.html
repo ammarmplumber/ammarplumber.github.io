@@ -14,10 +14,11 @@ layout: none
     </script>
     {%- include scripts/variables.html -%}
 
+
     <script>
       window.chatwootSettings = {"position":"right","type":"standard","launcherTitle":"Chat with us"};
       (function(d,t) {
-        var BASE_URL="https://app.chatwoot.com";
+        var BASE_URL="https://chat.adcompsystems.com";
         var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
         g.src=BASE_URL+"/packs/js/sdk.js";
         g.defer = true;
@@ -25,12 +26,13 @@ layout: none
         s.parentNode.insertBefore(g,s);
         g.onload=function(){
           window.chatwootSDK.run({
-            websiteToken: 'RSwYwQHnJhQjFacoqp73FHE7',
+            websiteToken: 'aJBFAATsmvhYSwMn5wAK7yEj',
             baseUrl: BASE_URL
           })
         }
       })(document,"script");
     </script>
+    
     
   </head>
   <body>
