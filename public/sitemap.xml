@@ -2,176 +2,160 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.example.com/project-types/adcomp-systems/</loc>
+    <loc>https://www.ammarplumber.com/project-types/adcomp-systems/</loc>
     <lastmod>2023-02-20T03:52:30-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.example.com/projects/classy-the-courtbot/</loc>
+    <loc>https://www.ammarplumber.com/projects/classy-the-courtbot/</loc>
     <lastmod>2023-02-20T03:52:30-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.example.com/</loc>
+    <loc>https://www.ammarplumber.com/</loc>
     <lastmod>2023-02-20T03:52:30-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.example.com/project-types/ongoing/</loc>
+    <loc>https://www.ammarplumber.com/project-types/ongoing/</loc>
     <lastmod>2023-02-20T03:52:30-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.example.com/project-types/</loc>
+    <loc>https://www.ammarplumber.com/project-types/</loc>
     <lastmod>2023-02-20T03:52:30-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.example.com/projects/</loc>
+    <loc>https://www.ammarplumber.com/projects/</loc>
     <lastmod>2023-02-20T03:52:30-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.example.com/categories/</loc>
+    <loc>https://www.ammarplumber.com/categories/academic/</loc>
     <lastmod>2020-12-17T21:21:46-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.example.com/tags/html/</loc>
+    <loc>https://www.ammarplumber.com/categories/</loc>
     <lastmod>2020-12-17T21:21:46-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.example.com/series/learn-markdown/</loc>
-    <lastmod>2020-12-17T21:21:46-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.example.com/tags/markdown/</loc>
-    <lastmod>2020-12-17T21:21:46-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.example.com/philosophy/markdown-syntax-2/</loc>
-    <lastmod>2020-11-19T21:21:46-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.example.com/philosophy/</loc>
-    <lastmod>2020-12-17T21:21:46-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.example.com/posts/</loc>
-    <lastmod>2020-12-17T21:21:46-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.example.com/series/</loc>
-    <lastmod>2020-12-17T21:21:46-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.example.com/tags/</loc>
-    <lastmod>2020-12-17T21:21:46-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.example.com/categories/web-development/</loc>
-    <lastmod>2020-12-17T21:21:46-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.example.com/neuro/see-also-read-next/</loc>
+    <loc>https://www.ammarplumber.com/tags/developmental-neuroscience/</loc>
     <lastmod>2020-11-17T21:21:46-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.example.com/categories/academic/</loc>
+    <loc>https://www.ammarplumber.com/neuroscience/neuro-dopamine/</loc>
     <lastmod>2020-11-17T21:21:46-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.example.com/tags/emoji/</loc>
-    <lastmod>2020-11-18T21:21:46-05:00</lastmod>
+    <loc>https://www.ammarplumber.com/tags/education/</loc>
+    <lastmod>2020-11-17T21:21:46-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.example.com/posts/emoji-support/</loc>
-    <lastmod>2020-11-18T21:21:46-05:00</lastmod>
+    <loc>https://www.ammarplumber.com/tags/neuroeducation/</loc>
+    <lastmod>2020-11-17T21:21:46-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.example.com/categories/formatting/</loc>
-    <lastmod>2020-11-18T21:21:46-05:00</lastmod>
+    <loc>https://www.ammarplumber.com/tags/neuroscience/</loc>
+    <lastmod>2020-11-17T21:21:46-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.example.com/philosophy/markdown-syntax/</loc>
+    <loc>https://www.ammarplumber.com/neuroscience/</loc>
+    <lastmod>2020-11-17T21:21:46-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.ammarplumber.com/tags/philosophy/</loc>
     <lastmod>2020-12-17T21:21:46-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.example.com/tags/neuroscience/</loc>
+    <loc>https://www.ammarplumber.com/philosophy/</loc>
+    <lastmod>2020-12-17T21:21:46-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.ammarplumber.com/posts/</loc>
+    <lastmod>2020-12-17T21:21:46-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.ammarplumber.com/neuroscience/neuroeducation/</loc>
     <lastmod>2020-11-17T21:21:46-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.example.com/neuroscience/</loc>
+    <loc>https://www.ammarplumber.com/neuroscience/undermining-effect/</loc>
     <lastmod>2020-11-17T21:21:46-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.example.com/neuro/really-long-toc/</loc>
+    <loc>https://www.ammarplumber.com/tags/scan/</loc>
     <lastmod>2020-11-17T21:21:46-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.example.com/neuro/infant-neuro/</loc>
+    <loc>https://www.ammarplumber.com/neuroscience/infant-neuro/</loc>
     <lastmod>2020-11-17T21:21:46-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.example.com/tags/katex/</loc>
+    <loc>https://www.ammarplumber.com/tags/</loc>
+    <lastmod>2020-12-17T21:21:46-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.ammarplumber.com/philosophy/philosophy-of-science/</loc>
+    <lastmod>2020-12-17T21:21:46-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.ammarplumber.com/tags/economics/</loc>
     <lastmod>2020-11-16T21:21:46-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.example.com/categories/math/</loc>
+    <loc>https://www.ammarplumber.com/neuroscience/math-typesetting/</loc>
     <lastmod>2020-11-16T21:21:46-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.example.com/neuro/math-typesetting/</loc>
+    <loc>https://www.ammarplumber.com/tags/neuroeconomics/</loc>
     <lastmod>2020-11-16T21:21:46-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.example.com/tags/notation/</loc>
-    <lastmod>2020-11-16T21:21:46-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.example.com/projects/pof-fall-2022/</loc>
+    <loc>https://www.ammarplumber.com/projects/pof-fall-2022/</loc>
     <lastmod>2019-02-20T03:52:30-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.example.com/projects/pof-spring-2023/</loc>
+    <loc>https://www.ammarplumber.com/projects/pof-spring-2023/</loc>
     <lastmod>2019-02-20T03:52:30-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.example.com/project-types/teaching/</loc>
+    <loc>https://www.ammarplumber.com/project-types/teaching/</loc>
     <lastmod>2019-02-20T03:52:30-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.example.com/contact/</loc>
+    <loc>https://www.ammarplumber.com/contact/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.example.com/about/</loc>
+    <loc>https://www.ammarplumber.com/about/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.ammarplumber.com/series/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
