@@ -7,14 +7,14 @@ disallow_search_engines = false # Disallow search engine crawling in robots.txt
 favicon = true # Enable favicon, add your favicon files to /static/ directory
 # avatar = 'speaking.webp' # Custom avatar image in /assets/
 grayscale_avatar = false # Add a grayscale filter to the avatar image
-author = 'Ammar Plumber' # Default author for <head> meta
+author = 'Ammar M. Plumber' # Default author for <head> meta
 description = "Personal blog and portfolio site of Ammar M. Plumber." # Add a global meta description to <head>
 # footer_text = "" # Customize footer text
 fallback_text = "No content available yet. Coming soon." # Fallback text for empty content
 label_drafts = true # Add a label indicator next to the title of any built drafts (dev only)
 
 # Customize newsletter text
-newsletter_header = "Validate me with your email subscription."
+newsletter_header = "Give me your email."
 newsletter_description = "I got too many homies to keep up with, so I need a list."
 newsletter_submit = "Join now"
 global_newsletter = true # Enable newsletter site-wide
