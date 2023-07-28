@@ -1,6 +1,6 @@
 ---
-title: What is a scientific realism? 
-seo_title: What is a scientific explanation? 
+title: What is scientific realism? 
+seo_title: What is scientific realism? 
 summary: Evaluate the no-miracles argument in favour of this position. How does scientific realism fare in light of the threat of underdetermination, and the pessimistic meta-induction? 
 description: Evaluate the no-miracles argument in favour of this position. How does scientific realism fare in light of the threat of underdetermination, and the pessimistic meta-induction? 
 slug: scientific-realism
