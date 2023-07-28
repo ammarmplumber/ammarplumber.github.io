@@ -1113,14 +1113,14 @@ body {
   align-items: center;
   row-gap: 20px; }
   .hero-owner .hero-avatar {
-    min-width: 400px;
-    width: 100%;
+    min-width: 350px;
+    width: 95%;
     height: auto;
     border-radius: 20px; }
     @media (min-width: 768px) {
       .hero-owner .hero-avatar {
-        width: 100%;
-        max-width: unset; } }
+        width: 95%;
+        max-width: 95%; } }
 .home-section-title, .home-section-posts-title {
   margin-bottom: 50px; }
   .home-section-title::after, .home-section-posts-title::after {

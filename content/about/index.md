@@ -1,20 +1,32 @@
 ---
 type: about
-title: Hi, my name is Ammar.
+title: Hi :)
 seo_title: About
 description: Learn more about my background and experience.
 ---
 
-You can customize the about page heading and disable social links if desired. The rest of the content can be added with markdown. Please see [Github](https://github.com/wjh18/hugo-liftoff) for a full list of features and documentation.
+{{< img src="thinking.webp" >}}
+
+&nbsp;
+
+This picture is intended to make me seem smart. I was probably thinking about something stupid. This caption was intended to make me seem humorous and humble even though I've created a website for myself.
 
 ## Who am I?
 
-Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce sem augue, tristique luctus lobortis nec, cursus eu erat. Proin dictum vel enim a vestibulum.
+I'm a young professional in Dallas. I'm Indian American, was raised Muslim, and became Catholic in 2022. I'm a pretty philosophical guy (some might say "in the clouds"), and I hope to develop as a speaker so that I can share my ideas and engage more effectively with others in pursuit of the truth.
 
 ## My Experience
 
-Integer est purus, aliquam ac enim aliquet, viverra sodales mauris. Integer neque sapien, fermentum sit amet augue in, vulputate pellentesque turpis. Quisque eget blandit turpis, in semper lectus.
+I work in management for AdComp Systems, a government technology company founded by my father and uncle in 1989. We work with over 300 cities around the world. My official title is Chief of Staff, although I do work in several aspects of the business.
 
-## Learn More
+Previously, I earned a master's degree in behavioral economics and neuroscience and a bachelor's degree in economics and philosophy, both from the University of Pennsylvania. 
 
-You can also link to [other pages]({{< ref "contact" >}}) in your markdown.
+Along the way, I've taught a Penn student seminar on "Philosophy of Finance" for the Collegium Institute. I also conducted research for the Center of Social Norms and Behavioral Dynamics and studied philosophy in England for a year.
+
+I am fairly proficient in software design and data science.
+
+## Contact Me
+
+[LinkedIn](https://www.linkedin.com/in/ammarplumber/)
+
+[Email](mailto:ammar@adcompsystems.com)

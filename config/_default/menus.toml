@@ -6,25 +6,18 @@
     weight = 1
 
 [[main]]
-    identifier = "projects"
-    name = "Projects"
-    url = "/projects/"
-    parent = "work"
-    weight = 1
-
-[[main]]
     identifier = "about"
     name = "About"
     url = "/about/"
     parent = "work"
-    weight = 2
+    weight = 1
 
 [[main]]
-    identifier = "contact"
-    name = "Contact"
-    url = "/contact/"
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects/"
     parent = "work"
-    weight = 3
+    weight = 2
 
 [[main]]
     # Top-level menu entry
@@ -53,6 +46,14 @@
     name = "Philosophy"
     url = "/philosophy/"
     # url = "/posts/philosophy/" # Remove url param from subsection/_index.md frontmatter to use full permalink
+    parent = "writing"
+    weight = 6
+
+[[main]]
+    identifier = "economics"
+    name = "Economics"
+    url = "/economics/"
+    # url = "/posts/economics/" # Remove url param from subsection/_index.md frontmatter to use full permalink
     parent = "writing"
     weight = 6
 
