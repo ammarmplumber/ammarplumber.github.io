@@ -32,11 +32,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.ammarplumber.com/economics/inequity-aversion/</loc>
-    <lastmod>2020-12-17T21:21:46-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.ammarplumber.com/philosophy/inequity-aversion/</loc>
     <lastmod>2020-12-17T21:21:46-05:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -57,13 +52,33 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://www.ammarplumber.com/economics/international-trade/</loc>
+    <lastmod>2020-12-17T21:21:46-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://www.ammarplumber.com/neuroscience/neuro-dopamine/</loc>
     <lastmod>2020-11-17T21:21:46-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://www.ammarplumber.com/tags/economics/</loc>
+    <lastmod>2020-12-17T21:21:46-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.ammarplumber.com/economics/</loc>
+    <lastmod>2020-12-17T21:21:46-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://www.ammarplumber.com/tags/education/</loc>
     <lastmod>2020-11-17T21:21:46-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.ammarplumber.com/economics/information-asymmetry/</loc>
+    <lastmod>2020-12-17T21:21:46-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -83,11 +98,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.ammarplumber.com/tags/philosophy/</loc>
-    <lastmod>2020-12-17T21:21:46-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.ammarplumber.com/philosophy/</loc>
     <lastmod>2020-12-17T21:21:46-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -132,7 +142,17 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://www.ammarplumber.com/philosophy/laws-of-nature/</loc>
+    <lastmod>2020-12-17T21:21:46-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://www.ammarplumber.com/philosophy/scientific-explanation/</loc>
+    <lastmod>2020-12-17T21:21:46-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.ammarplumber.com/philosophy/scientific-realism/</loc>
     <lastmod>2020-12-17T21:21:46-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -142,8 +162,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.ammarplumber.com/tags/economics/</loc>
-    <lastmod>2020-11-16T21:21:46-05:00</lastmod>
+    <loc>https://www.ammarplumber.com/philosophy/popperian-falsificationism/</loc>
+    <lastmod>2020-12-17T21:21:46-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.ammarplumber.com/philosophy/thomas-kuhn/</loc>
+    <lastmod>2020-12-17T21:21:46-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
