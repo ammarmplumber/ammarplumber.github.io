@@ -15,7 +15,7 @@ label_drafts = true # Add a label indicator next to the title of any built draft
 
 # Customize newsletter text
 newsletter_header = "Give me your email."
-newsletter_description = "I got too many homies to keep up with, so I need a list."
+newsletter_description = "I've got a lot of people to keep up with, so I need a list."
 newsletter_submit = "Join now"
 global_newsletter = true # Enable newsletter site-wide
 
