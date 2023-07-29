@@ -1,6 +1,6 @@
 ---
 type: about
-title: Hi :)
+title: Hello :)
 seo_title: About
 description: Learn more about my background and experience.
 ---
@@ -9,7 +9,7 @@ description: Learn more about my background and experience.
 
 &nbsp;
 
-This picture is intended to make me seem smart. I was probably thinking about something stupid. This caption was intended to make me seem humorous and humble even though I've created a website for myself.
+This picture could make me seem smart. I was probably thinking about something stupid. This caption was intended to make me seem humorous and humble even though I've created a website for myself.
 
 ## Who am I?
 
