@@ -23,6 +23,8 @@ The Philosophy of Finance fall semester reflects on good and evil in the market 
 
 ## Course Reviews
 
+>"I took a class that Ammar taught over two college semesters, and I am happy to strongly endorse him. Ammar is a clear thinker, and an even clearer speaker. He is able to take dense concepts, extract useful nuggets, and pass that information on succinctly to others. He fosters participation, and is able to get feedback from all in the room, which he seamlessly incorporates into the greater discussion. Ammar is also very approachable and friendly. If you have the chance to learn from him, take it."  —[Jack Beatty](), Wharton MBA student, US Air Force Veteran
+
 >"PoF was a space for those who were intellectually curious about the morality of finance and economics. Ammar was uniquely suited to structuring conversations that did not have a distinct black or white nature or a set trajectory."  —[Sourish Jasti](https://www.linkedin.com/in/sourishjasti/), Wharton alum, Investor at Insight Partners
 
 
