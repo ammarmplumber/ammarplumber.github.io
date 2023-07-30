@@ -57,48 +57,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.ammarplumber.com/economics/international-trade/</loc>
-    <lastmod>2020-12-17T21:21:46-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.ammarplumber.com/neuroscience/neuro-dopamine/</loc>
     <lastmod>2020-11-17T21:21:46-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.ammarplumber.com/economics/earnings-premia/</loc>
-    <lastmod>2020-12-17T21:21:46-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.ammarplumber.com/tags/economics/</loc>
-    <lastmod>2020-12-17T21:21:46-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.ammarplumber.com/economics/</loc>
-    <lastmod>2020-12-17T21:21:46-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.ammarplumber.com/tags/education/</loc>
     <lastmod>2020-11-17T21:21:46-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.ammarplumber.com/economics/healing-trauma/</loc>
-    <lastmod>2020-12-17T21:21:46-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.ammarplumber.com/economics/fishy-business/</loc>
-    <lastmod>2020-12-17T21:21:46-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.ammarplumber.com/economics/information-asymmetry/</loc>
-    <lastmod>2020-12-17T21:21:46-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -197,6 +162,11 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://www.ammarplumber.com/tags/economics/</loc>
+    <lastmod>2020-11-16T21:21:46-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://www.ammarplumber.com/neuroscience/math-typesetting/</loc>
     <lastmod>2020-11-16T21:21:46-05:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -204,6 +174,21 @@
   </url><url>
     <loc>https://www.ammarplumber.com/tags/neuroeconomics/</loc>
     <lastmod>2020-11-16T21:21:46-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.ammarplumber.com/economics/international-trade/</loc>
+    <lastmod>2019-12-17T21:21:46-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.ammarplumber.com/economics/</loc>
+    <lastmod>2019-12-17T21:21:46-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.ammarplumber.com/economics/information-asymmetry/</loc>
+    <lastmod>2019-12-17T21:21:46-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -219,6 +204,18 @@
   </url><url>
     <loc>https://www.ammarplumber.com/project-types/teaching/</loc>
     <lastmod>2019-02-20T03:52:30-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.ammarplumber.com/economics/earnings-premia/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.ammarplumber.com/economics/healing-trauma/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.ammarplumber.com/economics/fishy-business/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>

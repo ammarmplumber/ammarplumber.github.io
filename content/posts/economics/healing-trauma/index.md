@@ -7,8 +7,8 @@ slug: healing-trauma
 author: Ammar M. Plumber
 
 draft: false
-date: 2020-11-17T21:21:46-05:00
-lastmod: 2020-12-17T21:21:46-05:00
+date: 2021-6-17T21:21:46-05:00
+lastmod: 2021-6-17T21:21:46-05:00
 expiryDate: 
 publishDate: 
 

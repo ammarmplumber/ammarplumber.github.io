@@ -7,8 +7,8 @@ slug: information-asymmetry
 author: Ammar M. Plumber
 
 draft: false
-date: 2020-11-17T21:21:46-05:00
-lastmod: 2020-12-17T21:21:46-05:00
+date: 2019-11-17T21:21:46-05:00
+lastmod: 2019-12-17T21:21:46-05:00
 expiryDate: 
 publishDate: 
 
