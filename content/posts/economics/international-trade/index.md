@@ -59,10 +59,17 @@ From these various considerations, a few key conclusions can be drawn. First, be
 **Bibliography**
 
 [1] CORE (2019), Core-Econ, Unit 18. 
+
 [2] Kiringai, J. (2006), “Trade Policy and Transport Costs in Kenya”, Centre for Research in Economic Development and International Trade, University of Nottingham. 
+
 [3] O’Rourke, K. (2000), “Tariffs and Growth in the Late 19th Century”, The Economic Journal, 110. 
+
 [4] Ray, D. (1998), Development Economics, Princeton UP. 
+
 [5] Rodriguez, F. & D. Rodrik (2000), “Trade Policy and Economic Growth: a Skeptic's guide to the Cross-National Evidence”, NBER Macroeconomics Annual. 
+
 [6] Rudaheranwa, N. (2006), “Trade Policy and Transport Costs in Uganda”, Centre for Research in Economic Development and International Trade, University of Nottingham. 
+
 [7] Shaalan, M., El-Mahdy, M., Saleh, M. & M. El-Matbouli (2017), “Aquaculture in Egypt: Insights on the Current Trends and Future Perspectives for Sustainable Development”, Reviews in Fisheries Science & Aquaculture 26, no. 1, pp 99-110. 
+
 [8] World Bank (2005), “Trade Liberalization: Why so much controversy?”, Economic growth in the 1990s: learning from a decade of reform. 
