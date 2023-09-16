@@ -12,8 +12,8 @@ lastmod:
 expiryDate: 
 publishDate: 
 
-feature_image:
-feature_image_alt:
+feature_image: ctc.webp
+feature_image_alt: NCSC Court Technology Conference 2023
 
 project types: 
     - AdComp Systems
