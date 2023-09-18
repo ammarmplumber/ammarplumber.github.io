@@ -27,13 +27,13 @@ I am based in Dallas, TX (USA), where I work at a family-founded government tech
 
 ## A Bit More Personal...
 
-I really like to read and think about deep questions, and I hope to share what I learn through public speaking. While I value contemplation, I have a soft corner for the simple joys in life — cute kids, beautiful nature, and good storytelling. In my downtime, I like to dance 💃, play basketball 🏀, and be outdoors 🌳.
+I really like to read and think about deep philosophical questions, and I hope to share what I learn through public speaking. While I value contemplation, I have a soft corner for the simple joys in life — cute kids, beautiful nature, and good storytelling. In my downtime, I like to dance 💃, play basketball 🏀, and be outdoors 🌳.
 
 {{< img src="party.webp" >}}
 
 ## Faith and Spirituality 🙏📿
 
-In 2022, a personal calling from God and a growing appreciation for Christian thought led me to embrace Catholicism ✝️, after being raised Muslim and losing my belief. My day isn't complete without attending mass, praying the rosary, and fostering bonds with a close-knit group of friends who share my faith.
+In 2022, a personal calling from God and a growing appreciation for Christian thought (which took place over several years) led me to embrace Catholicism ✝️, after being raised Muslim and losing my belief. My day isn't complete without attending mass in the morning, praying the rosary, and fostering bonds with a close-knit group of friends who share my faith.
 
 {{< img src="friends.webp" >}}
 
