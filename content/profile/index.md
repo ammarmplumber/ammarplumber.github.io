@@ -26,7 +26,7 @@ I am based in Dallas, TX (USA), where I work at a family-founded government tech
 
 ## A Bit More Personal...
 
-I really like to read and think about deep philosophical questions, and I hope to share what I learn through public speaking. While I value contemplation, I have a soft corner for the simple joys in life — cute kids, beautiful nature, and good storytelling. In my downtime, I like to dance 💃, play basketball 🏀, and be outdoors 🌳.
+I really like to read and think about deep philosophical questions, and I hope to share what I learn through public speaking. While I value contemplation, I also enjoy the simple things in life — cute kids, beautiful nature, and good storytelling. In my downtime, I like to dance 💃, play basketball 🏀, and be outdoors 🌳.
 
 {{< img src="party.webp" >}}
 
