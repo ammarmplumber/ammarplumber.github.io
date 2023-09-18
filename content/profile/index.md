@@ -1,7 +1,7 @@
 ---
 type: about
 title: Learn a bit about me! 🤓
-seo_title: About
+seo_title: Learn about me
 description: Some info about me!
 ---
 
