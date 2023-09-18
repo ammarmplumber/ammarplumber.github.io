@@ -18,7 +18,6 @@ description: Some info about me!
 - **Smoking:** Non-smoker
 - **Education:** Graduate degree
 - **Occupation:** Government Technology
-- **Political View:** Conservative
 - **Children:** None
 
 I am based in Dallas, TX (USA), where I work at a family-founded government technology firm, AdComp Systems, steering the ship as the Chief of Staff. My work is dynamic, dabbling in everything from product design to marketing. My academic background is in economics, philosophy, and neuroscience. I completed my undergrad and graduate education at the University of Pennsylvania.
