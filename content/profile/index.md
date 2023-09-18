@@ -21,7 +21,7 @@ description: Some info about me!
 - **Political View:** Conservative
 - **Children:** None
 
-I am based in Dallas, TX (USA), where I work at a family-founded government technology firm, AdComp Systems, steering the ship as the Chief of Staff. My work is dynamic, dabbling in everything from product design to marketing, with an academic foundation in economics, philosophy, and neuroscience, which I studied at the University of Pennsylvania.
+I am based in Dallas, TX (USA), where I work at a family-founded government technology firm, AdComp Systems, steering the ship as the Chief of Staff. My work is dynamic, dabbling in everything from product design to marketing. My academic background is in economics, philosophy, and neuroscience. I completed my undergrad and graduate education at the University of Pennsylvania.
 
 {{< img src="academic.webp" >}}
 
