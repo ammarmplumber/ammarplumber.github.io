@@ -1,8 +1,8 @@
 ---
 title: CathGPT
 seo_title: CathGPT
-summary: Streamlining parish operations so clergy and staff can emphasize sacraments, ministry, and deepening community ties.
-description: Streamlining parish operations so clergy and staff can emphasize sacraments, ministry, and deepening community ties.
+summary: Streamlining parish operations so clergy and staff can emphasize sacraments, ministry, and community.
+description: Streamlining parish operations so clergy and staff can emphasize sacraments, ministry, and community.
 slug: cathgpt
 author: Ammar M. Plumber
 
