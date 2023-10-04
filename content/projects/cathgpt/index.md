@@ -40,5 +40,5 @@ live_url: https://www.cathgpt.app
 
 ----
 
-{{< include >}} 
+{{< cathbot >}} 
 Click [here](https://www.cathgpt.app) for a live demo, or try our the chatbot on the bottom right of this page.
