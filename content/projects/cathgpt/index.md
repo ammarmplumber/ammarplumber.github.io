@@ -6,7 +6,7 @@ description: Streamlining parish operations so clergy and staff can emphasize sa
 slug: cathgpt
 author: Ammar M. Plumber
 
-draft: false
+draft: true
 date: 2023-02-20T03:52:30-05:00
 lastmod: 
 expiryDate: 
