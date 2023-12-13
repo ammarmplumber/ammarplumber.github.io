@@ -1,6 +1,6 @@
 ---
 type: about
-title: Hello :)
+title: Hello 😊
 seo_title: About
 description: Learn more about my background and experience.
 ---
