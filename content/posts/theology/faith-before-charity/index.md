@@ -28,7 +28,7 @@ disable_comments: false
 ---
 
 > "… the theological virtues stand in a particular relation to one another, as determined both by their objective value and according to the sequence of their developing in the human person. As mother of the virtues, charity ranks hierarchically first among them. But because, as Aquinas puts it, 'no human appetite moves toward anything, either by hoping or loving, unless it be apprehended by sense or mind,' faith precedes the other two virtues in the order of their coming to exist in a person."
->
+> {{< linebreak >}} {{< linebreak >}}
 > From _Christian Faith and the Theological Life_ by Romanus Cessario
 
 Consider the love shared between a baby and its mother. The baby has to know his mother as mother/caregiver, distinguishing her from the rest of his reality, in order to love her. The mother is initially known through her effects—her scent, her milk, her voice, her embrace. Similarly, in our spiritual journey, God must be known, at least by His effects, in order to be loved. Salvation history, as described in Scripture, supports this: God reveals Himself to us so that we may love Him. Without this knowledge of God, He becomes an empty signifier. If we falsely understand God, we love not the true God but a false impression of Him. To love the God of deism is not the same as to love the Trinitarian God. Hence, as our understanding grows, so too might our love.
@@ -42,7 +42,7 @@ Also, maturation increases one's ability to love, if love is seen as a volitiona
 Our knowledge of God is probably similar to how weakly a baby knows its mother. 
 
 > “There is a story that St. Augustine was walking on the beach contemplating the mystery of the Trinity. Then he saw a boy in front of him who had dug a hole in the sand and was going out to the sea again and again and bringing some water to pour into the hole. St. Augustine asked him, ‘What are you doing?’ ‘I’m going to pour the entire ocean into this hole.’ ‘That is impossible, the whole ocean will not fit in the hole you have made’ said St. Augustine. The boy replied, ‘And you cannot fit the Trinity in your tiny little brain.’ The story concludes by saying that the boy vanished because St. Augustine had been talking to an angel.“
->
+> {{< linebreak >}} {{< linebreak >}}
 > From _The Golden Legend_ by Jacobus de Voragine.
 
 I think a good ambition would be to try to fill our minds with as much knowledge of God as they can hold, with the care to distinguish between what is knowable through revelation and reason and what is mystery. 
