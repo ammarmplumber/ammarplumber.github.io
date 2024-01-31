@@ -2,17 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.ammarplumber.com/categories/</loc>
+    <lastmod>2024-01-30T21:21:46-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.ammarplumber.com/theology/philosophy-of-science/</loc>
+    <lastmod>2024-01-30T21:21:46-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.ammarplumber.com/</loc>
+    <lastmod>2024-01-30T21:21:46-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.ammarplumber.com/categories/personal/</loc>
+    <lastmod>2024-01-30T21:21:46-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.ammarplumber.com/posts/</loc>
+    <lastmod>2024-01-30T21:21:46-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.ammarplumber.com/tags/</loc>
+    <lastmod>2024-01-30T21:21:46-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.ammarplumber.com/tags/theology/</loc>
+    <lastmod>2024-01-30T21:21:46-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.ammarplumber.com/theology/</loc>
+    <lastmod>2024-01-30T21:21:46-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://www.ammarplumber.com/project-types/adcomp-systems/</loc>
     <lastmod>2023-02-20T03:52:30-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.ammarplumber.com/projects/classy-the-courtbot/</loc>
-    <lastmod>2023-02-20T03:52:30-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.ammarplumber.com/</loc>
     <lastmod>2023-02-20T03:52:30-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -42,11 +77,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.ammarplumber.com/categories/</loc>
-    <lastmod>2021-06-17T21:21:46-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.ammarplumber.com/tags/economics/</loc>
     <lastmod>2021-06-17T21:21:46-05:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -58,16 +88,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.ammarplumber.com/economics/healing-trauma/</loc>
-    <lastmod>2021-06-17T21:21:46-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.ammarplumber.com/posts/</loc>
-    <lastmod>2021-06-17T21:21:46-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.ammarplumber.com/tags/</loc>
     <lastmod>2021-06-17T21:21:46-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
