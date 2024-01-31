@@ -1,8 +1,8 @@
 ---
 title: Faith Precedes Charity
 seo_title: Faith Precedes Charity
-summary: Why knowledge of God is essential to loving Him.
-description: Why knowledge of God is essential to loving Him.
+summary: Why knowledge of God is essential to loving Him. Written while returning from Philly, inspired by a discussion with homies from St. Patrick's Church.
+description: Why knowledge of God is essential to loving Him. Written while returning from Philly, inspired by a discussion with homies from St. Patrick's Church.
 slug: philosophy-of-science
 author: Ammar M. Plumber
 
