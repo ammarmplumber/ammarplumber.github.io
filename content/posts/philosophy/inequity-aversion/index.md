@@ -552,33 +552,33 @@ deviating from their "calibrated" distributions. The calibration they
 settle upon in their *Quarterly Journal of Economics* paper (1999) is as
 follows:
 
-| \\(\\alpha\\) | % |   |   |   |
-|---|---|---|---|---|
-| 0.0 | 30 |   |   |   |
-| 0.5 | 30 |   |   |   |
-| 1.0 | 30 |   |   |   |
-| 4.0 | 10 |   |   |   |
+| \\(\\alpha\\) | % |
+|---|---|
+| 0.0 | 30 |
+| 0.5 | 30 |
+| 1.0 | 30 |
+| 4.0 | 10 |
 
 marginal distribution
 
 &nbsp;
 
-| \\(\\beta\\) | % |   |   |   |
-|---|---|---|---|---|
-| 0.0 | 30 |   |   |   |
-| 0.25 | 30 |   |   |   |
-| 0.6 | 40 |   |   |   |
+| \\(\\beta\\) | % |
+|---|---|
+| 0.0 | 30 |
+| 0.25 | 30 |
+| 0.6 | 40 |
 
 marginal distribution
 
 &nbsp;
 
-| \\((\\alpha, \\beta)\\) | % |   |   |   |
-|---|---|---|---|---|
-| (0.0,0.0) | 30 |   |   |   |
-| (0.5,0.25) | 30 |   |   |   |
-| (1.0,0.6) | 30 |   |   |   |
-| (4.0,0.6) | 10 |   |   |   |
+| \\((\\alpha, \\beta)\\) | % |
+|---|---|
+| (0.0,0.0) | 30 |
+| (0.5,0.25) | 30 |
+| (1.0,0.6) | 30 |
+| (4.0,0.6) | 10 |
 
 joint distribution
 
