@@ -38,7 +38,7 @@ I argue that Bayesian confirmation theory is valuable from a practical standpoin
 
 Bayes’ theorem can be stated as follows: 
 
-\[ P(h | e) = \frac{P(h) \cdot P(e | h)}{P(e)} \]
+$$P(ℎ | 𝑒) = \frac{P(ℎ) \cdot P(𝑒 | ℎ)}{P(𝑒)}$$
 
 In short, the probability of the hypothesis *h* being true given observation of evidence *e* is equal to the antecedent probability of *h* multiplied by the probability of observing *e* given *h* divided by the unconditional probability of *e*.
 
