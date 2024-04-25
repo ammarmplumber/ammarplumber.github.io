@@ -26,10 +26,10 @@ Join us on Sunday evenings for a thoughtful exploration into the moral life, foc
 
 ## Course Overview
 
-- **Why Philosophy?** Understand the role of philosophical inquiry in deciphering the complexities of human existence and morality.
-- **What is a Person?** Examine perspectives on personhood, exploring the inherent dignity and infinite value of human life.
-- **Moral Life:** Engage with the concepts of virtue and habit that shape our actions and define our character.
-- **Charity:** Discuss the central role of love in ethical living and social interaction.
+- **Why philosophy?** Human beings naturally seek an answer to this question: what is it all about?
+- **What kind of creature is a human being?** A human being is a dependent rational animal.
+- **What does it mean to live morally?:** Engage with the concepts of virtue and habit that shape our actions and define our character.
+- **What is love?:** Discuss the central role of *charity* in ethical living and social interaction. Understand why love requires self-mastery.
 - **Theology of the Body:** Learn how Pope John Paul II's thought on the human body as a gift and a vocation for self-giving love is rooted in the philosophical anthropology of Thomas Aquinas.
 
 {{< iframe src="https://docs.google.com/forms/d/e/1FAIpQLSePo4_2lIyq12n6kR3DLdHdm_fjKHLKXwj-YV53LcVnZkvIaQ/viewform?embedded=true" >}}
