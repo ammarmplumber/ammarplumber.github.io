@@ -26,10 +26,10 @@ Join us on Sunday evenings for a thoughtful exploration into the moral life, foc
 
 ## Course Overview
 
-- **Why philosophy?** Human beings naturally seek an answer to this question: what is it all about?
-- **What kind of creature is a human being?** A human being is a dependent rational animal.
-- **What does it mean to live morally?:** Engage with the concepts of virtue and habit that shape our actions and define our character.
-- **What is love?:** Discuss the central role of *charity* in ethical living and social interaction. Understand why love requires self-mastery.
-- **Theology of the Body:** Learn how Pope John Paul II's thought on the human body as a gift and a vocation for self-giving love is rooted in the philosophical anthropology of Thomas Aquinas.
+- **Why philosophy?** Human beings naturally seek an answer to this question: what is it all about? Source: *In Defense of Philosophy* by Josef Pieper
+- **What kind of creature is a human being?** A human being is a dependent rational animal. Source: *Dependent Rational Animals* by Alasdair MacIntyre.
+- **What does it mean to live morally?:** Engage with the concepts of virtue and habit that shape our actions and define our character. Source: *Ethica Thomistica* by Ralph MacInerny.
+- **What is love?:** Discuss the central role of *charity* in ethical living and social interaction. Understand why love requires self-mastery. Sources: *Love and Responsibility* by Karol Wojtyla, *Love and Virtue* by Michael Sherwin
+- **Theology of the Body:** Learn how Pope John Paul II's thought on the human body as a gift and a vocation for self-giving love is rooted in the philosophical anthropology of Thomas Aquinas. Sources: *Man and Woman He Created Them* by JPII, *Aquinas and the Theology of the Body* by Thomas Petri, *Covenanted Happiness* by Cormac Burke.
 
 {{< iframe src="https://docs.google.com/forms/d/e/1FAIpQLSePo4_2lIyq12n6kR3DLdHdm_fjKHLKXwj-YV53LcVnZkvIaQ/viewform?embedded=true" >}}
