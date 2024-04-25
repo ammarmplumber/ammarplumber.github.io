@@ -1,6 +1,6 @@
 ---
-title: "Human Devotion and the Moral Life: Thomistic Roots of Theology of the Body"
-seo_title: "Human Devotion and the Moral Life: Thomistic Roots of Theology of the Body"
+title: "Human Devotion and the Moral Life: Thomistic Roots of JPII's Theology of the Body"
+seo_title: "Human Devotion and the Moral Life: Thomistic Roots of JPII's Theology of the Body"
 summary: Dive into the ethical dimensions of human life through a Thomistic lens in this free seminar series hosted by the Collegium Institute.
 description: This seminar series provides an in-depth exploration of moral philosophy and its application in understanding the dignity and vocation of the human person.
 slug: tob
@@ -19,9 +19,8 @@ project types:
     - Teaching
 ---
 
-# Human Devotion and the Moral Life
-
-> “Some people will cross mountain and sea for money. So should you labor for wisdom.” – St. Thomas Aquinas
+> Some people will cross mountain and sea for money. So should you labor for wisdom. 
+> – St. Thomas Aquinas
 
 Join us on Sunday evenings for a thoughtful exploration into the moral life, focusing on the ethical teachings derived from philosophical tradition and their contemporary implications. This seminar is accessible globally via Zoom and offered through the Collegium Institute.
 
@@ -31,5 +30,6 @@ Join us on Sunday evenings for a thoughtful exploration into the moral life, foc
 - **What is a Person?** Examine perspectives on personhood, exploring the inherent dignity and infinite value of human life.
 - **Moral Life:** Engage with the concepts of virtue and habit that shape our actions and define our character.
 - **Charity:** Discuss the central role of love in ethical living and social interaction.
-- **Theological Insights:** Unpack modern theological interpretations that expand on traditional philosophical teachings.
+- **Theology of the Body:** Learn how Pope John Paul II's thought on the human body as a gift and a vocation for self-giving love is rooted in the philosophical anthropology of Thomas Aquinas.
 
+{{< iframe src="https://docs.google.com/forms/d/e/1FAIpQLSePo4_2lIyq12n6kR3DLdHdm_fjKHLKXwj-YV53LcVnZkvIaQ/viewform?embedded=true" >}}
