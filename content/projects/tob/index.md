@@ -1,9 +1,9 @@
 ---
-title: Human Devotion and the Moral Life: Thomistic Roots of Theology of the Body
-seo_title: Human Devotion and the Moral Life: Thomistic Roots of Theology of the Body
+title: "Human Devotion and the Moral Life: Thomistic Roots of Theology of the Body"
+seo_title: "Human Devotion and the Moral Life: Thomistic Roots of Theology of the Body"
 summary: Dive into the ethical dimensions of human life through a Thomistic lens in this free seminar series hosted by the Collegium Institute.
 description: This seminar series provides an in-depth exploration of moral philosophy and its application in understanding the dignity and vocation of the human person.
-slug: thomistic-ethics-theology-body
+slug: tob
 author: Ammar M. Plumber
 
 draft: false

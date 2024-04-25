@@ -12,8 +12,8 @@ lastmod:
 expiryDate: 
 publishDate: 
 
-feature_image: 
-feature_image_alt:
+feature_image: logo-grey.webp
+feature_image_alt: OptimalWork
 
 project types: 
     - AdComp Systems
