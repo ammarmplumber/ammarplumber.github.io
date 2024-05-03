@@ -19,6 +19,8 @@ project types:
     - Teaching
 ---
 
+[![image](ci.png)](https://www.collegiuminstitute.org)
+
 > Some people will cross mountain and sea for money. So should you labor for wisdom. {{< linebreak >}} {{< linebreak >}} –St. Thomas Aquinas
 
 Join us on Sunday evenings for a thoughtful exploration into the moral life, focusing on the ethical teachings derived from philosophical tradition and their contemporary implications. This seminar is accessible globally via Zoom and supported by the [Collegium Institute](https://collegiuminstitute.org).
