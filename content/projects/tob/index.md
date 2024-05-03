@@ -23,7 +23,7 @@ project types:
 
 Join us on Sunday evenings for a thoughtful exploration into the moral life, focusing on the ethical teachings derived from philosophical tradition and their contemporary implications. This seminar is accessible globally via Zoom and supported by the [Collegium Institute](https://collegiuminstitute.org).
 
-[![image](ci.png)](https://www.collegiuminstitute.org)
+[![image](ci.webp)](https://www.collegiuminstitute.org)
 
 ## Course Overview
 
