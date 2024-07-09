@@ -13,7 +13,7 @@
     </div>
     <div class="hero-owner">
       {{ $avatar := .Site.Params.avatar }}
-      {{ $default_image := "images/speaking.JPG" }}
+      {{ $default_image := "images/speaking.webp" }}
       {{ $image := "" }}
       {{ with $avatar }}
         {{ $image = resources.Get $avatar }}
@@ -24,7 +24,7 @@
         {{ $image = $image | images.Filter (images.Grayscale)  }}
       {{ end }}
       <img class="hero-avatar"
-            src="/images/speaking.JPG"
+            src="{{ $image.RelPermalink }}"
             width="500" height="500"
             alt="Headshot or avatar belonging to the website owner"/>
       {{ if eq .Site.Params.home_hero_socials true }}
