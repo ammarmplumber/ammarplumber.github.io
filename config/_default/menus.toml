@@ -66,14 +66,6 @@
     weight = 8
 
 [[main]]
-    identifier = "theology"
-    name = "Theology"
-    url = "/theology/"
-    # url = "/posts/theology/" # Remove url param from subsection/_index.md frontmatter to use full permalink
-    parent = "writing"
-    weight = 9
-
-[[main]]
     # Top-level menu entry
     identifier = "explore"
     name = "Explore"
