@@ -1,0 +1,1631 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  
+
+
+
+
+
+
+  
+  
+  
+    
+    
+  
+
+
+
+
+
+  
+
+
+
+  
+  
+
+<link rel="stylesheet" href="https://www.ammarplumber.com/main.min.css" />
+
+
+  
+<meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  
+
+<title>Tweets about Facebook and TikTok - a classification model</title>
+
+
+<meta name="author" content="Ammar M. Plumber">
+
+<meta name="description" content="Homework assignment for BDS 516 - Data Science and Quantitative Modeling, a graduate course taught by Alex Shpenev at Penn.">
+<link rel="canonical" href="https://www.ammarplumber.com/data-science/fb-tiktok-classification/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Tweets about Facebook and TikTok - a classification model">
+<meta property="og:description" content="Homework assignment for BDS 516 - Data Science and Quantitative Modeling, a graduate course taught by Alex Shpenev at Penn.">
+<meta property="og:url" content="https://www.ammarplumber.com/data-science/fb-tiktok-classification/">
+<meta property="article:published_time" content="2021-04-25T21:21:46-05:00">
+  <meta property="article:modified_time" content="2021-04-25T21:21:46-05:00">
+  
+
+
+  <meta name="og:image" content="https://www.ammarplumber.com/speaking.webp"/>
+
+
+
+
+
+
+  <meta name="twitter:site" content="johndoestwitter">
+
+
+  <meta name="twitter:creator" content="johndoestwitter">
+
+<meta name="twitter:title" content="Tweets about Facebook and TikTok - a classification model">
+<meta name="twitter:description" content="Homework assignment for BDS 516 - Data Science and Quantitative Modeling, a graduate course taught by Alex Shpenev at Penn.">
+
+
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://www.ammarplumber.com/speaking.webp"/>
+
+
+
+
+
+  
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://www.ammarplumber.com/#/schema/person/1",
+      "name": "John Doe",
+      "url": "https://www.ammarplumber.com/",
+      "image": {
+        "@type": "ImageObject",
+        "@id": "https://www.ammarplumber.com/#/schema/image/1",
+        "url": "https://www.ammarplumber.com/images/speaking.webp",
+        "width": 453 ,
+        "height": 455 ,
+        "caption": "John Doe"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.ammarplumber.com/#/schema/website/1",
+      "url": "https://www.ammarplumber.com/",
+      "name": "Ammar M. Plumber",
+      "description": "Personal blog and portfolio site of Ammar M. Plumber.",
+      "publisher": {
+        "@id": "https://www.ammarplumber.com/#/schema/person/1"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.ammarplumber.com/data-science/fb-tiktok-classification/",
+      "url": "https://www.ammarplumber.com/data-science/fb-tiktok-classification/",
+      "name": "Tweets about Facebook and TikTok - a classification model",
+      "description": "Homework assignment for BDS 516 - Data Science and Quantitative Modeling, a graduate course taught by Alex Shpenev at Penn.",
+      "isPartOf": {
+        "@id": "https://www.ammarplumber.com/#/schema/website/1"
+      },
+      "about": {
+        "@id": "https://www.ammarplumber.com/#/schema/person/1"
+      },
+      "datePublished": "2021-04-25T21:21:46-05:00",
+      "dateModified": "2021-04-25T21:21:46-05:00",
+      "breadcrumb": {
+        "@id": "https://www.ammarplumber.com/data-science/fb-tiktok-classification/#/schema/breadcrumb/1"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://www.ammarplumber.com/data-science/fb-tiktok-classification/#/schema/image/2"
+      },
+      "inLanguage": "en-US",
+      "potentialAction": [{
+        "@type": "ReadAction", "target": ["https://www.ammarplumber.com/data-science/fb-tiktok-classification/"]
+      }]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.ammarplumber.com/data-science/fb-tiktok-classification/#/schema/breadcrumb/1",
+      "name": "Breadcrumbs",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position":  1 ,
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://www.ammarplumber.com/",
+          "url": "https://www.ammarplumber.com/",
+          "name": "Home"
+          }
+        },{
+        "@type": "ListItem",
+        "position":  2 ,
+        "item": {
+          "@type": "WebPage",
+          "@id": "https://www.ammarplumber.com/data-science/",
+          "url": "https://www.ammarplumber.com/data-science/",
+          "name": "Data Science"
+          }
+        },{
+        "@type": "ListItem",
+        "position":  3 ,
+        "item": {
+          "@id": "https://www.ammarplumber.com/data-science/fb-tiktok-classification/"
+          }
+        }]
+    },
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "@id": "https://www.ammarplumber.com/#/schema/article/1",
+          "headline": "Tweets about Facebook and TikTok - a classification model",
+          "description": "Homework assignment for BDS 516 - Data Science and Quantitative Modeling, a graduate course taught by Alex Shpenev at Penn.",
+          "isPartOf": {
+            "@id": "https://www.ammarplumber.com/data-science/fb-tiktok-classification/"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://www.ammarplumber.com/data-science/fb-tiktok-classification/"
+          },
+          "datePublished": "2021-04-25T21:21:46-05:00",
+          "dateModified": "2021-04-25T21:21:46-05:00",
+          "author": {
+            "@id": "https://www.ammarplumber.com/#/schema/person/1"
+          },          
+          "publisher": {
+            "@id": "https://www.ammarplumber.com/#/schema/person/1"
+          },
+          "image": {
+            "@id": "https://www.ammarplumber.com/data-science/fb-tiktok-classification/#/schema/image/2"
+          }
+        }
+      ]
+    },{
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ImageObject",
+          "@id": "https://www.ammarplumber.com/data-science/fb-tiktok-classification/#/schema/image/2",
+          "url": "https://www.ammarplumber.com/speaking.webp",
+          "contentUrl": "https://www.ammarplumber.com/speaking.webp",
+          "caption": "Tweets about Facebook and TikTok - a classification model"
+        }
+      ]
+    }
+  ]
+}
+</script>
+  
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+  
+
+</head><body>
+    <header class="container">
+  <nav class="main-nav" id="js-navbar">
+    <a class="logo" href="https://www.ammarplumber.com/">Ammar M. Plumber</a>
+    <ul class="menu" id="js-menu">
+      
+      
+      
+      <li class="menu-item">
+        <span class="menu-link">Work<span class="drop-icon">▾</span></span>
+        <ul class="sub-menu">
+          
+            <li class="menu-item">
+              <a href="/about/" class="menu-link">About</a>                  
+            </li>
+          
+            <li class="menu-item">
+              <a href="/projects/" class="menu-link">Projects</a>                  
+            </li>
+          
+        </ul>
+      </li>
+      
+      
+      
+      <li class="menu-item">
+        <span class="menu-link">Writing<span class="drop-icon">▾</span></span>
+        <ul class="sub-menu">
+          
+            <li class="menu-item">
+              <a href="/posts/" class="menu-link">All Posts</a>                  
+            </li>
+          
+            <li class="menu-item">
+              <a href="/data-science/" class="menu-link">Data Science</a>                  
+            </li>
+          
+            <li class="menu-item">
+              <a href="/neuroscience/" class="menu-link">Neuroscience</a>                  
+            </li>
+          
+            <li class="menu-item">
+              <a href="/philosophy/" class="menu-link">Philosophy</a>                  
+            </li>
+          
+            <li class="menu-item">
+              <a href="/economics/" class="menu-link">Economics</a>                  
+            </li>
+          
+            <li class="menu-item">
+              <a href="/theology/" class="menu-link">Theology</a>                  
+            </li>
+          
+        </ul>
+      </li>
+      
+      
+      
+      <li class="menu-item">
+        <span class="menu-link">Explore<span class="drop-icon">▾</span></span>
+        <ul class="sub-menu">
+          
+            <li class="menu-item">
+              <a href="/categories/" class="menu-link">Categories</a>                  
+            </li>
+          
+            <li class="menu-item">
+              <a href="/tags/" class="menu-link">Tags</a>                  
+            </li>
+          
+            <li class="menu-item">
+              <a href="/series/" class="menu-link">Series</a>                  
+            </li>
+          
+            <li class="menu-item">
+              <a href="/project-types/" class="menu-link">Project Types</a>                  
+            </li>
+          
+        </ul>
+      </li>
+      
+      
+      <li class="menu-item--align">
+        <div class="switch">
+          <input class="switch-input" type="checkbox" id="themeSwitch">
+          <label aria-hidden="true" class="switch-label" for="themeSwitch">On</label>
+          <div aria-hidden="true" class="switch-marker"></div>
+        </div>
+      </li>
+    </ul>
+    <span class="nav-toggle" id="js-navbar-toggle">
+      <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="30" height="30" fill="var(--color-contrast-high)"><rect y="11" width="24" height="2" rx="1"/><rect y="4" width="24" height="2" rx="1"/><rect y="18" width="24" height="2" rx="1"/></svg>
+    </span>
+  </nav>
+</header><main class="section">
+<div class="container">
+  <section class="page-header">
+    <h1 class="page-header-title">Tweets about Facebook and TikTok - a classification model</h1>
+    <div class="post-list-meta">
+      <div class="post-list-dates">Apr 25, 2021&nbsp;&middot;&nbsp;21 min.</div>
+      
+      <div class="post-list-categories">
+        
+          <a href="https://www.ammarplumber.com/categories/academic/">Academic</a>
+        
+      </div>
+      
+      
+    </div>
+    <p class="page-header-desc">Homework assignment for BDS 516 - Data Science and Quantitative Modeling, a graduate course taught by Alex Shpenev at Penn.
+    </p>
+    <div class="single-terms">
+      
+      
+      <a class="term" href="https://www.ammarplumber.com/tags/data-science/">Data Science</a></li>
+      
+      
+    </div>
+  </section>
+</div>
+<div class="single-container-post">
+  
+  <div class="single-post-contents">
+    
+      
+
+  <aside class="toc">
+    <div id="js-toc-toggle">
+      <h2 class="toc-header">Table of Contents</h2>
+      <span class="toc-drop-icon">▾</span>
+    </div>
+    <div id="js-toc-contents" class="toc-contents"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#i-introduction">I. Introduction</a></li>
+    <li><a href="#ii-methodology">II. Methodology</a></li>
+    <li><a href="#iii-setup-and-preliminary-analysis">III. Setup and Preliminary Analysis</a></li>
+    <li><a href="#iv-sentiment-analysis">IV. Sentiment Analysis</a></li>
+    <li><a href="#v-training-predictive-models">V. Training Predictive Models</a></li>
+    <li><a href="#vi-results-and-discussion">VI. Results and Discussion</a>
+      <ul>
+        <li><a href="#training-set-performance">Training Set Performance</a></li>
+        <li><a href="#test-set-performance">Test Set Performance</a></li>
+      </ul>
+    </li>
+    <li><a href="#vii-conclusion">VII. Conclusion</a></li>
+  </ul>
+</nav></div>
+  </aside>
+
+    
+    <div class="single-post-main">
+    <div class="single-feature-img">
+
+
+
+  
+
+</div>
+    <article class="markdown">
+        <h2 id="i-introduction">I. Introduction<a href="#i-introduction">
+    <svg role="img" aria-labelledby="i-introduction-IconTitle" fill="var(--color-primary)" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+      <title id="i-introduction-IconTitle">Link to this heading</title>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg>
+  </a>
+</h2><p>We will be examining the difference in tweet communications between TikTok and Facebook. These are two popular social media platforms but with very different target audiences. Thus, the two brands may differ in their communication styles and language. We set out to identify the particular ways in which they differ and to build a model that can attribute each tweet to the correct user.</p>
+<h2 id="ii-methodology">II. Methodology<a href="#ii-methodology">
+    <svg role="img" aria-labelledby="ii-methodology-IconTitle" fill="var(--color-primary)" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+      <title id="ii-methodology-IconTitle">Link to this heading</title>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg>
+  </a>
+</h2><p>First, after getting tweets using the Twitter API and R package rtweet, we use basic tools of data exploration to transform, visualize, and examine different features of the datasets, such as source, time, length, and particular contents (e.g., picture/links) of the tweets. We produce bar charts to visualize the most popular words used by each twitter account, as well as the most popular sentiments associated with tweets that each account produces. A word cloud also helps paint a clearer picture of each company’s most commonly used words.</p>
+<p>Second, we transform the datasets into tidytext format for sentiment analysis. The two lexicons that we use are NRC and AFINN.</p>
+<p>Finally, we train four different models to predict if a tweet was posted by either Facebook or TikTok. The inputs of these models are as follows:</p>
+<ul>
+<li>
+<p>length of the tweet</p>
+</li>
+<li>
+<p>the number of times each of the twenty most common words from each account appear</p>
+</li>
+<li>
+<p>presence of pictures</p>
+</li>
+<li>
+<p>sentiment words, which reflect anger, anticipation, disgust, negative, postive, trust, joy, surprise, fear and sadness</p>
+</li>
+<li>
+<p>positive/negative valence, estimated by averaging AFINN scores over each tweet.</p>
+</li>
+</ul>
+<p>The first model is a Simple Decision Tree, the second model is a Bagging Model, the third model is a Random Forest and the fourth model is a Gradient Boosting Model.</p>
+<p>We report the residual sum of squares on the training and test sets to determine which models have the smallest differences between the predicted tweeter and actual tweeter. We also show confusion matrices to determine the predictive efficacy of the four models.</p>
+<h2 id="iii-setup-and-preliminary-analysis">III. Setup and Preliminary Analysis<a href="#iii-setup-and-preliminary-analysis">
+    <svg role="img" aria-labelledby="iii-setup-and-preliminary-analysis-IconTitle" fill="var(--color-primary)" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+      <title id="iii-setup-and-preliminary-analysis-IconTitle">Link to this heading</title>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg>
+  </a>
+</h2><p>First, we import all non-base packages to be used in this analysis.</p>
+
+
+  <span class="code-language">r</span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#a6e22e">library</span>(rtweet)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span><span style="color:#a6e22e">library</span>(tidyverse)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span><span style="color:#a6e22e">library</span>(lubridate)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span><span style="color:#a6e22e">library</span>(scales)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span><span style="color:#a6e22e">library</span>(tidytext)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span><span style="color:#a6e22e">library</span>(wordcloud)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span><span style="color:#a6e22e">library</span>(textdata)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span><span style="color:#a6e22e">library</span>(caret)       <span style="color:#75715e"># for general model fitting</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span><span style="color:#a6e22e">library</span>(rpart)       <span style="color:#75715e"># for fitting decision trees</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span><span style="color:#a6e22e">library</span>(rpart.plot)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span><span style="color:#a6e22e">library</span>(ipred)       <span style="color:#75715e"># for fitting bagged decision trees</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span><span style="color:#a6e22e">library</span>(ranger)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span><span style="color:#a6e22e">library</span>(gbm)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span><span style="color:#a6e22e">library</span>(vip)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span><span><span style="color:#a6e22e">library</span>(kableExtra)</span></span></code></pre></div>
+<p>Now, we import the tweets that we pulled using the get_timeline() function and saved to a CSV file. There are ~3200 tweets from each user in our dataset.</p>
+
+
+  <span class="code-language">r</span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#75715e"># Run these two lines to get the tweets </span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span><span style="color:#75715e"># and then save them as a csv for future use</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span><span style="color:#75715e"># tiktok &lt;- get_timeline(&#34;tiktok_us&#34;, n=3200)</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span><span style="color:#75715e"># tiktok %&gt;% write_as_csv(&#39;tiktok.csv&#39;)</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span><span style="color:#75715e"># </span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span><span style="color:#75715e"># facebook &lt;- get_timeline(&#34;Facebook&#34;, n=3200)</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span><span style="color:#75715e"># facebook %&gt;% write_as_csv(&#34;facebook.csv&#34;)</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>tiktok <span style="color:#f92672">&lt;-</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>  <span style="color:#a6e22e">read_csv</span>(<span style="color:#e6db74">&#39;tiktok.csv&#39;</span>) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>  <span style="color:#a6e22e">select</span>(status_id, source, text, created_at) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>  <span style="color:#a6e22e">as.data.frame</span>()
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span>facebook <span style="color:#f92672">&lt;-</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span>  <span style="color:#a6e22e">read_csv</span>(<span style="color:#e6db74">&#39;facebook.csv&#39;</span>) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span><span>  <span style="color:#a6e22e">select</span>(status_id, source, text, created_at)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18</span><span>nrc <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read_rds</span>(<span style="color:#e6db74">&#34;nrc.rds&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20</span><span>facebook <span style="color:#f92672">%&gt;%</span> <span style="color:#a6e22e">head</span>()</span></span></code></pre></div>
+
+
+  <pre><code>## # A tibble: 6 x 4
+##   status_id      source    text                              created_at         
+##   &lt;chr&gt;          &lt;chr&gt;     &lt;chr&gt;                             &lt;dttm&gt;             
+## 1 x138202008034~ Twitter ~ &#34;Ramadan Mubarak &lt;U&#43;0001F319&gt;\n ~ 2021-04-13 17:17:18
+## 2 x138173442901~ Khoros CX &#34;@MeenalK1 Hi Meenal. Do you hav~ 2021-04-12 22:22:13
+## 3 x138173338263~ Khoros CX &#34;@Afrojalipro Thanks for updatin~ 2021-04-12 22:18:04
+## 4 x138173266838~ Khoros CX &#34;@CallandManning Hi Calland. If ~ 2021-04-12 22:15:14
+## 5 x138171137687~ Khoros CX &#34;@BHARTINANDAN4 Hello! Please vi~ 2021-04-12 20:50:37
+## 6 x138171054847~ Khoros CX &#34;@weathermatt22 Hi Matt. Please ~ 2021-04-12 20:47:20</code></pre>
+<p>Now, for each user, we produce a line chart showing the percent of all tweets from each source by hour.</p>
+
+
+  <span class="code-language">r</span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>facebook <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>  <span style="color:#a6e22e">count</span>(source, hour <span style="color:#f92672">=</span> <span style="color:#a6e22e">hour</span>(<span style="color:#a6e22e">with_tz</span>(created_at, <span style="color:#e6db74">&#34;EST&#34;</span>))) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>  <span style="color:#a6e22e">mutate</span>(percent <span style="color:#f92672">=</span> n<span style="color:#f92672">/</span><span style="color:#a6e22e">sum</span>(n)) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>  <span style="color:#a6e22e">ggplot</span>(<span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> hour, y <span style="color:#f92672">=</span> percent, color <span style="color:#f92672">=</span> source)) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>  <span style="color:#a6e22e">labs</span>(x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hour of day (EST)&#34;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;% of tweets&#34;</span>, color <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>) <span style="color:#f92672">+</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>  <span style="color:#a6e22e">scale_y_continuous</span>(labels <span style="color:#f92672">=</span> <span style="color:#a6e22e">percent_format</span>()) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>  <span style="color:#a6e22e">geom_line</span>() <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span>  <span style="color:#a6e22e">ggtitle</span>(<span style="color:#e6db74">&#39;Facebook Source Breakdown by Hour&#39;</span>)</span></span></code></pre></div>
+<p><img src="https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-4-1.png"
+	alt="image" 
+	class="single-post-image" 
+	loading="lazy"
+	decoding="async"
+	></p>
+
+
+  <span class="code-language">r</span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>tiktok <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>  <span style="color:#a6e22e">count</span>(source, hour <span style="color:#f92672">=</span> <span style="color:#a6e22e">hour</span>(<span style="color:#a6e22e">with_tz</span>(created_at, <span style="color:#e6db74">&#34;EST&#34;</span>))) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>  <span style="color:#a6e22e">mutate</span>(percent <span style="color:#f92672">=</span> n<span style="color:#f92672">/</span><span style="color:#a6e22e">sum</span>(n)) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>  <span style="color:#a6e22e">ggplot</span>(<span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> hour, y <span style="color:#f92672">=</span> percent, color <span style="color:#f92672">=</span> source)) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>  <span style="color:#a6e22e">labs</span>(x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hour of day (EST)&#34;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;% of tweets&#34;</span>, color <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>) <span style="color:#f92672">+</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>  <span style="color:#a6e22e">scale_y_continuous</span>(labels <span style="color:#f92672">=</span> <span style="color:#a6e22e">percent_format</span>()) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>  <span style="color:#a6e22e">geom_line</span>() <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span>  <span style="color:#a6e22e">ggtitle</span>(<span style="color:#e6db74">&#39;Tiktok Source Breakdown by Hour&#39;</span>)</span></span></code></pre></div>
+<p><img src="https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-4-2.png"
+	alt="image" 
+	class="single-post-image" 
+	loading="lazy"
+	decoding="async"
+	></p>
+<p>We see that the vast majority of Facebook&rsquo;s tweets are put out using Khoros Publishing between the hours of 10 AM and 8 PM. TikTok publishes most of its tweets through the Twitter Web App and Fan Experiences Platform&mdash;usually between 10 AM and 8 PM, like Facebook.</p>
+<p>We want to see if both users&rsquo; tweets tend to differ in length, so we create a histogram for each user.</p>
+
+
+  <span class="code-language">r</span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span>fb_wordcounts <span style="color:#f92672">&lt;-</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>  facebook <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>  <span style="color:#a6e22e">mutate</span>(tweetLength <span style="color:#f92672">=</span> <span style="color:#a6e22e">str_length</span>(text)) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>  <span style="color:#a6e22e">filter</span>(tweetLength <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">500</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>tiktok_wordcounts <span style="color:#f92672">&lt;-</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>  tiktok <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>  <span style="color:#a6e22e">mutate</span>(tweetLength <span style="color:#f92672">=</span> <span style="color:#a6e22e">str_length</span>(text)) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>  <span style="color:#a6e22e">filter</span>(tweetLength <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">500</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span><span style="color:#a6e22e">writeLines</span>(<span style="color:#a6e22e">c</span>(<span style="color:#a6e22e">paste0</span>(<span style="color:#e6db74">&#34;Facebook Mean Tweet Length: &#34;</span>, 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>                  <span style="color:#a6e22e">mean</span>(fb_wordcounts<span style="color:#f92672">$</span>tweetLength)), 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span>           <span style="color:#a6e22e">paste0</span>(<span style="color:#e6db74">&#34;TikTok Mean Tweet Length: &#34;</span>, 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span>                  <span style="color:#a6e22e">mean</span>(tiktok_wordcounts<span style="color:#f92672">$</span>tweetLength))))</span></span></code></pre></div>
+
+
+  <pre><code>## Facebook Mean Tweet Length: 163.289555972483
+## TikTok Mean Tweet Length: 112.557921102066</code></pre>
+
+
+  <span class="code-language">r</span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#a6e22e">hist</span>(tiktok_wordcounts<span style="color:#f92672">$</span>tweetLength, main <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;TikTok - Histogram of Tweet Lengths&#34;</span>)</span></span></code></pre></div>
+<p><img src="https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-5-1.png"
+	alt="image" 
+	class="single-post-image" 
+	loading="lazy"
+	decoding="async"
+	></p>
+
+
+  <span class="code-language">r</span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#a6e22e">hist</span>(fb_wordcounts<span style="color:#f92672">$</span>tweetLength, main <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Facebook - Histogram of Tweet Lengths&#34;</span>)</span></span></code></pre></div>
+<p><img src="https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-5-2.png"
+	alt="image" 
+	class="single-post-image" 
+	loading="lazy"
+	decoding="async"
+	></p>
+<p>As we see, TikTok&rsquo;s tweet lengths are right-skewed, with most tweets being around 100 characters long. Facebook, on the other hand, seems to post longer tweets, with a more normal distribution centered around 150 characters long. Tweet length seems like a useful feature to include in our predictive model.</p>
+<p>Next, we look at whether there is a difference in the share of Tweets that include pictures.</p>
+
+
+  <span class="code-language">r</span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span>fb_picture_counts <span style="color:#f92672">&lt;-</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>  facebook <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>  <span style="color:#a6e22e">filter</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">str_detect</span>(text, <span style="color:#e6db74">&#39;^&#34;&#39;</span>)) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>  <span style="color:#a6e22e">count</span>(picture <span style="color:#f92672">=</span> <span style="color:#a6e22e">ifelse</span>(<span style="color:#a6e22e">str_detect</span>(text, <span style="color:#e6db74">&#34;t.co&#34;</span>),
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>                         <span style="color:#e6db74">&#34;Picture/link&#34;</span>, <span style="color:#e6db74">&#34;No picture/link&#34;</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>fb_picture_counts <span style="color:#f92672">&lt;-</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>  fb_picture_counts <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>  <span style="color:#a6e22e">mutate</span>(prop <span style="color:#f92672">=</span> n <span style="color:#f92672">/</span> <span style="color:#a6e22e">sum</span>(fb_picture_counts<span style="color:#f92672">$</span>n) <span style="color:#f92672">*</span><span style="color:#ae81ff">100</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>tiktok_picture_counts <span style="color:#f92672">&lt;-</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>  tiktok <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span>  <span style="color:#a6e22e">filter</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">str_detect</span>(text, <span style="color:#e6db74">&#39;^&#34;&#39;</span>)) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span>  <span style="color:#a6e22e">count</span>(picture <span style="color:#f92672">=</span> <span style="color:#a6e22e">ifelse</span>(<span style="color:#a6e22e">str_detect</span>(text, <span style="color:#e6db74">&#34;t.co&#34;</span>),
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span>                         <span style="color:#e6db74">&#34;Picture/link&#34;</span>, <span style="color:#e6db74">&#34;No picture/link&#34;</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span><span>tiktok_picture_counts <span style="color:#f92672">&lt;-</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18</span><span>  tiktok_picture_counts <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19</span><span>  <span style="color:#a6e22e">mutate</span>(prop <span style="color:#f92672">=</span> n <span style="color:#f92672">/</span> <span style="color:#a6e22e">sum</span>(tiktok_picture_counts<span style="color:#f92672">$</span>n) <span style="color:#f92672">*</span><span style="color:#ae81ff">100</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21</span><span>fb_picture_counts <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22</span><span>  <span style="color:#a6e22e">ggplot</span>(<span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>, y <span style="color:#f92672">=</span> n, fill <span style="color:#f92672">=</span> picture)) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23</span><span>  <span style="color:#a6e22e">geom_bar</span>(width <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, stat <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;identity&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24</span><span>  <span style="color:#a6e22e">coord_polar</span>(<span style="color:#e6db74">&#34;y&#34;</span>, start<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25</span><span>  <span style="color:#a6e22e">theme_void</span>() <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26</span><span>  <span style="color:#a6e22e">geom_text</span>(<span style="color:#a6e22e">aes</span>(label <span style="color:#f92672">=</span> <span style="color:#a6e22e">paste0</span>(<span style="color:#a6e22e">round</span>(prop,<span style="color:#ae81ff">2</span>), <span style="color:#e6db74">&#34;%&#34;</span>)), 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27</span><span>            position <span style="color:#f92672">=</span> <span style="color:#a6e22e">position_stack</span>(vjust <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>), size <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>) <span style="color:#f92672">+</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28</span><span>  <span style="color:#a6e22e">ggtitle</span>(<span style="color:#e6db74">&#34;Percent of Facebook Tweets with Picture/link and Without&#34;</span>)</span></span></code></pre></div>
+<p><img src="https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-6-1.png"
+	alt="image" 
+	class="single-post-image" 
+	loading="lazy"
+	decoding="async"
+	></p>
+
+
+  <span class="code-language">r</span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>tiktok_picture_counts <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>  <span style="color:#a6e22e">ggplot</span>(<span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>, y <span style="color:#f92672">=</span> n, fill <span style="color:#f92672">=</span> picture)) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>  <span style="color:#a6e22e">geom_bar</span>(width <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, stat <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;identity&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>  <span style="color:#a6e22e">coord_polar</span>(<span style="color:#e6db74">&#34;y&#34;</span>, start<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>  <span style="color:#a6e22e">theme_void</span>() <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>  <span style="color:#a6e22e">geom_text</span>(<span style="color:#a6e22e">aes</span>(label <span style="color:#f92672">=</span> <span style="color:#a6e22e">paste0</span>(<span style="color:#a6e22e">round</span>(prop,<span style="color:#ae81ff">2</span>), <span style="color:#e6db74">&#34;%&#34;</span>)), 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>            position <span style="color:#f92672">=</span> <span style="color:#a6e22e">position_stack</span>(vjust <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>), size <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>) <span style="color:#f92672">+</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span>  <span style="color:#a6e22e">ggtitle</span>(<span style="color:#e6db74">&#34;Percent of TikTok Tweets with Picture/link and Without&#34;</span>)</span></span></code></pre></div>
+<p><img src="https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-6-2.png"
+	alt="image" 
+	class="single-post-image" 
+	loading="lazy"
+	decoding="async"
+	></p>
+<p>~86% of Facebook&rsquo;s tweets contain pictures/links, while only ~52% of TikTok&rsquo;s tweets contain pictures/links. This could be another useful predictor to include in our model.</p>
+<h2 id="iv-sentiment-analysis">IV. Sentiment Analysis<a href="#iv-sentiment-analysis">
+    <svg role="img" aria-labelledby="iv-sentiment-analysis-IconTitle" fill="var(--color-primary)" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+      <title id="iv-sentiment-analysis-IconTitle">Link to this heading</title>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg>
+  </a>
+</h2><p>Now, we split the tweets into tokens so that we can perform sentiment analysis on them.</p>
+
+
+  <span class="code-language">r</span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span>reg <span style="color:#f92672">&lt;-</span> <span style="color:#e6db74">&#34;([^A-Za-z\\d#@&#39;]|&#39;(?![A-Za-z\\d#@]))&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span><span style="color:#75715e"># Unnest the text strings into a data frame of words</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>fb_words <span style="color:#f92672">&lt;-</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>  facebook <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>  <span style="color:#a6e22e">filter</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">str_detect</span>(text, <span style="color:#e6db74">&#39;^&#34;&#39;</span>)) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>  <span style="color:#a6e22e">mutate</span>(text <span style="color:#f92672">=</span> <span style="color:#a6e22e">str_replace_all</span>(text, 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>                                <span style="color:#e6db74">&#34;https://t.co/[A-Za-z\\d]+|&amp;amp;&#34;</span>, 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>                                <span style="color:#e6db74">&#34;&#34;</span>)) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>  <span style="color:#a6e22e">unnest_tokens</span>(word, text, 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>                token <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;regex&#34;</span>, 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>                pattern <span style="color:#f92672">=</span> reg) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span>  <span style="color:#a6e22e">filter</span>(<span style="color:#f92672">!</span>word <span style="color:#f92672">%in%</span> stop_words<span style="color:#f92672">$</span>word,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span>         <span style="color:#a6e22e">str_detect</span>(word, <span style="color:#e6db74">&#34;[a-z]&#34;</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span><span>tiktok_words <span style="color:#f92672">&lt;-</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span><span>  tiktok <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18</span><span>  <span style="color:#a6e22e">filter</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">str_detect</span>(text, <span style="color:#e6db74">&#39;^&#34;&#39;</span>)) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19</span><span>  <span style="color:#a6e22e">mutate</span>(text <span style="color:#f92672">=</span> <span style="color:#a6e22e">str_replace_all</span>(text, 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20</span><span>                                <span style="color:#e6db74">&#34;https://t.co/[A-Za-z\\d]+|&amp;amp;&#34;</span>, 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21</span><span>                                <span style="color:#e6db74">&#34;&#34;</span>)) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22</span><span>  <span style="color:#a6e22e">unnest_tokens</span>(word, text, 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23</span><span>                token <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;regex&#34;</span>, 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24</span><span>                pattern <span style="color:#f92672">=</span> reg) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25</span><span>  <span style="color:#a6e22e">filter</span>(<span style="color:#f92672">!</span>word <span style="color:#f92672">%in%</span> stop_words<span style="color:#f92672">$</span>word,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26</span><span>         <span style="color:#a6e22e">str_detect</span>(word, <span style="color:#e6db74">&#34;[a-z]&#34;</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28</span><span><span style="color:#75715e"># Inspect the first six rows of tweet_words</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29</span><span><span style="color:#a6e22e">head</span>(fb_words)</span></span></code></pre></div>
+
+
+  <pre><code>## # A tibble: 6 x 4
+##   status_id            source          created_at          word        
+##   &lt;chr&gt;                &lt;chr&gt;           &lt;dttm&gt;              &lt;chr&gt;       
+## 1 x1382020080343470082 Twitter Web App 2021-04-13 17:17:18 ramadan     
+## 2 x1382020080343470082 Twitter Web App 2021-04-13 17:17:18 mubarak     
+## 3 x1382020080343470082 Twitter Web App 2021-04-13 17:17:18 0001f319    
+## 4 x1382020080343470082 Twitter Web App 2021-04-13 17:17:18 #monthofgood
+## 5 x1382020080343470082 Twitter Web App 2021-04-13 17:17:18 check       
+## 6 x1382020080343470082 Twitter Web App 2021-04-13 17:17:18 kindness</code></pre>
+<p>We produce two horizontal bar graphs that show the most common words along with a word cloud for each user.</p>
+
+
+  <span class="code-language">r</span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span>fb_most_common <span style="color:#f92672">&lt;-</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>  fb_words <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>  <span style="color:#a6e22e">count</span>(word, sort <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>  <span style="color:#a6e22e">head</span>(<span style="color:#ae81ff">20</span>) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>  <span style="color:#a6e22e">mutate</span>(word <span style="color:#f92672">=</span> <span style="color:#a6e22e">reorder</span>(word, n))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>fb_most_common <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>  <span style="color:#a6e22e">ggplot</span>(<span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> word, y <span style="color:#f92672">=</span> n)) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>  <span style="color:#a6e22e">geom_bar</span>(stat <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;identity&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>  <span style="color:#a6e22e">ylab</span>(<span style="color:#e6db74">&#34;Occurrences&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>  <span style="color:#a6e22e">coord_flip</span>() <span style="color:#f92672">+</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>  <span style="color:#a6e22e">ggtitle</span>(<span style="color:#e6db74">&#34;Facebook Word Frequency&#34;</span>)</span></span></code></pre></div>
+<p><img src="https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-8-1.png"
+	alt="image" 
+	class="single-post-image" 
+	loading="lazy"
+	decoding="async"
+	></p>
+
+
+  <span class="code-language">r</span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span>tiktok_most_common <span style="color:#f92672">&lt;-</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>  tiktok_words <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>  <span style="color:#a6e22e">count</span>(word, sort <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>  <span style="color:#a6e22e">head</span>(<span style="color:#ae81ff">20</span>) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>  <span style="color:#a6e22e">mutate</span>(word <span style="color:#f92672">=</span> <span style="color:#a6e22e">reorder</span>(word, n))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>tiktok_most_common <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>  <span style="color:#a6e22e">ggplot</span>(<span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> word, y <span style="color:#f92672">=</span> n)) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>  <span style="color:#a6e22e">geom_bar</span>(stat <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;identity&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>  <span style="color:#a6e22e">ylab</span>(<span style="color:#e6db74">&#34;Occurrences&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>  <span style="color:#a6e22e">coord_flip</span>() <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>  <span style="color:#a6e22e">ggtitle</span>(<span style="color:#e6db74">&#34;TikTok Word Frequency&#34;</span>)</span></span></code></pre></div>
+<p><img src="https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-8-2.png"
+	alt="image" 
+	class="single-post-image" 
+	loading="lazy"
+	decoding="async"
+	></p>
+
+
+  <span class="code-language">r</span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span>facebook_cloud <span style="color:#f92672">&lt;-</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>  fb_words  <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>  <span style="color:#a6e22e">count</span>(word) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>  <span style="color:#a6e22e">arrange</span>(<span style="color:#f92672">-</span>n)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span><span style="color:#a6e22e">wordcloud</span>(facebook_cloud<span style="color:#f92672">$</span>word, 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>          facebook_cloud<span style="color:#f92672">$</span>n, max.words <span style="color:#f92672">=</span> <span style="color:#ae81ff">200</span>, 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>          colors <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;#00B2FF&#34;</span>, <span style="color:#e6db74">&#34;red&#34;</span>, 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>                     <span style="color:#e6db74">&#34;#FF0099&#34;</span>, <span style="color:#e6db74">&#34;#6600CC&#34;</span>, 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>                     <span style="color:#e6db74">&#34;green&#34;</span>, <span style="color:#e6db74">&#34;orange&#34;</span>, 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>                     <span style="color:#e6db74">&#34;blue&#34;</span>, <span style="color:#e6db74">&#34;brown&#34;</span>))</span></span></code></pre></div>
+<p><img src="https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-8-3.png"
+	alt="image" 
+	class="single-post-image" 
+	loading="lazy"
+	decoding="async"
+	></p>
+
+
+  <span class="code-language">r</span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span>tiktok_cloud <span style="color:#f92672">&lt;-</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>  tiktok_words  <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>  <span style="color:#a6e22e">count</span>(word) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>  <span style="color:#a6e22e">arrange</span>(<span style="color:#f92672">-</span>n)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span><span style="color:#a6e22e">wordcloud</span>(tiktok_cloud<span style="color:#f92672">$</span>word, 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>          tiktok_cloud<span style="color:#f92672">$</span>n, max.words <span style="color:#f92672">=</span> <span style="color:#ae81ff">200</span>, 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>          colors <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;#00B2FF&#34;</span>, <span style="color:#e6db74">&#34;red&#34;</span>, 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>                     <span style="color:#e6db74">&#34;#FF0099&#34;</span>, <span style="color:#e6db74">&#34;#6600CC&#34;</span>, 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>                     <span style="color:#e6db74">&#34;green&#34;</span>, <span style="color:#e6db74">&#34;orange&#34;</span>, 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>                     <span style="color:#e6db74">&#34;blue&#34;</span>, <span style="color:#e6db74">&#34;brown&#34;</span>))</span></span></code></pre></div>
+<p><img src="https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-8-4.png"
+	alt="image" 
+	class="single-post-image" 
+	loading="lazy"
+	decoding="async"
+	></p>
+<p>The most common word that Facebook uses is &ldquo;kn,&rdquo; and it&rsquo;s unclear what this means. We did a quick search and found that Facebook signs off a lot of its replies with &ldquo;-KN.&rdquo; See here: <a href="https://twitter.com/Facebook/status/1185298970832244736" target="_blank" rel="noopener">https://twitter.com/Facebook/status/1185298970832244736</a></p>
+<p>Facebook frequently uses neutral and security-/support-related words: &ldquo;account,&rdquo; &ldquo;report,&rdquo; &ldquo;secure,&rdquo; &ldquo;experiencing,&rdquo; etc.</p>
+<p>TikTok uses a lot more anticipatory words like &ldquo;tomorrow,&rdquo; &ldquo;prizes,&rdquo; &ldquo;nomination,&rdquo; &ldquo;winner.&rdquo; TikTok&rsquo;s Twitter account actually has a lot of sweepstakes.</p>
+<p>Both accounts, of course, reference their own company names frequently.</p>
+<p>We will use the number of times these forty words appear as predictors in our model.</p>
+<p>We now join the NRC Word-Emotion Association Lexicon to our data, which will allow us to identify words associated with eight basic emotions (anger, fear, anticipation, trust, surprise, sadness, joy, and disgust) and two sentiments (negative and positive).</p>
+
+
+  <span class="code-language">r</span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>fb_sentiment <span style="color:#f92672">&lt;-</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>  <span style="color:#a6e22e">inner_join</span>(fb_words, nrc, by <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;word&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>tiktok_sentiment <span style="color:#f92672">&lt;-</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>  <span style="color:#a6e22e">inner_join</span>(tiktok_words, nrc, by <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;word&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>fb_sentiment <span style="color:#f92672">%&gt;%</span> <span style="color:#a6e22e">head</span>()</span></span></code></pre></div>
+
+
+  <pre><code>## # A tibble: 6 x 5
+##   status_id            source          created_at          word      sentiment  
+##   &lt;chr&gt;                &lt;chr&gt;           &lt;dttm&gt;              &lt;chr&gt;     &lt;chr&gt;      
+## 1 x1382020080343470082 Twitter Web App 2021-04-13 17:17:18 kindness  positive   
+## 2 x1381733382632001536 Khoros CX       2021-04-12 22:18:04 happy     anticipati~
+## 3 x1381733382632001536 Khoros CX       2021-04-12 22:18:04 happy     joy        
+## 4 x1381733382632001536 Khoros CX       2021-04-12 22:18:04 happy     positive   
+## 5 x1381733382632001536 Khoros CX       2021-04-12 22:18:04 happy     trust      
+## 6 x1381733382632001536 Khoros CX       2021-04-12 22:18:04 wonderful joy</code></pre>
+<p>Here, we compare Facebook&rsquo;s and TikTok&rsquo;s sentiments.</p>
+
+
+  <span class="code-language">r</span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span>fb_sentiment_analysis <span style="color:#f92672">&lt;-</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>  fb_sentiment <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>  <span style="color:#a6e22e">count</span>(word, sentiment) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>  <span style="color:#a6e22e">group_by</span>(sentiment)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>fb_sentiment_analysis <span style="color:#f92672">%&gt;%</span>  
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>  <span style="color:#a6e22e">top_n</span>(<span style="color:#ae81ff">15</span>) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>  <span style="color:#a6e22e">ggplot</span>(<span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> sentiment, y <span style="color:#f92672">=</span> n )) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>  <span style="color:#a6e22e">geom_bar</span>(stat <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;identity&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>  <span style="color:#a6e22e">coord_flip</span>() <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>  <span style="color:#a6e22e">ylab</span>(<span style="color:#e6db74">&#34;Frequency&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>  <span style="color:#a6e22e">xlab</span>(<span style="color:#e6db74">&#34;Sentiment&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span>  <span style="color:#a6e22e">labs</span>(title<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Facebook Sentiment&#34;</span>)</span></span></code></pre></div>
+<p><img src="https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-10-1.png"
+	alt="image" 
+	class="single-post-image" 
+	loading="lazy"
+	decoding="async"
+	></p>
+
+
+  <span class="code-language">r</span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span>tiktok_sentiment_analysis <span style="color:#f92672">&lt;-</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>  tiktok_sentiment <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>  <span style="color:#a6e22e">count</span>(word, sentiment) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>  <span style="color:#a6e22e">group_by</span>(sentiment)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>tiktok_sentiment_analysis <span style="color:#f92672">%&gt;%</span>  
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>  <span style="color:#a6e22e">top_n</span>(<span style="color:#ae81ff">15</span>) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>  <span style="color:#a6e22e">ggplot</span>(<span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> sentiment, y <span style="color:#f92672">=</span> n )) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>  <span style="color:#a6e22e">geom_bar</span>(stat <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;identity&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>  <span style="color:#a6e22e">coord_flip</span>() <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>  <span style="color:#a6e22e">ylab</span>(<span style="color:#e6db74">&#34;Frequency&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>  <span style="color:#a6e22e">xlab</span>(<span style="color:#e6db74">&#34;Sentiment&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span>  <span style="color:#a6e22e">labs</span>(title<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;TikTok Sentiment&#34;</span>)</span></span></code></pre></div>
+<p><img src="https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-10-2.png"
+	alt="image" 
+	class="single-post-image" 
+	loading="lazy"
+	decoding="async"
+	></p>
+<p>It looks like Facebook&rsquo;s tweets use more trust words while TikTok uses more words that reflect anticipation. We now show specifically which words are conveying each of these observed sentiments.</p>
+
+
+  <span class="code-language">r</span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>fb_sentiment_analysis <span style="color:#f92672">%&gt;%</span> <span style="color:#a6e22e">filter</span>(<span style="color:#f92672">!</span>sentiment <span style="color:#f92672">%in%</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;positive&#34;</span>, <span style="color:#e6db74">&#34;negative&#34;</span>)) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>  <span style="color:#a6e22e">mutate</span>(sentiment <span style="color:#f92672">=</span> <span style="color:#a6e22e">reorder</span>(sentiment, <span style="color:#f92672">-</span>n),
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>         word <span style="color:#f92672">=</span> <span style="color:#a6e22e">reorder</span>(word, <span style="color:#f92672">-</span>n)) <span style="color:#f92672">%&gt;%</span> <span style="color:#a6e22e">top_n</span>(<span style="color:#ae81ff">10</span>) <span style="color:#f92672">-&gt;</span> fb_sentiment_analysis2
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span><span style="color:#a6e22e">ggplot</span>(fb_sentiment_analysis2, <span style="color:#a6e22e">aes</span>(x<span style="color:#f92672">=</span>word, y<span style="color:#f92672">=</span>n, fill <span style="color:#f92672">=</span> n)) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>  <span style="color:#a6e22e">facet_wrap</span>(<span style="color:#f92672">~</span> sentiment, scales <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;free&#34;</span>)<span style="color:#f92672">+</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>  <span style="color:#a6e22e">geom_bar</span>(stat <span style="color:#f92672">=</span><span style="color:#e6db74">&#34;identity&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span>  <span style="color:#a6e22e">theme</span>(axis.text.x <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_text</span>(angle <span style="color:#f92672">=</span> <span style="color:#ae81ff">90</span>, hjust <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)) <span style="color:#f92672">+</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9</span><span>  <span style="color:#a6e22e">labs</span>(y<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;count&#34;</span>, title<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Facebook Sentiment Words&#34;</span>)</span></span></code></pre></div>
+<p><img src="https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-11-1.png"
+	alt="image" 
+	class="single-post-image" 
+	loading="lazy"
+	decoding="async"
+	></p>
+
+
+  <span class="code-language">r</span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>tiktok_sentiment_analysis <span style="color:#f92672">%&gt;%</span> <span style="color:#a6e22e">filter</span>(<span style="color:#f92672">!</span>sentiment <span style="color:#f92672">%in%</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;positive&#34;</span>, <span style="color:#e6db74">&#34;negative&#34;</span>)) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>  <span style="color:#a6e22e">mutate</span>(sentiment <span style="color:#f92672">=</span> <span style="color:#a6e22e">reorder</span>(sentiment, <span style="color:#f92672">-</span>n),
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>         word <span style="color:#f92672">=</span> <span style="color:#a6e22e">reorder</span>(word, <span style="color:#f92672">-</span>n)) <span style="color:#f92672">%&gt;%</span> <span style="color:#a6e22e">top_n</span>(<span style="color:#ae81ff">10</span>) <span style="color:#f92672">-&gt;</span> tiktok_sentiment_analysis2
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span><span style="color:#a6e22e">ggplot</span>(tiktok_sentiment_analysis2, <span style="color:#a6e22e">aes</span>(x<span style="color:#f92672">=</span>word, y<span style="color:#f92672">=</span>n, fill <span style="color:#f92672">=</span> n)) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>  <span style="color:#a6e22e">facet_wrap</span>(<span style="color:#f92672">~</span> sentiment, scales <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;free&#34;</span>)<span style="color:#f92672">+</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>  <span style="color:#a6e22e">geom_bar</span>(stat <span style="color:#f92672">=</span><span style="color:#e6db74">&#34;identity&#34;</span>) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span>  <span style="color:#a6e22e">theme</span>(axis.text.x <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_text</span>(angle <span style="color:#f92672">=</span> <span style="color:#ae81ff">90</span>, hjust <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)) <span style="color:#f92672">+</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9</span><span>  <span style="color:#a6e22e">labs</span>(y<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;count&#34;</span>, title<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Tik Tok Sentiment Words&#34;</span>)</span></span></code></pre></div>
+<p><img src="https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-11-2.png"
+	alt="image" 
+	class="single-post-image" 
+	loading="lazy"
+	decoding="async"
+	></p>
+<p>Next, we examine texts on Facebook and Tiktok to see their positive-negative score by using the AFINN sentiment lexicon, a list of English terms manually rated for valence with an integer between -5 (negative) and +5 (positive) by Finn Årup Nielsen between 2009 and 2011.</p>
+<p>We use this lexicon to compute mean positivity scores for all words tweeted by each user.</p>
+
+
+  <span class="code-language">r</span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#75715e"># run this to get afinn lexicon and save it as a csv</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span><span style="color:#75715e"># get_sentiments (&#34;afinn&#34;) -&gt; afinn</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span><span style="color:#75715e">#</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span><span style="color:#75715e">#afinn %&gt;% write_as_csv(&#34;afinn.csv&#34;)</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>afinn <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read_csv</span>(<span style="color:#e6db74">&#39;afinn.csv&#39;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>fb_afinn <span style="color:#f92672">&lt;-</span>    
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span> <span style="color:#a6e22e">inner_join</span>(fb_words, 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>            afinn, 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>            by <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;word&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span>tiktok_afinn <span style="color:#f92672">&lt;-</span>    
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span> <span style="color:#a6e22e">inner_join</span>(tiktok_words, 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span>            afinn, 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span><span>            by <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;word&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18</span><span>fb_mean_afinn <span style="color:#f92672">&lt;-</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19</span><span>  fb_afinn <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20</span><span>  <span style="color:#a6e22e">summarise</span>(mean_fb_afinn <span style="color:#f92672">=</span> <span style="color:#a6e22e">mean</span>(value))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22</span><span>tiktok_mean_afinn <span style="color:#f92672">&lt;-</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23</span><span>  tiktok_afinn <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24</span><span>  <span style="color:#a6e22e">summarise</span>(mean_tt_afinn <span style="color:#f92672">=</span> <span style="color:#a6e22e">mean</span>(value))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26</span><span><span style="color:#a6e22e">cat</span>(<span style="color:#a6e22e">paste0</span>(<span style="color:#e6db74">&#34;Average AFINN scores for all words by user\n&#34;</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27</span><span>           <span style="color:#e6db74">&#34;\nFacebook: &#34;</span>, <span style="color:#a6e22e">round</span>(fb_mean_afinn, <span style="color:#ae81ff">3</span>), 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28</span><span>           <span style="color:#e6db74">&#34;\nTikTok: &#34;</span>, <span style="color:#a6e22e">round</span>(tiktok_mean_afinn, <span style="color:#ae81ff">3</span>)))</span></span></code></pre></div>
+
+
+  <pre><code>## Average AFINN scores for all words by user
+## 
+## Facebook: 0.785
+## TikTok: 1.704</code></pre>
+<p>Facebook&rsquo;s mean AFINN value is 0.79 while TikTok&rsquo;s mean AFINN value is 1.704. In general, words tweeted by Tiktok are more positive than those tweeted by Facebook.</p>
+<h2 id="v-training-predictive-models">V. Training Predictive Models<a href="#v-training-predictive-models">
+    <svg role="img" aria-labelledby="v-training-predictive-models-IconTitle" fill="var(--color-primary)" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+      <title id="v-training-predictive-models-IconTitle">Link to this heading</title>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg>
+  </a>
+</h2><p>Here, using the text of a tweet, we attempt to predict the user who tweeted it.</p>
+<p>The features we extracted are tweet length, the number of times each of the twenty most common words from each account appear, the presence of a picture/link, number of words for each sentiment, and mean AFINN score per tweet.</p>
+<p>TikTok is encoded as 1, and Facebook is encoded as 0.</p>
+<p>First, we prepare the data for training and produce a simple decision tree.</p>
+
+
+  <span class="code-language">r</span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  1</span><span>fbcommon <span style="color:#f92672">&lt;-</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  2</span><span>  <span style="color:#a6e22e">lapply</span>(fb_most_common<span style="color:#f92672">$</span>word, as.character) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  3</span><span>  <span style="color:#a6e22e">unlist</span>()
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  4</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  5</span><span>tiktokcommon <span style="color:#f92672">&lt;-</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  6</span><span>  <span style="color:#a6e22e">lapply</span>(tiktok_most_common<span style="color:#f92672">$</span>word, as.character) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  7</span><span>  <span style="color:#a6e22e">unlist</span>()
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  8</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  9</span><span>commonwords <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(tiktokcommon, fbcommon)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 10</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 11</span><span>fb_word_predict <span style="color:#f92672">&lt;-</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 12</span><span>  fb_words <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 13</span><span>  <span style="color:#a6e22e">filter</span>(word <span style="color:#f92672">%in%</span> commonwords) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 14</span><span>  <span style="color:#a6e22e">group_by</span>(status_id) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 15</span><span>  <span style="color:#a6e22e">count</span>(word) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 16</span><span>  <span style="color:#a6e22e">ungroup</span>() <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 17</span><span>  <span style="color:#a6e22e">pivot_wider</span>(id_cols <span style="color:#f92672">=</span> status_id, 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 18</span><span>              names_from <span style="color:#f92672">=</span> word, 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 19</span><span>              values_from <span style="color:#f92672">=</span> n,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 20</span><span>              values_fill <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 21</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 22</span><span>tiktok_word_predict <span style="color:#f92672">&lt;-</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 23</span><span>  tiktok_words <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 24</span><span>  <span style="color:#a6e22e">filter</span>(word <span style="color:#f92672">%in%</span> commonwords) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 25</span><span>  <span style="color:#a6e22e">group_by</span>(status_id) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 26</span><span>  <span style="color:#a6e22e">count</span>(word) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 27</span><span>  <span style="color:#a6e22e">ungroup</span>() <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 28</span><span>  <span style="color:#a6e22e">pivot_wider</span>(id_cols <span style="color:#f92672">=</span> status_id, 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 29</span><span>              names_from <span style="color:#f92672">=</span> word, 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 30</span><span>              values_from <span style="color:#f92672">=</span> n,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 31</span><span>              values_fill <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 32</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 33</span><span>fb_piclinks <span style="color:#f92672">&lt;-</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 34</span><span>  facebook <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 35</span><span>  <span style="color:#a6e22e">filter</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">str_detect</span>(text, <span style="color:#e6db74">&#39;^&#34;&#39;</span>)) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 36</span><span>  <span style="color:#a6e22e">mutate</span>(picture_link <span style="color:#f92672">=</span> <span style="color:#a6e22e">ifelse</span>(<span style="color:#a6e22e">str_detect</span>(text, <span style="color:#e6db74">&#34;t.co&#34;</span>),
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 37</span><span>                         <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0</span>)) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 38</span><span>  <span style="color:#a6e22e">select</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">5</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 39</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 40</span><span>tiktok_piclinks <span style="color:#f92672">&lt;-</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 41</span><span>  tiktok <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 42</span><span>  <span style="color:#a6e22e">filter</span>(<span style="color:#f92672">!</span><span style="color:#a6e22e">str_detect</span>(text, <span style="color:#e6db74">&#39;^&#34;&#39;</span>)) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 43</span><span>  <span style="color:#a6e22e">mutate</span>(picture_link <span style="color:#f92672">=</span> <span style="color:#a6e22e">ifelse</span>(<span style="color:#a6e22e">str_detect</span>(text, <span style="color:#e6db74">&#34;t.co&#34;</span>),
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 44</span><span>                         <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0</span>)) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 45</span><span>  <span style="color:#a6e22e">select</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">5</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 46</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 47</span><span>fb_tweet_afinn <span style="color:#f92672">&lt;-</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 48</span><span>  fb_afinn <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 49</span><span>  <span style="color:#a6e22e">group_by</span>(status_id) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 50</span><span>  <span style="color:#a6e22e">summarize</span>(afinn <span style="color:#f92672">=</span> <span style="color:#a6e22e">mean</span>(value))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 51</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 52</span><span>tiktok_tweet_afinn <span style="color:#f92672">&lt;-</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 53</span><span>  tiktok_afinn <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 54</span><span>  <span style="color:#a6e22e">group_by</span>(status_id) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 55</span><span>  <span style="color:#a6e22e">summarize</span>(afinn <span style="color:#f92672">=</span> <span style="color:#a6e22e">mean</span>(value))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 56</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 57</span><span>fb_sentiment_counts <span style="color:#f92672">&lt;-</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 58</span><span>  fb_sentiment <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 59</span><span>  <span style="color:#a6e22e">group_by</span>(status_id) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 60</span><span>  <span style="color:#a6e22e">count</span>(sentiment) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 61</span><span>  <span style="color:#a6e22e">ungroup</span>() <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 62</span><span>  <span style="color:#a6e22e">pivot_wider</span>(id_cols <span style="color:#f92672">=</span> status_id, 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 63</span><span>              names_from <span style="color:#f92672">=</span> sentiment, 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 64</span><span>              values_from <span style="color:#f92672">=</span> n,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 65</span><span>              values_fill <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 66</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 67</span><span>tiktok_sentiment_counts <span style="color:#f92672">&lt;-</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 68</span><span>  tiktok_sentiment <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 69</span><span>  <span style="color:#a6e22e">group_by</span>(status_id) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 70</span><span>  <span style="color:#a6e22e">count</span>(sentiment) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 71</span><span>  <span style="color:#a6e22e">ungroup</span>() <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 72</span><span>  <span style="color:#a6e22e">pivot_wider</span>(id_cols <span style="color:#f92672">=</span> status_id, 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 73</span><span>              names_from <span style="color:#f92672">=</span> sentiment, 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 74</span><span>              values_from <span style="color:#f92672">=</span> n,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 75</span><span>              values_fill <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 76</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 77</span><span>tiktok_feature_selection <span style="color:#f92672">&lt;-</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 78</span><span>  tiktok_wordcounts <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 79</span><span>  <span style="color:#a6e22e">mutate</span>(user <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 80</span><span>  <span style="color:#a6e22e">left_join</span>(tiktok_sentiment_counts, 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 81</span><span>            by<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;status_id&#34;</span>) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 82</span><span>  <span style="color:#a6e22e">left_join</span>(tiktok_tweet_afinn,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 83</span><span>            by<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;status_id&#34;</span>) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 84</span><span>  <span style="color:#a6e22e">left_join</span>(tiktok_piclinks,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 85</span><span>            by<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;status_id&#34;</span>) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 86</span><span>  <span style="color:#a6e22e">left_join</span>(tiktok_word_predict,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 87</span><span>            by <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;status_id&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 88</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 89</span><span>facebook_feature_selection <span style="color:#f92672">&lt;-</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 90</span><span>  fb_wordcounts <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 91</span><span>  <span style="color:#a6e22e">mutate</span>(user <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 92</span><span>  <span style="color:#a6e22e">left_join</span>(fb_sentiment_counts, 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 93</span><span>            by<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;status_id&#34;</span>) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 94</span><span>  <span style="color:#a6e22e">left_join</span>(fb_tweet_afinn,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 95</span><span>            by<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;status_id&#34;</span>) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 96</span><span>  <span style="color:#a6e22e">left_join</span>(fb_piclinks,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 97</span><span>            by<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;status_id&#34;</span>) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 98</span><span>  <span style="color:#a6e22e">left_join</span>(fb_word_predict,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 99</span><span>            by <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;status_id&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">100</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">101</span><span>both_users <span style="color:#f92672">&lt;-</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">102</span><span>  tiktok_feature_selection <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">103</span><span>  dplyr<span style="color:#f92672">::</span><span style="color:#a6e22e">bind_rows</span>(facebook_feature_selection) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">104</span><span>  <span style="color:#a6e22e">mutate_if</span>(is.numeric,coalesce,<span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">105</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">106</span><span><span style="color:#a6e22e">set.seed</span>(<span style="color:#ae81ff">123</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">107</span><span>index <span style="color:#f92672">&lt;-</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">108</span><span>  <span style="color:#a6e22e">createDataPartition</span>(both_users<span style="color:#f92672">$</span>user,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">109</span><span>                      p <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.8</span>, list <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">110</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">111</span><span>for_decisiontree <span style="color:#f92672">&lt;-</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">112</span><span>  both_users <span style="color:#f92672">%&gt;%</span> <span style="color:#a6e22e">select</span>(<span style="color:#ae81ff">-1</span>,<span style="color:#ae81ff">-2</span>,<span style="color:#ae81ff">-3</span>,<span style="color:#ae81ff">-4</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">113</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">114</span><span>train <span style="color:#f92672">&lt;-</span> for_decisiontree[index, ]
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">115</span><span>test  <span style="color:#f92672">&lt;-</span> for_decisiontree[<span style="color:#f92672">-</span>index, ]
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">116</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">117</span><span><span style="color:#a6e22e">colnames</span>(train) <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">make.names</span>(<span style="color:#a6e22e">colnames</span>(train))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">118</span><span><span style="color:#a6e22e">colnames</span>(test) <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">make.names</span>(<span style="color:#a6e22e">colnames</span>(test))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">119</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">120</span><span><span style="color:#a6e22e">set.seed</span>(<span style="color:#ae81ff">123</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">121</span><span>simple_model <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rpart</span>(user <span style="color:#f92672">~</span> ., 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">122</span><span>                      data <span style="color:#f92672">=</span> train, method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;class&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">123</span><span><span style="color:#a6e22e">rpart.plot</span>(simple_model, yesno <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>)</span></span></code></pre></div>
+<p><img src="https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-13-1.png"
+	alt="image" 
+	class="single-post-image" 
+	loading="lazy"
+	decoding="async"
+	></p>
+<p>It seems that the most dominant predictors in the simple model were the presence (or non-presence) of Facebook&rsquo;s most common words, along with tweet length and the presence of the word &ldquo;tiktok.&rdquo; I suspect this will be similar for other models, though perhaps sentiment will play a role too.</p>
+<p>We produce additional models using the bagging, random forests, and gradient boosting methods.</p>
+
+
+  <span class="code-language">r</span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#a6e22e">set.seed</span>(<span style="color:#ae81ff">123</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>bagging_model <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">train</span>(
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>  user <span style="color:#f92672">~</span> .,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>  data <span style="color:#f92672">=</span> train,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>  method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;treebag&#34;</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>  trControl <span style="color:#f92672">=</span> <span style="color:#a6e22e">trainControl</span>(method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;oob&#34;</span>),
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>  keepX <span style="color:#f92672">=</span> T,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>  nbagg <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>  importance <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;impurity&#34;</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>  control <span style="color:#f92672">=</span> <span style="color:#a6e22e">rpart.control</span>(minsplit <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>, cp <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span>n_features <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">length</span>(<span style="color:#a6e22e">setdiff</span>(<span style="color:#a6e22e">names</span>(train), <span style="color:#e6db74">&#34;user&#34;</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span>train<span style="color:#f92672">$</span>user <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">as.factor</span>(train<span style="color:#f92672">$</span>user)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span><span>rf_model <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">ranger</span>(
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span><span>  user <span style="color:#f92672">~</span> .,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18</span><span>  data <span style="color:#f92672">=</span> train,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19</span><span>  mtry <span style="color:#f92672">=</span> <span style="color:#a6e22e">floor</span>(n_features <span style="color:#f92672">*</span> <span style="color:#ae81ff">0.5</span>),
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20</span><span>  respect.unordered.factors <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;order&#34;</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21</span><span>  importance <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;permutation&#34;</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22</span><span>  seed <span style="color:#f92672">=</span> <span style="color:#ae81ff">123</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23</span><span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26</span><span><span style="color:#a6e22e">set.seed</span>(<span style="color:#ae81ff">123</span>)  <span style="color:#75715e"># for reproducibility</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27</span><span>train<span style="color:#f92672">$</span>user <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">as.numeric</span>(train<span style="color:#f92672">$</span>user)<span style="color:#ae81ff">-1</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28</span><span>gbm_model <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">gbm</span>(
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29</span><span>  formula <span style="color:#f92672">=</span> user <span style="color:#f92672">~</span> .,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30</span><span>  data <span style="color:#f92672">=</span> train,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31</span><span>  distribution <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;gaussian&#34;</span>,  <span style="color:#75715e"># SSE loss function</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32</span><span>  n.trees <span style="color:#f92672">=</span> <span style="color:#ae81ff">1000</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33</span><span>  shrinkage <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.05</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34</span><span>  interaction.depth <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35</span><span>  n.minobsinnode <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36</span><span>  cv.folds <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37</span><span>)</span></span></code></pre></div>
+<p>We also display four variable importance plots to see which variables each model identified as significant.</p>
+
+
+  <span class="code-language">r</span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#a6e22e">vip</span>(simple_model, num_features <span style="color:#f92672">=</span> <span style="color:#ae81ff">25</span>) <span style="color:#f92672">+</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>  <span style="color:#a6e22e">ggtitle</span>(<span style="color:#e6db74">&#39;Simple Decision Tree - Variable Importance Plot&#39;</span>)</span></span></code></pre></div>
+<p><img src="https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-15-1.png"
+	alt="image" 
+	class="single-post-image" 
+	loading="lazy"
+	decoding="async"
+	></p>
+
+
+  <span class="code-language">r</span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#a6e22e">vip</span>(bagging_model, num_features <span style="color:#f92672">=</span> <span style="color:#ae81ff">25</span>) <span style="color:#f92672">+</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>  <span style="color:#a6e22e">ggtitle</span>(<span style="color:#e6db74">&#39;Bagging - Variable Importance Plot&#39;</span>)</span></span></code></pre></div>
+<p><img src="https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-15-2.png"
+	alt="image" 
+	class="single-post-image" 
+	loading="lazy"
+	decoding="async"
+	></p>
+
+
+  <span class="code-language">r</span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#a6e22e">vip</span>(rf_model, num_features <span style="color:#f92672">=</span> <span style="color:#ae81ff">25</span>) <span style="color:#f92672">+</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>  <span style="color:#a6e22e">ggtitle</span>(<span style="color:#e6db74">&#39;Random Forests - Variable Importance Plot&#39;</span>)</span></span></code></pre></div>
+<p><img src="https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-15-3.png"
+	alt="image" 
+	class="single-post-image" 
+	loading="lazy"
+	decoding="async"
+	></p>
+
+
+  <span class="code-language">r</span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#a6e22e">vip</span>(gbm_model, num_features <span style="color:#f92672">=</span> <span style="color:#ae81ff">25</span>) <span style="color:#f92672">+</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>  <span style="color:#a6e22e">ggtitle</span>(<span style="color:#e6db74">&#39;Gradient Boosting - Variable Importance Plot&#39;</span>)</span></span></code></pre></div>
+<p><img src="https://516alligators.github.io/HW9_files/figure-html/unnamed-chunk-15-4.png"
+	alt="image" 
+	class="single-post-image" 
+	loading="lazy"
+	decoding="async"
+	></p>
+<p>It seems that the simple decision tree, random forests model, and gradient boosting model placed the most importance on the presence of the word &ldquo;kn&rdquo; and the other commonly used words. The bagging model, on the other hand places little importance on the presence of these words and instead privileges tweet length, AFINN score, and sentiments. All of the ensemble methods identified tweet length as strongly predictive of the user. All four heavily weighted anticipation sentiments and AFINN scores.</p>
+<h2 id="vi-results-and-discussion">VI. Results and Discussion<a href="#vi-results-and-discussion">
+    <svg role="img" aria-labelledby="vi-results-and-discussion-IconTitle" fill="var(--color-primary)" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+      <title id="vi-results-and-discussion-IconTitle">Link to this heading</title>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg>
+  </a>
+</h2><p>Now, I produce confusion matrices and show residual sum of squares for all tree-based methods&mdash;first evaluating their performance on the training set and then on the test set. Note again that a Tiktok tweet is encoded as 1, and a Facebook tweet is encoded as 0. The code is shown for the first matrix but not for subsequent ones for the sake of elegance.</p>
+<h3 id="training-set-performance">Training Set Performance<a href="#training-set-performance">
+    <svg role="img" aria-labelledby="training-set-performance-IconTitle" fill="var(--color-primary)" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+      <title id="training-set-performance-IconTitle">Link to this heading</title>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg>
+  </a>
+</h3><p><strong>Simple Decision Tree - Training Set:</strong></p>
+
+
+  <pre><code>## [1] 1 0
+## Levels: 0 1</code></pre>
+
+
+  <pre><code>## Confusion Matrix and Statistics
+## 
+##           Reference
+## Prediction    0    1
+##          0 2300  108
+##          1  247 2459
+##                                           
+##                Accuracy : 0.9306          
+##                  95% CI : (0.9233, 0.9374)
+##     No Information Rate : 0.502           
+##     P-Value [Acc &gt; NIR] : &lt; 2.2e-16       
+##                                           
+##                   Kappa : 0.8611          
+##                                           
+##  Mcnemar&#39;s Test P-Value : 2.402e-13       
+##                                           
+##               Precision : 0.9551          
+##                  Recall : 0.9030          
+##                      F1 : 0.9284          
+##              Prevalence : 0.4980          
+##          Detection Rate : 0.4497          
+##    Detection Prevalence : 0.4709          
+##       Balanced Accuracy : 0.9305          
+##                                           
+##        &#39;Positive&#39; Class : 0               
+## </code></pre>
+<p><strong>Bagging Method - Training Set:</strong></p>
+
+
+  <pre><code>## Confusion Matrix and Statistics
+## 
+##           Reference
+## Prediction    0    1
+##          0 2512    3
+##          1   35 2564
+##                                           
+##                Accuracy : 0.9926          
+##                  95% CI : (0.9898, 0.9947)
+##     No Information Rate : 0.502           
+##     P-Value [Acc &gt; NIR] : &lt; 2.2e-16       
+##                                           
+##                   Kappa : 0.9851          
+##                                           
+##  Mcnemar&#39;s Test P-Value : 4.934e-07       
+##                                           
+##               Precision : 0.9988          
+##                  Recall : 0.9863          
+##                      F1 : 0.9925          
+##              Prevalence : 0.4980          
+##          Detection Rate : 0.4912          
+##    Detection Prevalence : 0.4918          
+##       Balanced Accuracy : 0.9925          
+##                                           
+##        &#39;Positive&#39; Class : 0               
+## </code></pre>
+<p><strong>Random Forests Method - Training Set:</strong></p>
+
+
+  <pre><code>## Confusion Matrix and Statistics
+## 
+##           Reference
+## Prediction    0    1
+##          0 2504    3
+##          1   43 2564
+##                                          
+##                Accuracy : 0.991          
+##                  95% CI : (0.988, 0.9934)
+##     No Information Rate : 0.502          
+##     P-Value [Acc &gt; NIR] : &lt; 2.2e-16      
+##                                          
+##                   Kappa : 0.982          
+##                                          
+##  Mcnemar&#39;s Test P-Value : 8.912e-09      
+##                                          
+##               Precision : 0.9988         
+##                  Recall : 0.9831         
+##                      F1 : 0.9909         
+##              Prevalence : 0.4980         
+##          Detection Rate : 0.4896         
+##    Detection Prevalence : 0.4902         
+##       Balanced Accuracy : 0.9910         
+##                                          
+##        &#39;Positive&#39; Class : 0              
+## </code></pre>
+<p><strong>Gradient Boosting Method - Training Set:</strong></p>
+
+
+  <pre><code>## Confusion Matrix and Statistics
+## 
+##           Reference
+## Prediction    0    1
+##          0 2374   55
+##          1  173 2512
+##                                           
+##                Accuracy : 0.9554          
+##                  95% CI : (0.9494, 0.9609)
+##     No Information Rate : 0.502           
+##     P-Value [Acc &gt; NIR] : &lt; 2.2e-16       
+##                                           
+##                   Kappa : 0.9108          
+##                                           
+##  Mcnemar&#39;s Test P-Value : 9.297e-15       
+##                                           
+##               Precision : 0.9774          
+##                  Recall : 0.9321          
+##                      F1 : 0.9542          
+##              Prevalence : 0.4980          
+##          Detection Rate : 0.4642          
+##    Detection Prevalence : 0.4750          
+##       Balanced Accuracy : 0.9553          
+##                                           
+##        &#39;Positive&#39; Class : 0               
+## </code></pre>
+<p><strong>Performance Summary and RSS</strong></p>
+<!-- raw HTML omitted -->
+<p>The rankings for accuracy on the training set are as follows:</p>
+<ol>
+<li>
+<p>Bagging method</p>
+</li>
+<li>
+<p>Random forests</p>
+</li>
+<li>
+<p>Gradient boosting method</p>
+</li>
+<li>
+<p>Simple decision tree</p>
+</li>
+</ol>
+<p>The bagging and random forests methods achieved impressive accuracy on the training set, both able to correctly classify more than 99% of the tweets.</p>
+<p>We show the residual sum of squares for all four models on the training set below.</p>
+
+
+  <span class="code-language">r</span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span>rss_simple_train <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">sum</span>((actual_train<span style="color:#f92672">-</span>simple_pred_train)^2)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>rss_bagging_train <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">sum</span>((actual_train<span style="color:#f92672">-</span>bagging_pred_train)^2)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>rss_rf_train <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">sum</span>((actual_train<span style="color:#f92672">-</span>rf_pred_train)^2)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>rss_gb_train <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">sum</span>((actual_train<span style="color:#f92672">-</span>gb_pred_train)^2)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span><span style="color:#a6e22e">cat</span>(<span style="color:#a6e22e">paste0</span>(<span style="color:#e6db74">&#34;Residual Sum of Squares on Training Set\n&#34;</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>           <span style="color:#e6db74">&#34;\nSimple decision tree: &#34;</span>, <span style="color:#a6e22e">round</span>(rss_simple_train, <span style="color:#ae81ff">2</span>), 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>           <span style="color:#e6db74">&#34;\nBagging model: &#34;</span>, <span style="color:#a6e22e">round</span>(rss_bagging_train, <span style="color:#ae81ff">2</span>), 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>           <span style="color:#e6db74">&#34;\nRandom forests model: &#34;</span>, <span style="color:#a6e22e">round</span>(rss_rf_train, <span style="color:#ae81ff">2</span>), 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>           <span style="color:#e6db74">&#34;\nGradient boosting model: &#34;</span>, <span style="color:#a6e22e">round</span>(rss_gb_train, <span style="color:#ae81ff">2</span>)))</span></span></code></pre></div>
+
+
+  <pre><code>## Residual Sum of Squares on Training Set
+## 
+## Simple decision tree: 299.52
+## Bagging model: 56.46
+## Random forests model: 46
+## Gradient boosting model: 187.74</code></pre>
+<p>The random forests method had the lowest RSS, despite the bagging method achieving higher predictive accuracy on the training set. The bagging method performed second best, followed by the gradient boosting method and simple decision tree.</p>
+<p>Now, we show confusion matrices for the test set.</p>
+<h3 id="test-set-performance">Test Set Performance<a href="#test-set-performance">
+    <svg role="img" aria-labelledby="test-set-performance-IconTitle" fill="var(--color-primary)" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+      <title id="test-set-performance-IconTitle">Link to this heading</title>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg>
+  </a>
+</h3><p><strong>Simple Decision Tree - Test Set:</strong></p>
+
+
+  <span class="code-language">r</span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span>actual_test <span style="color:#f92672">&lt;-</span> test<span style="color:#f92672">$</span>user
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>simple_pred_test <span style="color:#f92672">&lt;-</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>  <span style="color:#a6e22e">predict</span>(simple_model, newdata <span style="color:#f92672">=</span> test) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>  <span style="color:#a6e22e">as_tibble</span>() <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>  <span style="color:#a6e22e">select</span>(<span style="color:#ae81ff">2</span>) <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>  <span style="color:#a6e22e">unlist</span>() <span style="color:#f92672">%&gt;%</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>  <span style="color:#a6e22e">as.vector</span>()
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>simple_test_confusion <span style="color:#f92672">&lt;-</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>  <span style="color:#a6e22e">confusionMatrix</span>(data <span style="color:#f92672">=</span> <span style="color:#a6e22e">factor</span>(<span style="color:#a6e22e">round</span>(simple_pred_test)),
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>                  reference <span style="color:#f92672">=</span> <span style="color:#a6e22e">factor</span>(actual_test), mode <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;prec_recall&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span>simple_test_errors <span style="color:#f92672">&lt;-</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span>  simple_test_confusion<span style="color:#f92672">$</span>table[2] <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span><span>  simple_test_confusion<span style="color:#f92672">$</span>table[3]
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18</span><span>simple_test_accuracy <span style="color:#f92672">&lt;-</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19</span><span>  <span style="color:#a6e22e">as.numeric</span>(simple_test_confusion<span style="color:#f92672">$</span>overall[1])
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21</span><span>simple_test_confusion</span></span></code></pre></div>
+
+
+  <pre><code>## Confusion Matrix and Statistics
+## 
+##           Reference
+## Prediction   0   1
+##          0 583  23
+##          1  68 604
+##                                           
+##                Accuracy : 0.9288          
+##                  95% CI : (0.9133, 0.9423)
+##     No Information Rate : 0.5094          
+##     P-Value [Acc &gt; NIR] : &lt; 2.2e-16       
+##                                           
+##                   Kappa : 0.8577          
+##                                           
+##  Mcnemar&#39;s Test P-Value : 3.979e-06       
+##                                           
+##               Precision : 0.9620          
+##                  Recall : 0.8955          
+##                      F1 : 0.9276          
+##              Prevalence : 0.5094          
+##          Detection Rate : 0.4562          
+##    Detection Prevalence : 0.4742          
+##       Balanced Accuracy : 0.9294          
+##                                           
+##        &#39;Positive&#39; Class : 0               
+## </code></pre>
+<p><strong>Bagging Method - Test Set:</strong></p>
+
+
+  <pre><code>## Confusion Matrix and Statistics
+## 
+##           Reference
+## Prediction   0   1
+##          0 603  30
+##          1  48 597
+##                                           
+##                Accuracy : 0.939           
+##                  95% CI : (0.9244, 0.9515)
+##     No Information Rate : 0.5094          
+##     P-Value [Acc &gt; NIR] : &lt; 2e-16         
+##                                           
+##                   Kappa : 0.878           
+##                                           
+##  Mcnemar&#39;s Test P-Value : 0.05425         
+##                                           
+##               Precision : 0.9526          
+##                  Recall : 0.9263          
+##                      F1 : 0.9393          
+##              Prevalence : 0.5094          
+##          Detection Rate : 0.4718          
+##    Detection Prevalence : 0.4953          
+##       Balanced Accuracy : 0.9392          
+##                                           
+##        &#39;Positive&#39; Class : 0               
+## </code></pre>
+<p><strong>Random Forests Method - Test Set:</strong></p>
+
+
+  <pre><code>## Confusion Matrix and Statistics
+## 
+##           Reference
+## Prediction   0   1
+##          0 600  23
+##          1  51 604
+##                                           
+##                Accuracy : 0.9421          
+##                  95% CI : (0.9279, 0.9543)
+##     No Information Rate : 0.5094          
+##     P-Value [Acc &gt; NIR] : &lt; 2.2e-16       
+##                                           
+##                   Kappa : 0.8842          
+##                                           
+##  Mcnemar&#39;s Test P-Value : 0.001697        
+##                                           
+##               Precision : 0.9631          
+##                  Recall : 0.9217          
+##                      F1 : 0.9419          
+##              Prevalence : 0.5094          
+##          Detection Rate : 0.4695          
+##    Detection Prevalence : 0.4875          
+##       Balanced Accuracy : 0.9425          
+##                                           
+##        &#39;Positive&#39; Class : 0               
+## </code></pre>
+<p><strong>Gradient Boosting Method - Test Set:</strong></p>
+
+
+  <pre><code>## Confusion Matrix and Statistics
+## 
+##           Reference
+## Prediction   0   1
+##          0 596  22
+##          1  55 605
+##                                           
+##                Accuracy : 0.9397          
+##                  95% CI : (0.9253, 0.9522)
+##     No Information Rate : 0.5094          
+##     P-Value [Acc &gt; NIR] : &lt; 2.2e-16       
+##                                           
+##                   Kappa : 0.8796          
+##                                           
+##  Mcnemar&#39;s Test P-Value : 0.0002656       
+##                                           
+##               Precision : 0.9644          
+##                  Recall : 0.9155          
+##                      F1 : 0.9393          
+##              Prevalence : 0.5094          
+##          Detection Rate : 0.4664          
+##    Detection Prevalence : 0.4836          
+##       Balanced Accuracy : 0.9402          
+##                                           
+##        &#39;Positive&#39; Class : 0               
+## </code></pre>
+<p><strong>Performance Summary and RSS</strong></p>
+<!-- raw HTML omitted -->
+<p>The rankings for accuracy on the test set are as follows:</p>
+<ol>
+<li>
+<p>Gradient boosting method</p>
+</li>
+<li>
+<p>Random forests method</p>
+</li>
+<li>
+<p>Bagging method</p>
+</li>
+<li>
+<p>Simple decision tree</p>
+</li>
+</ol>
+<p>It is worth noting though, that the differences in accuracy between the first three is incredibly small, so perhaps the tie may be broken using RSS with respect to the test set:</p>
+
+
+  <span class="code-language">r</span><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span>rss_simple_test <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">sum</span>((actual_test<span style="color:#f92672">-</span>simple_pred_test)^2)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>rss_bagging_test <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">sum</span>((actual_test<span style="color:#f92672">-</span>bagging_pred_test)^2)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>rss_rf_test <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">sum</span>((actual_test<span style="color:#f92672">-</span>rf_pred_test)^2)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>rss_gb_test <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">sum</span>((actual_test<span style="color:#f92672">-</span>gb_pred_test)^2)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span><span style="color:#a6e22e">cat</span>(<span style="color:#a6e22e">paste0</span>(<span style="color:#e6db74">&#34;Residual Sum of Squares on Test Set\n&#34;</span>,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>           <span style="color:#e6db74">&#34;\nSimple decision tree: &#34;</span>, <span style="color:#a6e22e">round</span>(rss_simple_test, <span style="color:#ae81ff">2</span>), 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>           <span style="color:#e6db74">&#34;\nBagging model: &#34;</span>, <span style="color:#a6e22e">round</span>(rss_bagging_test, <span style="color:#ae81ff">2</span>), 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>           <span style="color:#e6db74">&#34;\nRandom forests model: &#34;</span>, <span style="color:#a6e22e">round</span>(rss_rf_test, <span style="color:#ae81ff">2</span>), 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>           <span style="color:#e6db74">&#34;\nGradient boosting model: &#34;</span>, <span style="color:#a6e22e">round</span>(rss_gb_test, <span style="color:#ae81ff">2</span>)))</span></span></code></pre></div>
+
+
+  <pre><code>## Residual Sum of Squares on Test Set
+## 
+## Simple decision tree: 77.23
+## Bagging model: 58.6
+## Random forests model: 74
+## Gradient boosting model: 60.05</code></pre>
+<p>The bagging model had the lowest RSS on the test set even though it was only second best for the training set. The gradient boosting model had the second lowest RSS, followed by random forests and the simple decision tree.</p>
+<p>In sum, it seems that the best model would be either the bagging model or the gradient boosting model, but this is nitpicking because all of the ensemble methods performed very well, with accuracy scores above 93%.</p>
+<h2 id="vii-conclusion">VII. Conclusion<a href="#vii-conclusion">
+    <svg role="img" aria-labelledby="vii-conclusion-IconTitle" fill="var(--color-primary)" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+      <title id="vii-conclusion-IconTitle">Link to this heading</title>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg>
+  </a>
+</h2><p>Looking at the analyses, it seems that the Facebook and TikTok accounts have systematically different Twitter presences. Facebook seems to respond more frequently to user fears, which are associated with words such as “secure” and “trust.” Whereas, TikTok focuses on generating excitement and offer prize giveaways, which is associated with “anticipation” words such as “winning” and “tomorrow.” Differences in tweet length also possibly reflect on the preferences of the target audience; TikTok users are younger and less likely to consume written information (it is a video platform, after all), and the opposite is true for Facebook. In sum, our predictive endeavor was successful, and we unveiled a number of useful insights from it.</p>
+
+    </article>
+    <aside>
+      <div class="single-terms">
+        
+          
+          <a class="term" href="https://www.ammarplumber.com/tags/data-science/">Data Science</a></li>
+          
+        
+      </div>
+      
+  
+  
+  
+
+  <section>
+    <h2>Share</h2>
+    <div class="social-links">
+      <ul class="social-icons--share">
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.ammarplumber.com%2fdata-science%2ffb-tiktok-classification%2f&amp;source=https%3a%2f%2fwww.ammarplumber.com%2fdata-science%2ffb-tiktok-classification%2f&amp;title=Tweets%20about%20Facebook%20and%20TikTok%20-%20a%20classification%20model&amp;summary=Tweets%20about%20Facebook%20and%20TikTok%20-%20a%20classification%20model" target="_blank" rel="noopener" aria-label="Share on LinkedIn" class="social-btn linkedin">
+          <li><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-linkedin" width="24" height="24" viewBox="0 0 352 352" fill="var(--color-primary)"><path d="M0,40v272c0,21.9,18.1,40,40,40h272c21.9,0,40-18.1,40-40V40c0-21.9-18.1-40-40-40H40C18.1,0,0,18.1,0,40z M312,32 c4.6,0,8,3.4,8,8v272c0,4.6-3.4,8-8,8H40c-4.6,0-8-3.4-8-8V40c0-4.6,3.4-8,8-8H312z M59.5,87c0,15.2,12.3,27.5,27.5,27.5 c15.2,0,27.5-12.3,27.5-27.5c0-15.2-12.3-27.5-27.5-27.5C71.8,59.5,59.5,71.8,59.5,87z M187,157h-1v-21h-45v152h47v-75 c0-19.8,3.9-39,28.5-39c24.2,0,24.5,22.4,24.5,40v74h47v-83.5c0-40.9-8.7-72-56.5-72C208.5,132.5,193.3,145.1,187,157z M64,288h47.5 V136H64V288z"/></svg></li>
+        </a>
+        
+        
+        
+        <a href="mailto:?subject=Ammar%20M.%20Plumber%20-%20Tweets%20about%20Facebook%20and%20TikTok%20-%20a%20classification%20model.&amp;body=Tweets%20about%20Facebook%20and%20TikTok%20-%20a%20classification%20model%2c%20by%20Ammar%20M.%20Plumber%0aHomework%20assignment%20for%20BDS%20516%20-%20Data%20Science%20and%20Quantitative%20Modeling%2c%20a%20graduate%20course%20taught%20by%20Alex%20Shpenev%20at%20Penn.%0a%0ahttps%3a%2f%2fwww.ammarplumber.com%2fdata-science%2ffb-tiktok-classification%2f%0a" target="_blank" class="social-btn email">
+          <li><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-mail" width="24" height="24" viewBox="0 0 416 288" fill="var(--color-primary)"><path d="m0 16v256 16h16 384 16v-16-256-16h-16-384-16zm347 16-139 92.5-139-92.5zm-148 125.5 9 5.5 9-5.5 167-111.5v210h-352v-210z"/></svg></li>
+        </a>
+      </ul>
+    </div>
+  </section>
+  
+        
+
+  
+  
+
+        
+  <section>
+    <h2>Read Next</h2>
+    <div class="single-next-previous">
+      
+      
+        <a class="next" href="https://www.ammarplumber.com/data-science/covid-tweets/">COVID-19 Tweet Analysis &raquo;</a>
+      
+    </div>
+  </section>
+
+      
+    </aside>
+  </div>
+</div>
+
+    </main><footer>
+  
+    
+<section class="section">
+  <div class="container--sm">
+    <h2 class="newsletter-header">Give me your email.</h2>
+    <p class="newsletter-desc">I&#39;ve got a lot of people to keep up with, so I need a list.</p>
+    <form id="newsletter-form" name="newsletter" method="POST" action="https://mm.adcompsystems.com/subscribe" accept-charset="utf-8" style="width: 100%; max-width: 700px;">
+      <div style="display: flex; margin-bottom: 10px; width: 100%;">
+        <label for="newsletter-form--name" style="width: 50px; margin-right: 10px; box-sizing: border-box;">Name</label>
+        <input type="text" id="newsletter-form--name" name="name" placeholder="Your name..." required style="flex-grow: 1; box-sizing: border-box; width: 90%;">
+      </div>
+      <div style="display: flex; margin-bottom: 10px; width: 100%;">
+        <label for="newsletter-form--input" style="width: 50px; margin-right: 10px; box-sizing: border-box;">Email</label>
+        <input type="email" id="newsletter-form--input" name="email" placeholder="Your best email..." title="Enter your best email" required style="flex-grow: 1; box-sizing: border-box;">
+      </div>
+      <div style="display:none;">
+        <label for="hp">HP</label>
+        <input type="text" name="hp" id="hp" style="width: 100%; box-sizing: border-box;"/>
+      </div>
+      <input type="hidden" name="list" value="1yJ8HQkDJt4wQ892FQLyjlpQ"/>
+      <input type="hidden" name="subform" value="yes"/>
+      <button type="submit" id="newsletter-form--submit" class="btn-primary" style="width: 100%; box-sizing: border-box;">Join now</button>
+    </form>    
+  </div>
+</section>
+  
+  <div class="section footer">
+    <p class="footer-copyright">&copy; 2024 &middot; 
+      <a href="https://www.ammarplumber.com/">Ammar M. Plumber</a>
+      
+    </p>
+    
+      <div class="footer-socials">
+        
+<div class="social-links">
+  <ul class="social-icons">
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <li>
+      <a href="https://www.linkedin.com/in/ammarplumber" target="_blank" rel="noopener" aria-label="Visit LinkedIn profile" class="social-btn linkedin">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-linkedin" width="24" height="24" viewBox="0 0 352 352" fill="var(--color-primary)"><path d="M0,40v272c0,21.9,18.1,40,40,40h272c21.9,0,40-18.1,40-40V40c0-21.9-18.1-40-40-40H40C18.1,0,0,18.1,0,40z M312,32 c4.6,0,8,3.4,8,8v272c0,4.6-3.4,8-8,8H40c-4.6,0-8-3.4-8-8V40c0-4.6,3.4-8,8-8H312z M59.5,87c0,15.2,12.3,27.5,27.5,27.5 c15.2,0,27.5-12.3,27.5-27.5c0-15.2-12.3-27.5-27.5-27.5C71.8,59.5,59.5,71.8,59.5,87z M187,157h-1v-21h-45v152h47v-75 c0-19.8,3.9-39,28.5-39c24.2,0,24.5,22.4,24.5,40v74h47v-83.5c0-40.9-8.7-72-56.5-72C208.5,132.5,193.3,145.1,187,157z M64,288h47.5 V136H64V288z"/></svg>
+        </a>
+    </li>
+    
+
+    
+    
+    <li>
+      <a href="mailto:?to=ammar%40adcompsystems.com" target="_blank" class="social-btn email">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-mail" width="24" height="24" viewBox="0 0 416 288" fill="var(--color-primary)"><path d="m0 16v256 16h16 384 16v-16-256-16h-16-384-16zm347 16-139 92.5-139-92.5zm-148 125.5 9 5.5 9-5.5 167-111.5v210h-352v-210z"/></svg>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+      </div>
+    
+  </div>
+</footer>
+
+  
+
+
+
+
+
+  
+  
+  
+    
+    
+  
+
+
+
+
+  
+  
+    
+
+<script src="https://www.ammarplumber.com/main.min.js"></script>
+
+
+
+  
+</body>
+</html>

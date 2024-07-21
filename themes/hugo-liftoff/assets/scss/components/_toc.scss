@@ -1,15 +1,12 @@
 .toc {
-
   @include respond-to('x-large') {
     position: sticky;
-	  top: 2rem;
-	  align-self: start;
-    order: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    top: 2rem;
+    align-self: start;
+    width: 250px; // Adjust as needed
+    flex-shrink: 0;
     height: 90vh;
-    overflow-y: scroll;
+    overflow-y: auto;
   }
 }
 
@@ -23,15 +20,12 @@
 .toc-contents {
   display: none;
   @include font-size('sm');
-
-  &--active {      
+  &--active {
     display: block;
   }
-
   @include respond-to('x-large') {
     display: block;
-
-    &--active {      
+    &--active {
       display: none;
     }
   }
@@ -44,9 +38,32 @@
   padding: 10px 20px;
   background-color: var(--color-contrast-lower);
   border-radius: 20px;
-
   &:hover {
     cursor: pointer;
     color: var(--color-primary);
+  }
+}
+
+.toc:empty {
+  display: none;
+}
+
+aside.toc:empty,
+aside.toc .toc-contents:empty {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .single-container-post {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .toc:not(:empty) {
+    width: 250px; /* Adjust as needed */
+  }
+
+  .toc:not(:empty) + .single-post-contents {
+    width: calc(100%); /* 250px + 20px gap */
   }
 }

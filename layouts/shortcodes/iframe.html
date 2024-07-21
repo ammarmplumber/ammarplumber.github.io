@@ -1,1 +1,35 @@
-<iframe src="{{ .Get "src" }}" width="100%" height="500px"></iframe>
+{{ $src := .Get "src" }}
+<div style="width: 100%; overflow: hidden;">
+  <iframe id="iframe-{{ replace $src "/" "-" | replace "." "-" | replace ":" "-" }}" src="{{ $src }}" style="width: 100%; border: none;" scrolling="auto"></iframe>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var iframe = document.getElementById("iframe-{{ replace $src "/" "-" | replace "." "-" | replace ":" "-" }}");
+
+    // Function to adjust iframe height
+    function adjustIframeHeight() {
+      var src = iframe.getAttribute("src");
+      var maxHeight = window.innerHeight;
+
+      if (src.endsWith(".pdf")) {
+        iframe.style.height = "500px";
+      } else {
+        var contentHeight = iframe.contentWindow.document.body.scrollHeight;
+        iframe.style.height = (contentHeight > maxHeight ? maxHeight : contentHeight) + "px";
+      }
+
+      // Set the max-height to the viewport height to allow scrolling if needed
+      iframe.style.maxHeight = maxHeight + "px";
+    }
+
+    // Event listener for iframe load event
+    iframe.addEventListener("load", adjustIframeHeight);
+
+    // Initial check in case the iframe content is already loaded
+    iframe.onload = adjustIframeHeight;
+
+    // Adjust height on window resize
+    window.addEventListener("resize", adjustIframeHeight);
+  });
+</script>

@@ -20,7 +20,7 @@
         {{- . -}}
       {{- else -}}
         {{- .Description -}}
-      {{- end -}}
+      {{- end }}
     </p>
     <div class="single-terms">
       {{ with .Params.tags }}
@@ -32,9 +32,13 @@
   </section>
 </div>
 <div class="single-container-post">
-  {{ partial "posts/toc.html" . }}
-  <div class="single-post-contents">
-    {{- if .Params.series }}
+  {{ $hasToC := ne (trim .TableOfContents " \n") "" }}
+  <div class="single-post-contents{{ if not $hasToC }} full-width{{ end }}">
+    {{ if $hasToC }}
+      {{ partial "posts/toc.html" . }}
+    {{ end }}
+    <div class="single-post-main">
+      {{- if .Params.series }}
       <div class="series">
         {{- $name := index .Params.series 0 }}
         <p>Part of the <a href="{{ "series" | absURL }}/{{ $name | urlize }}/">{{$name}}</a> series:</p>

@@ -221,15 +221,19 @@
             </li>
           
             <li class="menu-item">
+              <a href="/data-science/" class="menu-link">Data Science</a>                  
+            </li>
+          
+            <li class="menu-item">
               <a href="/neuroscience/" class="menu-link">Neuroscience</a>                  
             </li>
           
             <li class="menu-item">
-              <a href="/economics/" class="menu-link">Economics</a>                  
+              <a href="/philosophy/" class="menu-link">Philosophy</a>                  
             </li>
           
             <li class="menu-item">
-              <a href="/philosophy/" class="menu-link">Philosophy</a>                  
+              <a href="/economics/" class="menu-link">Economics</a>                  
             </li>
           
             <li class="menu-item">
@@ -342,7 +346,42 @@
 <li><strong>What is love?:</strong> Discuss the central role of <em>charity</em> in ethical living and social interaction. Understand why love requires self-mastery. Sources: <em>Love and Responsibility</em> by Karol Wojtyla, <em>Love and Virtue</em> by Michael Sherwin</li>
 <li><strong>Theology of the Body:</strong> Learn how Pope John Paul II&rsquo;s thought on the human body as a gift and a vocation for self-giving love is rooted in the philosophical anthropology of Thomas Aquinas. Sources: <em>Man and Woman He Created Them</em> by JPII, <em>Aquinas and the Theology of the Body</em> by Thomas Petri, <em>Covenanted Happiness</em> by Cormac Burke.</li>
 </ul>
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSePo4_2lIyq12n6kR3DLdHdm_fjKHLKXwj-YV53LcVnZkvIaQ/viewform?embedded=true" width="100%" height="500px"></iframe>
+
+<div style="width: 100%; overflow: hidden;">
+  <iframe id="iframe-:" src="https://docs.google.com/forms/d/e/1FAIpQLSePo4_2lIyq12n6kR3DLdHdm_fjKHLKXwj-YV53LcVnZkvIaQ/viewform?embedded=true" style="width: 100%; border: none;" scrolling="auto"></iframe>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var iframe = document.getElementById("iframe-:");
+
+    
+    function adjustIframeHeight() {
+      var src = iframe.getAttribute("src");
+      var maxHeight = window.innerHeight;
+
+      if (src.endsWith(".pdf")) {
+        iframe.style.height = "500px";
+      } else {
+        var contentHeight = iframe.contentWindow.document.body.scrollHeight;
+        iframe.style.height = (contentHeight > maxHeight ? maxHeight : contentHeight) + "px";
+      }
+
+      
+      iframe.style.maxHeight = maxHeight + "px";
+    }
+
+    
+    iframe.addEventListener("load", adjustIframeHeight);
+
+    
+    iframe.onload = adjustIframeHeight;
+
+    
+    window.addEventListener("resize", adjustIframeHeight);
+  });
+</script>
+
 
   </article>
 </div>

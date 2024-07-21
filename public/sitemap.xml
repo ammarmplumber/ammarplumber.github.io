@@ -73,7 +73,22 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.ammarplumber.com/categories/academic/</loc>
-    <lastmod>2021-06-17T21:21:46-05:00</lastmod>
+    <lastmod>2021-12-17T21:21:46-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.ammarplumber.com/data-science/covid-tweets/</loc>
+    <lastmod>2021-12-17T21:21:46-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.ammarplumber.com/tags/data-science/</loc>
+    <lastmod>2021-12-17T21:21:46-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.ammarplumber.com/data-science/</loc>
+    <lastmod>2021-12-17T21:21:46-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -89,6 +104,11 @@
   </url><url>
     <loc>https://www.ammarplumber.com/economics/healing-trauma/</loc>
     <lastmod>2021-06-17T21:21:46-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.ammarplumber.com/data-science/fb-tiktok-classification/</loc>
+    <lastmod>2021-04-25T21:21:46-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
