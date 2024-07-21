@@ -1,6 +1,6 @@
 ---
-title: COVID-19 Tweet Analysis
-seo_title: COVID-19 Tweet Analysis
+title: COVID-19 Tweets Predictive Modeling
+seo_title: COVID-19 Tweets Predictive Modeling
 summary: Final project for BDS 516 - Data Science and Quantitative Modeling, a graduate course taught by Alex Shpenev at Penn.
 description: Final project for BDS 516 - Data Science and Quantitative Modeling, a graduate course taught by Alex Shpenev at Penn.
 slug: covid-tweets
